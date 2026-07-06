@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment ABET | Industrial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="assessment-page">
+    <header class="site-header assessment-header">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Assessment ABET</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación de assessment">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#ciclos">Ciclos</a>
+        <a href="#asignaturas">Asignaturas</a>
+        <a href="#rankings">Rankings</a>
+        <a href="#comparativo">Comparativo</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Inicio</a>
+    </header>
+
+    <main>
+      <section class="assessment-hero" id="dashboard">
+        <div>
+          <p class="kicker">Assessment ABET</p>
+          <h1>Comparativo de resultados por Student Outcome.</h1>
+          <p>
+            Resultados consolidados de septiembre 2025 - febrero 2026 y marzo -
+            agosto 2026, con navegación por SO, PI y nivel de desempeño.
+          </p>
+        </div>
+      </section>
+
+      <section class="assessment-section assessment-page-section">
+        <div class="assessment-toolbar" aria-label="Filtros del comparativo ABET">
+          <label>
+            <span>Semestre</span>
+            <select id="semesterSelect"></select>
+          </label>
+          <label>
+            <span>Student Outcome</span>
+            <select id="soSelect"></select>
+          </label>
+          <label>
+            <span>Indicador PI</span>
+            <select id="piSelect"></select>
+          </label>
+          <label>
+            <span>Ciclo</span>
+            <select id="cycleSelect"></select>
+          </label>
+        </div>
+
+        <div class="assessment-dashboard assessment-dashboard--wide">
+          <article class="assessment-main-card">
+            <div class="assessment-card__header">
+              <span id="selectedCode"></span>
+              <div>
+                <h3 id="selectedTitle"></h3>
+                <p id="selectedDefinition"></p>
+              </div>
+            </div>
+
+            <div class="assessment-kpis">
+              <div>
+                <strong id="selectedAchievement"></strong>
+                <span>logro</span>
+              </div>
+              <div>
+                <strong id="selectedAverage"></strong>
+                <span>nivel promedio</span>
+              </div>
+              <div>
+                <strong id="selectedTotal"></strong>
+                <span>valoraciones</span>
+              </div>
+              <div>
+                <strong id="selectedStudents"></strong>
+                <span>alumnos</span>
+              </div>
+            </div>
+
+            <div class="assessment-levels" id="levelBreakdown"></div>
+          </article>
+
+          <article class="assessment-pi-card">
+            <p class="kicker">Indicadores de desempeño</p>
+            <div id="piCards"></div>
+          </article>
+        </div>
+
+        <div class="assessment-subjects" id="asignaturas">
+          <div class="section-heading compact">
+            <p class="kicker">Asignaturas involucradas</p>
+            <h2 id="subjectsTitle"></h2>
+          </div>
+          <div class="subject-grid" id="subjectGrid"></div>
+        </div>
+
+        <div class="assessment-cycle-wrap" id="ciclos">
+          <div class="section-heading compact">
+            <p class="kicker">Lectura por ciclo</p>
+            <h2 id="cycleTitle"></h2>
+          </div>
+          <div class="cycle-grid" id="cycleGrid"></div>
+        </div>
+
+        <div class="assessment-rankings" id="rankings">
+          <div class="section-heading compact">
+            <p class="kicker">Materias por ?rea</p>
+            <h2>Top de resultados y materias a mejorar</h2>
+          </div>
+
+          <div class="ranking-panels">
+            <article>
+              <h3>Mejores calificaciones</h3>
+              <div id="bestSubjects"></div>
+            </article>
+            <article>
+              <h3>Materias a mejorar</h3>
+              <div id="improveSubjects"></div>
+            </article>
+          </div>
+
+          <div class="area-ranking-list" id="areaRankingList"></div>
+        </div>
+
+        <div class="assessment-table-wrap" id="comparativo">
+          <div class="section-heading compact">
+            <p class="kicker">Estadística por SO</p>
+            <h2>Comparativo entre semestres</h2>
+          </div>
+          <div class="comparison-table" id="comparisonTable"></div>
+        </div>
+
+        <div class="assessment-charts" id="historico">
+          <div class="section-heading compact">
+            <p class="kicker">Hist?rico visual</p>
+            <h2>Evoluci?n de logro ABET</h2>
+          </div>
+          <div class="chart-grid">
+            <article class="chart-card">
+              <h3>Hist?rico por semestre</h3>
+              <div id="semesterLineChart"></div>
+            </article>
+            <article class="chart-card">
+              <h3>SO por ciclo</h3>
+              <div id="cycleLineChart"></div>
+            </article>
+            <article class="chart-card chart-card--wide">
+              <h3>Score por SO</h3>
+              <div id="soScoreBarChart"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assessment-data.js"></script>
+    <script src="assessment-page.js"></script>
+  </body>
+</html>

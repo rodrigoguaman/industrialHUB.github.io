@@ -55,6 +55,213 @@ const resources = [
   }
 ];
 
+const knowledgeAreas = [
+  {
+    id: "administracion",
+    code: "01",
+    title: "Administración",
+    tone: "gold",
+    summary:
+      "Integra gestión, costos, finanzas, talento humano, marketing y estrategia para dirigir sistemas productivos.",
+    courses: [
+      { cycle: 4, name: "Contabilidad" },
+      { cycle: 5, name: "Costos y presupuestos de producción" },
+      { cycle: 6, name: "Gestión del talento humano" },
+      { cycle: 6, name: "Economía general" },
+      { cycle: 7, name: "Matemática financiera" },
+      { cycle: 7, name: "Marketing" },
+      { cycle: 9, name: "Gestión financiera" },
+      { cycle: 9, name: "Sistemas de información estratégica" },
+      { cycle: 10, name: "Diseño y gestión de proyectos" },
+      { cycle: 10, name: "Gestión estratégica" }
+    ],
+    teachers: ["Saúl Jerves", "Rodrigo Guamán", "Cristian Zamora", "Juan Llivisaca", "Otilia Cordero"]
+  },
+  {
+    id: "matematica-estadistica",
+    code: "02",
+    title: "Unidad Básica: Matemática y Estadística",
+    tone: "blue",
+    summary:
+      "Sostiene el modelado cuantitativo con cálculo, programación, estadística, inferencia, simulación y diseño experimental.",
+    courses: [
+      { cycle: 1, name: "Álgebra lineal" },
+      { cycle: 1, name: "Cálculo diferencial" },
+      { cycle: 2, name: "Lenguajes de programación" },
+      { cycle: 2, name: "Cálculo integral" },
+      { cycle: 3, name: "Ecuaciones diferenciales" },
+      { cycle: 3, name: "Estadística analítica" },
+      { cycle: 4, name: "Métodos numéricos" },
+      { cycle: 4, name: "Técnicas de inferencia estadística" },
+      { cycle: 9, name: "Diseño experimental" }
+    ],
+    teachers: ["Franklin Guamán", "Juan Vidal", "Carlos Sánchez", "Rodrigo Guamán", "Paulina Echeverría", "Juan Llivisaca"]
+  },
+  {
+    id: "ciencias-fisica-quimica",
+    code: "03",
+    title: "Unidad Básica: Ciencias Física y Química",
+    tone: "blue",
+    summary:
+      "Aporta bases científicas para comprender materiales, energía, fluidos, electricidad y fenómenos industriales.",
+    courses: [
+      { cycle: 1, name: "Física I" },
+      { cycle: 1, name: "Química general" },
+      { cycle: 2, name: "Física II" },
+      { cycle: 2, name: "Química orgánica" },
+      { cycle: 3, name: "Termodinámica" },
+      { cycle: 4, name: "Transporte de fluidos" },
+      { cycle: 4, name: "Transferencia de calor" },
+      { cycle: 3, name: "Ingeniería y tecnología eléctricas" }
+    ],
+    teachers: ["Cristian Mejía", "Andrea Íñiguez", "Freddy Narváez", "Franklin Guamán", "James Arias"]
+  },
+  {
+    id: "industria-produccion",
+    code: "04",
+    title: "Industria y Producción",
+    tone: "green",
+    summary:
+      "Concentra procesos, producción, logística, calidad, control, investigación operativa, simulación y gestión ambiental.",
+    courses: [
+      { cycle: 2, name: "Ingeniería de procesos y ergonomía" },
+      { cycle: 5, name: "Lean Manufacturing y Six Sigma (I)" },
+      { cycle: 6, name: "Organización de la producción" },
+      { cycle: 7, name: "Logística y cadena de suministro" },
+      { cycle: 7, name: "Lean Manufacturing y Six Sigma (II)" },
+      { cycle: 8, name: "Gestión de calidad" },
+      { cycle: 8, name: "Sistemas de control de la producción" },
+      { cycle: 8, name: "Tecnología energética" },
+      { cycle: 9, name: "Investigación operativa" },
+      { cycle: 10, name: "Simulación de la producción" },
+      { cycle: 10, name: "Introducción a la Ingeniería Industrial" },
+      { cycle: 8, name: "Gestión ambiental empresarial" }
+    ],
+    teachers: ["Ximena Álvarez", "Juan Llivisaca", "Paola Vintimilla", "Milton Barragán", "Pablo Flores", "James Arias", "Diana Jadán"]
+  },
+  {
+    id: "diseno-industrial",
+    code: "05",
+    title: "Diseño Industrial",
+    tone: "green",
+    summary:
+      "Reúne materiales, diseño de máquinas, CAD, equipos, mantenimiento, instrumentación y desarrollo de productos.",
+    courses: [
+      { cycle: 3, name: "Mecánica de materiales" },
+      { cycle: 4, name: "Tecnología de materiales" },
+      { cycle: 5, name: "Diseño de máquinas" },
+      { cycle: 5, name: "Diseño industrial CAD" },
+      { cycle: 6, name: "Máquinas, herramientas y accesorios" },
+      { cycle: 7, name: "Equipo industrial" },
+      { cycle: 8, name: "Ingeniería del mantenimiento" },
+      { cycle: 9, name: "Instrumentación y control" },
+      { cycle: 6, name: "Investigación y desarrollo de nuevos productos" }
+    ],
+    teachers: ["Paúl Álvarez", "Raúl Peláez", "Paola Vintimilla", "Francisco Vázquez", "Jenny Rojas"]
+  },
+  {
+    id: "factor-humano",
+    code: "06",
+    title: "Factor Humano en la Industria",
+    tone: "gold",
+    summary:
+      "Articula investigación, emprendimiento, ética, psicología, legislación, seguridad ocupacional, servicios e innovación.",
+    courses: [
+      { cycle: 1, name: "Metodología de la investigación" },
+      { cycle: 5, name: "Desarrollo de emprendedores" },
+      { cycle: 5, name: "Ética de la ciencia" },
+      { cycle: 5, name: "Psicología industrial" },
+      { cycle: 6, name: "Legislación ecuatoriana" },
+      { cycle: 7, name: "Seguridad y salud ocupacional" },
+      { cycle: 9, name: "Lean Services y Sigma Sigma I" },
+      { cycle: 10, name: "Innovation Management" }
+    ],
+    teachers: ["Silvia Peña", "Saúl Jerves", "Paulina Espinoza", "Milton Barragán", "Diana Jadán"]
+  }
+];
+
+const abetResults = [
+  {
+    id: "ra1",
+    code: "RA1",
+    title: "Solución de problemas",
+    description:
+      "Identifica, formula y soluciona problemas complejos de ingeniería aplicando principios de ingeniería, ciencia y matemáticas.",
+    outcomes: [
+      "Plantea alternativas de solución de problemas, mediante el uso de la información proveniente de indicadores de gestión de la producción.",
+      "Interpreta la información basada en modelos matemáticos, físicos, químicos y su interrelación."
+    ]
+  },
+  {
+    id: "ra2",
+    code: "RA2",
+    title: "Diseño",
+    description:
+      "Aplica diseño de ingeniería para producir soluciones que satisfagan necesidades específicas teniendo en cuenta la salud pública, la seguridad y el bienestar, así como factores globales, culturales, sociales, ambientales y económicos.",
+    outcomes: [
+      "Diseña e implementa modelos de gestión orientados a la optimización de los procesos.",
+      "Construye modelos de simulación basado en diferentes metodologías de la ingeniería industrial."
+    ]
+  },
+  {
+    id: "ra6",
+    code: "RA6",
+    title: "Experimentación",
+    description:
+      "Desarrolla y efectúa experimentación apropiada, analiza e interpreta los datos y usa criterio de ingeniería para obtener conclusiones.",
+    outcomes: [
+      "Plantea alternativas de solución de problemas, mediante el uso de la información proveniente de indicadores de gestión de la producción.",
+      "Evalúa modelos existentes de transporte en la gestión logística de procesos productores de bienes y servicio.",
+      "Identifica los elementos que componen los sistemas de gestión de calidad y sus interrelaciones con un enfoque de economía circular para la agregación de valor en un sistema de producción.",
+      "Recomienda el mejor procedimiento para la optimización de un sistema de producción."
+    ]
+  },
+  {
+    id: "ra3",
+    code: "RA3",
+    title: "Comunicación",
+    description: "Comunica temas profesionales a un rango de audiencias con efectividad.",
+    outcomes: [
+      "Argumenta la validez de las decisiones tomadas en la formulación, ejecución y evaluación del proyecto."
+    ]
+  },
+  {
+    id: "ra4",
+    code: "RA4",
+    title: "Ética y responsabilidad",
+    description:
+      "Reconoce responsabilidades éticas y profesionales en situaciones de ingeniería para hacer juicios informados que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.",
+    outcomes: [
+      "Selecciona los mejores métodos, procesos, procedimientos, de manera integral para el bienestar del factor humano, basado en la normativa legal vigente en el país.",
+      "Identifica los impactos que generaría la implementación de proyectos.",
+      "Analiza los riesgos de proyectos que pueden presentarse en su ejecución."
+    ]
+  },
+  {
+    id: "ra5",
+    code: "RA5",
+    title: "Trabajo en equipo",
+    description:
+      "Trabaja en un equipo cuyos miembros en conjunto proveen liderazgo, crean un ambiente colaborativo e incluyente, establecen metas, planes de trabajo y logran objetivos con efectividad.",
+    outcomes: [
+      "Integra las normativas relacionadas con la seguridad y salud ocupacional, ambiente y legislación laboral con los procedimientos y el bienestar para generar un ambiente propicio de trabajo para el factor humano."
+    ]
+  },
+  {
+    id: "ra7",
+    code: "RA7",
+    title: "Aprendizaje autónomo",
+    description:
+      "Adquiere y aplica nuevo conocimiento según lo requiera, utilizando estrategias de aprendizaje adecuadas.",
+    outcomes: [
+      "Identifica el problema de desarrollo en donde se planteará un proyecto de intervención.",
+      "Describe y asocia los distintos componentes en una cadena de suministros.",
+      "Establece criterios prácticos de posicionamiento logístico en la cadena de suministro.",
+      "Establece los parámetros de control en un sistema de producción real."
+    ]
+  }
+];
+
 const faculty = [
   {
     name: "Ing. Alvarez Lloret Edgar Paul, MS.",
@@ -304,9 +511,26 @@ const searchInput = document.querySelector("#resourceSearch");
 const searchForm = document.querySelector("#searchForm");
 const facultyGrid = document.querySelector("#facultyGrid");
 const facultySearch = document.querySelector("#facultySearch");
-
+const areaTabs = document.querySelector("#areaTabs");
+const areaCode = document.querySelector("#areaCode");
+const areaTitle = document.querySelector("#areaTitle");
+const areaSummary = document.querySelector("#areaSummary");
+const areaCourseCount = document.querySelector("#areaCourseCount");
+const areaTeacherCount = document.querySelector("#areaTeacherCount");
+const areaCourses = document.querySelector("#areaCourses");
+const areaTeachers = document.querySelector("#areaTeachers");
+const areasOverview = document.querySelector("#areasOverview");
+const abetList = document.querySelector("#abetList");
+const abetCode = document.querySelector("#abetCode");
+const abetTitle = document.querySelector("#abetTitle");
+const abetDescription = document.querySelector("#abetDescription");
+const abetOutcomeCount = document.querySelector("#abetOutcomeCount");
+const abetOutcomes = document.querySelector("#abetOutcomes");
+const abetSummaryGrid = document.querySelector("#abetSummaryGrid");
 let activeFilter = "todos";
 let searchTerm = "";
+let activeArea = knowledgeAreas[0].id;
+let activeAbet = abetResults[0].id;
 
 function normalizeText(value) {
   return value
@@ -399,6 +623,167 @@ function renderFaculty() {
   facultyGrid.appendChild(fragment);
 }
 
+function renderAreaTabs() {
+  if (!areaTabs) return;
+
+  const fragment = document.createDocumentFragment();
+  areaTabs.innerHTML = "";
+
+  knowledgeAreas.forEach((area) => {
+    const button = document.createElement("button");
+    button.className = `area-tab area-tab--${area.tone}`;
+    button.type = "button";
+    button.dataset.area = area.id;
+    button.setAttribute("aria-pressed", String(area.id === activeArea));
+    button.innerHTML = `
+      <span>${area.code}</span>
+      <strong>${area.title}</strong>
+      <small>${area.courses.length} asignaturas</small>
+    `;
+    fragment.appendChild(button);
+  });
+
+  areaTabs.appendChild(fragment);
+}
+
+function renderAreaDetail() {
+  if (!areaCode || !areaCourses || !areaTeachers) return;
+
+  const area = knowledgeAreas.find((item) => item.id === activeArea) || knowledgeAreas[0];
+  areaCode.textContent = area.code;
+  areaTitle.textContent = area.title;
+  areaSummary.textContent = area.summary;
+  areaCourseCount.textContent = area.courses.length;
+  areaTeacherCount.textContent = area.teachers.length;
+  areaCourses.innerHTML = "";
+  areaTeachers.innerHTML = "";
+
+  const courses = [...area.courses].sort((a, b) => a.cycle - b.cycle || a.name.localeCompare(b.name));
+  const courseFragment = document.createDocumentFragment();
+
+  courses.forEach((course) => {
+    const item = document.createElement("article");
+    item.className = "course-item";
+    item.innerHTML = `
+      <span>Ciclo ${course.cycle}</span>
+      <strong>${course.name}</strong>
+    `;
+    courseFragment.appendChild(item);
+  });
+
+  const teacherFragment = document.createDocumentFragment();
+
+  area.teachers.forEach((teacher) => {
+    const item = document.createElement("span");
+    item.className = "teacher-chip";
+    item.textContent = teacher;
+    teacherFragment.appendChild(item);
+  });
+
+  areaCourses.appendChild(courseFragment);
+  areaTeachers.appendChild(teacherFragment);
+}
+
+function renderAreasOverview() {
+  if (!areasOverview) return;
+
+  const fragment = document.createDocumentFragment();
+  areasOverview.innerHTML = "";
+
+  knowledgeAreas.forEach((area) => {
+    const card = document.createElement("article");
+    card.className = `area-overview-card area-overview-card--${area.tone}`;
+    card.innerHTML = `
+      <span>${area.code}</span>
+      <h3>${area.title}</h3>
+      <p>${area.summary}</p>
+    `;
+    fragment.appendChild(card);
+  });
+
+  areasOverview.appendChild(fragment);
+}
+
+function renderAreas() {
+  renderAreaTabs();
+  renderAreaDetail();
+  renderAreasOverview();
+}
+
+function renderAbetList() {
+  if (!abetList) return;
+
+  const fragment = document.createDocumentFragment();
+  abetList.innerHTML = "";
+
+  abetResults.forEach((result) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "abet-item";
+    button.dataset.abet = result.id;
+    button.setAttribute("aria-pressed", String(result.id === activeAbet));
+    button.innerHTML = `
+      <span>${result.code}</span>
+      <strong>${result.title}</strong>
+      <small>${result.outcomes.length} logros</small>
+    `;
+    fragment.appendChild(button);
+  });
+
+  abetList.appendChild(fragment);
+}
+
+function renderAbetDetail() {
+  if (!abetCode || !abetOutcomes) return;
+
+  const result = abetResults.find((item) => item.id === activeAbet) || abetResults[0];
+  abetCode.textContent = result.code;
+  abetTitle.textContent = result.title;
+  abetDescription.textContent = result.description;
+  abetOutcomeCount.textContent = result.outcomes.length;
+  abetOutcomes.innerHTML = "";
+
+  const fragment = document.createDocumentFragment();
+
+  result.outcomes.forEach((outcome, index) => {
+    const card = document.createElement("article");
+    card.className = "abet-outcome-card";
+    card.innerHTML = `
+      <span>${String(index + 1).padStart(2, "0")}</span>
+      <p>${outcome}</p>
+    `;
+    fragment.appendChild(card);
+  });
+
+  abetOutcomes.appendChild(fragment);
+}
+
+function renderAbetSummary() {
+  if (!abetSummaryGrid) return;
+
+  const fragment = document.createDocumentFragment();
+  abetSummaryGrid.innerHTML = "";
+
+  abetResults.forEach((result) => {
+    const card = document.createElement("article");
+    card.className = "abet-summary-card";
+    card.innerHTML = `
+      <span>${result.code}</span>
+      <h3>${result.title}</h3>
+      <p>${result.outcomes.length} logro${result.outcomes.length === 1 ? "" : "s"} de rediseño</p>
+    `;
+    fragment.appendChild(card);
+  });
+
+  abetSummaryGrid.appendChild(fragment);
+}
+
+function renderAbet() {
+  renderAbetList();
+  renderAbetDetail();
+  renderAbetSummary();
+}
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     activeFilter = button.dataset.filter;
@@ -420,5 +805,23 @@ searchForm.addEventListener("submit", (event) => {
 
 facultySearch?.addEventListener("input", renderFaculty);
 
+areaTabs?.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-area]");
+  if (!button) return;
+
+  activeArea = button.dataset.area;
+  renderAreas();
+});
+
+abetList?.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-abet]");
+  if (!button) return;
+
+  activeAbet = button.dataset.abet;
+  renderAbet();
+});
+
 renderResources();
 renderFaculty();
+renderAreas();
+renderAbet();

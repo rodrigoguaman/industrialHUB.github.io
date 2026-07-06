@@ -26,6 +26,8 @@
         <a href="#repositorio">Repositorio</a>
         <a href="#docentes">Docentes</a>
         <a href="#areas">Areas</a>
+        <a href="#abet">RDA ABET</a>
+        <a href="assessment.html">Assessment ABET</a>
         <a href="#investigacion">Investigacion</a>
         <a href="#agenda">Agenda</a>
       </nav>
@@ -72,8 +74,8 @@
           <span>recursos curados</span>
         </article>
         <article>
-          <strong>9</strong>
-          <span>areas academicas</span>
+          <strong>6</strong>
+          <span>áreas de conocimiento</span>
         </article>
         <article>
           <strong>24</strong>
@@ -131,32 +133,81 @@
 
       <section class="areas-section" id="areas">
         <div class="section-heading compact">
-          <p class="kicker">Mapa curricular</p>
-          <h2>Areas nucleares de la carrera</h2>
+          <p class="kicker">Matriz curricular</p>
+          <h2>Áreas de conocimiento</h2>
+          <p>
+            Información organizada desde el anexo “Áreas de Conocimiento Ingeniería
+            Industrial”, propuesta de la Comisión Académica.
+          </p>
         </div>
 
-        <div class="area-grid">
-          <article>
-            <span>01</span>
-            <h3>Investigacion de operaciones</h3>
-            <p>Modelos de decision, programacion lineal, redes, colas y optimizacion.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Produccion y manufactura</h3>
-            <p>Planeacion, control, lean manufacturing, calidad y sistemas flexibles.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Logistica y supply chain</h3>
-            <p>Inventarios, distribucion, compras, transporte y diseno de redes.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Datos y simulacion</h3>
-            <p>Analitica, estadistica aplicada, gemelos digitales y modelos discretos.</p>
+        <div class="areas-shell">
+          <div class="area-tabs" id="areaTabs" aria-label="Áreas de conocimiento"></div>
+
+          <article class="area-detail" id="areaDetail">
+            <div class="area-detail__header">
+              <span id="areaCode"></span>
+              <div>
+                <h3 id="areaTitle"></h3>
+                <p id="areaSummary"></p>
+              </div>
+            </div>
+
+            <div class="area-stats">
+              <div>
+                <strong id="areaCourseCount"></strong>
+                <span>asignaturas</span>
+              </div>
+              <div>
+                <strong id="areaTeacherCount"></strong>
+                <span>docentes</span>
+              </div>
+            </div>
+
+            <div class="area-content-grid">
+              <div class="area-panel">
+                <h4>Asignaturas por ciclo</h4>
+                <div class="course-list" id="areaCourses"></div>
+              </div>
+              <div class="area-panel">
+                <h4>Docentes vinculados</h4>
+                <div class="teacher-list" id="areaTeachers"></div>
+              </div>
+            </div>
           </article>
         </div>
+
+        <div class="areas-overview" id="areasOverview"></div>
+      </section>
+
+      <section class="abet-section" id="abet">
+        <div class="section-heading compact">
+          <p class="kicker">Resultados de aprendizaje</p>
+          <h2>RDA ABET y logros del rediseño</h2>
+          <p>
+            Correspondencia entre los resultados de aprendizaje ABET y los logros
+            definidos en el rediseño curricular de Ingeniería Industrial.
+          </p>
+        </div>
+
+        <div class="abet-shell">
+          <aside class="abet-list" id="abetList" aria-label="Resultados ABET"></aside>
+
+          <article class="abet-detail">
+            <div class="abet-detail__eyebrow" id="abetCode"></div>
+            <h3 id="abetTitle"></h3>
+            <p id="abetDescription"></p>
+
+            <div class="abet-meter">
+              <span>Logros del rediseño vinculados</span>
+              <strong id="abetOutcomeCount"></strong>
+            </div>
+
+            <div class="abet-outcomes" id="abetOutcomes"></div>
+          </article>
+        </div>
+
+        <div class="abet-summary-grid" id="abetSummaryGrid"></div>
       </section>
 
       <section class="research-band" id="investigacion">
