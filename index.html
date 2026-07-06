@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repositorio de Ingeniería Industrial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Repositorio academico</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <a href="#repositorio">Repositorio</a>
+        <a href="#docentes">Docentes</a>
+        <a href="#areas">Areas</a>
+        <a href="#investigacion">Investigacion</a>
+        <a href="#agenda">Agenda</a>
+      </nav>
+
+      <a class="header-action" href="#contribuir">Contribuir</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-label="Inicio">
+        <img
+          class="hero-image"
+          src="assets/industrial-lab-hero.png"
+          alt="Laboratorio moderno de ingenieria industrial con analitica, sistemas productivos y colaboracion academica"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="kicker">Ingenieria Industrial</p>
+          <h1>Repositorio academico para estudiar, investigar y construir mejores sistemas.</h1>
+          <p class="hero-copy">
+            Un espacio curado para apuntes, libros, papers, simulaciones, casos,
+            laboratorios y herramientas clave de la carrera.
+          </p>
+
+          <form class="search-panel" id="searchForm">
+            <label for="resourceSearch">Buscar en el repositorio</label>
+            <div class="search-row">
+              <input
+                id="resourceSearch"
+                type="search"
+                placeholder="Ej. Lean, simulacion, ergonomia, optimizacion..."
+                autocomplete="off"
+              />
+              <button type="submit" aria-label="Buscar">
+                <span aria-hidden="true">⌕</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="metrics-band" aria-label="Indicadores del repositorio">
+        <article>
+          <strong>128</strong>
+          <span>recursos curados</span>
+        </article>
+        <article>
+          <strong>9</strong>
+          <span>areas academicas</span>
+        </article>
+        <article>
+          <strong>24</strong>
+          <span>casos y laboratorios</span>
+        </article>
+        <article>
+          <strong>Top-tier</strong>
+          <span>estandar visual y editorial</span>
+        </article>
+      </section>
+
+      <section class="section-wrap" id="repositorio">
+        <div class="section-heading">
+          <p class="kicker">Repositorio</p>
+          <h2>Materiales esenciales</h2>
+          <p>
+            Una primera biblioteca organizada por tipo de contenido. Los datos son
+            editables desde <code>script.js</code> mientras definimos la estructura final.
+          </p>
+        </div>
+
+        <div class="filter-bar" aria-label="Filtros de recursos">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="apuntes">Apuntes</button>
+          <button class="filter" data-filter="paper">Papers</button>
+          <button class="filter" data-filter="herramienta">Herramientas</button>
+          <button class="filter" data-filter="caso">Casos</button>
+        </div>
+
+        <div class="resource-grid" id="resourceGrid"></div>
+      </section>
+
+      <section class="faculty-section" id="docentes">
+        <div class="section-heading">
+          <p class="kicker">Equipo docente</p>
+          <h2>Profesores de Ingeniería Industrial UCuenca</h2>
+          <p>
+            Directorio local construido con información pública de la carrera. Las
+            fotografías están guardadas en este proyecto para evitar dependencias externas.
+          </p>
+        </div>
+
+        <div class="faculty-tools">
+          <label for="facultySearch">Buscar docente</label>
+          <input
+            id="facultySearch"
+            type="search"
+            placeholder="Nombre, correo, ORCID o area de formacion..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="faculty-grid" id="facultyGrid"></div>
+      </section>
+
+      <section class="areas-section" id="areas">
+        <div class="section-heading compact">
+          <p class="kicker">Mapa curricular</p>
+          <h2>Areas nucleares de la carrera</h2>
+        </div>
+
+        <div class="area-grid">
+          <article>
+            <span>01</span>
+            <h3>Investigacion de operaciones</h3>
+            <p>Modelos de decision, programacion lineal, redes, colas y optimizacion.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Produccion y manufactura</h3>
+            <p>Planeacion, control, lean manufacturing, calidad y sistemas flexibles.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Logistica y supply chain</h3>
+            <p>Inventarios, distribucion, compras, transporte y diseno de redes.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Datos y simulacion</h3>
+            <p>Analitica, estadistica aplicada, gemelos digitales y modelos discretos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="research-band" id="investigacion">
+        <div>
+          <p class="kicker">Investigacion aplicada</p>
+          <h2>De la teoria al impacto operacional</h2>
+          <p>
+            Este repositorio puede crecer hacia un portal con proyectos, datasets,
+            tesis, dashboards y publicaciones de estudiantes y docentes.
+          </p>
+        </div>
+        <div class="research-list">
+          <a href="#repositorio">Modelos de optimizacion para produccion</a>
+          <a href="#repositorio">Casos de mejora continua y Six Sigma</a>
+          <a href="#repositorio">Simulacion de procesos y servicios</a>
+          <a href="#repositorio">Analitica para cadena de suministro</a>
+        </div>
+      </section>
+
+      <section class="section-wrap two-column" id="agenda">
+        <div class="section-heading">
+          <p class="kicker">Agenda</p>
+          <h2>Actividades academicas</h2>
+          <p>Un bloque listo para eventos, convocatorias, entregas y seminarios.</p>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <time datetime="2026-07-15">15 Jul</time>
+            <div>
+              <h3>Seminario de simulacion discreta</h3>
+              <p>Modelado de lineas de espera y sistemas de servicio.</p>
+            </div>
+          </article>
+          <article>
+            <time datetime="2026-08-02">02 Ago</time>
+            <div>
+              <h3>Entrega de caso Lean</h3>
+              <p>Diagnostico, VSM actual y propuesta de mejora.</p>
+            </div>
+          </article>
+          <article>
+            <time datetime="2026-08-21">21 Ago</time>
+            <div>
+              <h3>Club de lectura de papers</h3>
+              <p>Optimizacion robusta aplicada a cadenas de suministro.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contribute" id="contribuir">
+        <div>
+          <p class="kicker">Construccion colaborativa</p>
+          <h2>Subamos el nivel del material de la carrera.</h2>
+        </div>
+        <a href="mailto:repositorio.industrial@example.com">Proponer recurso</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Industrial Hub · Repositorio de Ingenieria Industrial</p>
+      <p>Base inicial lista para personalizar con tu universidad, materias y documentos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
