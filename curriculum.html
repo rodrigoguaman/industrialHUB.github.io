@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malla Curricular | Industrial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="curriculum-page">
+    <header class="site-header curriculum-header">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Malla curricular</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación de malla curricular">
+        <a href="#resumen">Resumen</a>
+        <a href="#niveles">Niveles</a>
+        <a href="#prerrequisitos">Prerrequisitos</a>
+        <a href="#glosario">Glosario</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Inicio</a>
+    </header>
+
+    <main>
+      <section class="curriculum-hero" id="resumen">
+        <div>
+          <p class="kicker">Malla curricular</p>
+          <h1>Secuencia académica, horas y encadenamientos.</h1>
+          <p>
+            Navegación dinámica por niveles, componentes ACD, APE/A, APE/T y AA,
+            con visualización de prerrequisitos y asignaturas que se desbloquean.
+          </p>
+        </div>
+      </section>
+
+      <section class="curriculum-dashboard">
+        <div class="curriculum-metrics">
+          <article><strong id="curriculumCourseCount"></strong><span>asignaturas</span></article>
+          <article><strong id="curriculumLevelCount"></strong><span>niveles</span></article>
+          <article><strong id="curriculumPrereqCount"></strong><span>encadenamientos</span></article>
+          <article><strong id="curriculumTotalHours"></strong><span>componentes ACD/APE/AA</span></article>
+        </div>
+
+        <div class="curriculum-toolbar" aria-label="Filtros de malla curricular">
+          <label>
+            <span>Buscar</span>
+            <input id="curriculumSearch" type="search" placeholder="Asignatura, código, campo..." />
+          </label>
+          <label>
+            <span>Nivel</span>
+            <select id="curriculumLevel"></select>
+          </label>
+          <label>
+            <span>Campo</span>
+            <select id="curriculumField"></select>
+          </label>
+          <label class="curriculum-toggle">
+            <input id="showPrerequisites" type="checkbox" checked />
+            <span>Ver prerrequisitos</span>
+          </label>
+        </div>
+
+        <section class="curriculum-charts" id="niveles">
+          <article>
+            <h2>Carga por nivel</h2>
+            <div id="levelLoadChart"></div>
+          </article>
+          <article>
+            <h2>Campos de formación</h2>
+            <div id="fieldChart"></div>
+          </article>
+        </section>
+
+        <section class="curriculum-layout">
+          <div>
+            <div class="section-heading compact">
+              <p class="kicker">Malla dinámica</p>
+              <h2>Asignaturas por nivel</h2>
+            </div>
+            <div class="curriculum-level-grid" id="curriculumGrid"></div>
+          </div>
+
+          <aside class="curriculum-detail" id="prerrequisitos">
+            <div id="courseDetail"></div>
+          </aside>
+        </section>
+
+        <section class="curriculum-glossary" id="glosario">
+          <div class="section-heading compact">
+            <p class="kicker">Componentes</p>
+            <h2>Lectura de la carga académica</h2>
+          </div>
+          <div class="curriculum-glossary-grid" id="curriculumGlossary"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="curriculum-data.js"></script>
+    <script src="curriculum-page.js"></script>
+  </body>
+</html>

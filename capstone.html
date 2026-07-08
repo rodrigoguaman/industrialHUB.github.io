@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone Project | Industrial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="capstone-page">
+    <header class="site-header capstone-header">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Capstone Project</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegacion de capstone">
+        <a href="#resumen">Resumen</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#semestres">Semestres</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Inicio</a>
+    </header>
+
+    <main>
+      <section class="capstone-hero" id="resumen">
+        <div>
+          <p class="kicker">Capstone Project</p>
+          <h1>Proyectos de titulacion organizados por semestre.</h1>
+          <p>
+            Galeria dinamica con autores, tutores, titulos, areas de trabajo,
+            posters en espanol e ingles y una previsualizacion visual de cada entrega.
+          </p>
+        </div>
+      </section>
+
+      <section class="capstone-section" id="proyectos">
+        <div class="capstone-toolbar" aria-label="Filtros de Capstone Project">
+          <label>
+            <span>Semestre</span>
+            <select id="capstoneSemester"></select>
+          </label>
+          <label>
+            <span>Area</span>
+            <select id="capstoneArea"></select>
+          </label>
+          <label>
+            <span>Buscar</span>
+            <input id="capstoneSearch" type="search" placeholder="Titulo, autor, tutor o palabra clave..." />
+          </label>
+        </div>
+
+        <div class="capstone-metrics">
+          <article>
+            <strong id="capstoneProjectCount"></strong>
+            <span>proyectos</span>
+          </article>
+          <article>
+            <strong id="capstoneAuthorCount"></strong>
+            <span>estudiantes</span>
+          </article>
+          <article>
+            <strong id="capstoneAreaCount"></strong>
+            <span>areas de trabajo</span>
+          </article>
+        </div>
+
+        <article class="capstone-featured" id="capstoneFeatured"></article>
+
+        <div class="section-heading compact">
+          <p class="kicker">Repositorio visual</p>
+          <h2>Proyectos registrados</h2>
+        </div>
+        <div class="capstone-grid" id="capstoneGrid"></div>
+      </section>
+
+      <section class="capstone-semesters-section" id="semestres">
+        <div class="section-heading compact">
+          <p class="kicker">Navegacion historica</p>
+          <h2>Capstone por semestres</h2>
+          <p>La estructura queda lista para sumar nuevos ciclos academicos sin cambiar el diseno.</p>
+        </div>
+        <div class="capstone-semester-rail" id="capstoneSemesters"></div>
+      </section>
+    </main>
+
+    <dialog class="capstone-dialog" id="capstonePreviewDialog" aria-label="Previsualizacion de proyecto">
+      <button type="button" class="capstone-dialog__close" id="capstonePreviewClose" aria-label="Cerrar">x</button>
+      <img id="capstonePreviewImage" alt="" />
+      <div>
+        <h3 id="capstonePreviewTitle"></h3>
+        <p id="capstonePreviewAuthors"></p>
+        <div class="capstone-docs" id="capstonePreviewLinks"></div>
+      </div>
+    </dialog>
+
+    <script src="capstone-data.js"></script>
+    <script src="capstone-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docentes | Industrial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="faculty-page">
+    <header class="site-header faculty-header">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Docentes CII</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación de docentes">
+        <a href="#oferta">Oferta</a>
+        <a href="#estadistica">Estadística</a>
+        <a href="#docentes">Docentes</a>
+        <a href="#asignaturas">Asignaturas</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Inicio</a>
+    </header>
+
+    <main>
+      <section class="faculty-hero" id="oferta">
+        <div>
+          <p class="kicker">Equipo docente</p>
+          <h1>Oferta académica y distributivo docente.</h1>
+          <p id="offerDescription"></p>
+        </div>
+      </section>
+
+      <section class="faculty-dashboard">
+        <div class="faculty-offer-grid">
+          <article>
+            <strong id="offerCourses"></strong>
+            <span>cursos en malla</span>
+          </article>
+          <article>
+            <strong id="offerCycles"></strong>
+            <span>ciclos</span>
+          </article>
+          <article>
+            <strong id="offerHours"></strong>
+            <span>horas totales</span>
+          </article>
+          <article>
+            <strong id="offerPeriod"></strong>
+            <span>período de oferta</span>
+          </article>
+        </div>
+
+        <div class="faculty-toolbar" aria-label="Filtros de docentes">
+          <label>
+            <span>Buscar</span>
+            <input id="facultyPageSearch" type="search" placeholder="Docente, asignatura, título..." />
+          </label>
+          <label>
+            <span>Formación</span>
+            <select id="facultyFormation"></select>
+          </label>
+          <label>
+            <span>Tipo</span>
+            <select id="facultyType"></select>
+          </label>
+          <label>
+            <span>Ciclo</span>
+            <select id="facultyCycle"></select>
+          </label>
+        </div>
+
+        <section class="faculty-stats" id="estadistica">
+          <article class="faculty-stat-card">
+            <h2>Resumen docente</h2>
+            <div class="faculty-kpis">
+              <div><strong id="totalFaculty"></strong><span>docentes</span></div>
+              <div><strong id="totalAssignedCourses"></strong><span>asignaturas con docente</span></div>
+              <div><strong id="totalPhd"></strong><span>PhD / PhD candidate</span></div>
+              <div><strong id="totalExclusive"></strong><span>exclusivos Industrial</span></div>
+            </div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Formación</h2>
+            <div class="faculty-bars" id="formationBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Título</h2>
+            <div class="faculty-bars" id="titleBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Tipo</h2>
+            <div class="faculty-bars" id="typeBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Modalidad</h2>
+            <div class="faculty-bars" id="modalityBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Pertenencia</h2>
+            <div class="faculty-bars" id="belongingBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Dedicación</h2>
+            <div class="faculty-bars" id="dedicationBars"></div>
+          </article>
+          <article class="faculty-stat-card">
+            <h2>Carga por docente</h2>
+            <div class="faculty-bars" id="loadBars"></div>
+          </article>
+        </section>
+
+        <section class="faculty-layout" id="docentes">
+          <div>
+            <div class="section-heading compact">
+              <p class="kicker">Directorio dinámico</p>
+              <h2>Docentes y asignaturas</h2>
+            </div>
+            <div class="faculty-page-grid" id="facultyPageGrid"></div>
+          </div>
+
+          <aside class="faculty-detail-panel" id="asignaturas">
+            <div id="facultyDetail"></div>
+          </aside>
+        </section>
+      </section>
+    </main>
+
+    <script src="faculty-data.js"></script>
+    <script src="faculty-page.js"></script>
+  </body>
+</html>
