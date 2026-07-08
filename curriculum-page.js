@@ -11,12 +11,135 @@ let activeField = "all";
 let activeQuery = "";
 let activeCourseCode = curriculumData.courses.find((course) => course.prerequisites.length)?.code || curriculumData.courses[0].code;
 
+const facultySource = typeof facultyDashboardData === "undefined" ? { faculty: [], courses: [] } : facultyDashboardData;
+const facultyByName = new Map((facultySource.faculty || []).map((teacher) => [normalize(teacher.name), teacher]));
+const teacherImageFallbacks = new Map([
+  ["james arias", "assets/faculty/ing-arias-cisneros-james-marlon-ms.jpg"]
+]);
+const normalizeSubject = (value) => normalize(value)
+  .replace(/\b6\b/g, "six")
+  .replace(/\bsuministros\b/g, "suministro")
+  .replace(/\bservicio comunitario\b/g, "vinculacion")
+  .replace(/\blaborales\s+(\d+)\b/g, "laborales $1")
+  .replace(/\b(g|p)\d+\b/g, "")
+  .replace(/\bi[12]\b/g, "")
+  .replace(/[^a-z0-9]+/g, " ")
+  .replace(/\s+/g, " ")
+  .trim();
+function resolveTeacherProfile(name) {
+  const normalizedName = normalize(name);
+  const profile = facultyByName.get(normalizedName);
+  const image = profile?.image && !profile.image.includes("default-profile")
+    ? profile.image
+    : teacherImageFallbacks.get(normalizedName) || profile?.image || "assets/faculty/default-profile.png";
+  return { profile, image };
+}
+const teachersByCourseCode = (facultySource.courses || []).reduce((map, item) => {
+  if (!item.code || !item.teacher || normalize(item.teacher) === "por definir") return map;
+  const key = String(item.code);
+  const current = map.get(key) || [];
+  if (!current.some((teacher) => normalize(teacher.name) === normalize(item.teacher))) {
+    const { profile, image } = resolveTeacherProfile(item.teacher);
+    current.push({
+      name: item.teacher,
+      group: item.group,
+      image,
+      title: profile?.title || "Docente",
+      formation: profile?.formation || "",
+      modality: profile?.modality || ""
+    });
+  }
+  map.set(key, current);
+  return map;
+}, new Map());
+const teachersBySubject = (facultySource.courses || []).reduce((map, item) => {
+  if (!item.subject || !item.teacher || normalize(item.teacher) === "por definir") return map;
+  const key = normalizeSubject(item.subject);
+  const current = map.get(key) || [];
+  if (!current.some((teacher) => normalize(teacher.name) === normalize(item.teacher))) {
+    const { profile, image } = resolveTeacherProfile(item.teacher);
+    current.push({
+      name: item.teacher,
+      group: item.group,
+      image,
+      title: profile?.title || "Docente",
+      formation: profile?.formation || "",
+      modality: profile?.modality || ""
+    });
+  }
+  map.set(key, current);
+  return map;
+}, new Map());
+
 function normalize(value) {
   return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
 function getCourse(code) {
   return curriculumData.courses.find((course) => course.code === code);
+}
+
+function getCourseTeachers(course) {
+  const byCode = teachersByCourseCode.get(String(course.code)) || [];
+  if (byCode.length) return byCode;
+  const courseSubject = normalizeSubject(course.title);
+  const exact = teachersBySubject.get(courseSubject) || [];
+  if (exact.length) return exact;
+  const fuzzy = [...teachersBySubject.entries()].find(([subject]) => subject.includes(courseSubject) || courseSubject.includes(subject));
+  return fuzzy?.[1] || [];
+}
+
+function renderCourseAvatars(course) {
+  const teachers = getCourseTeachers(course);
+  if (!teachers.length) {
+    return `
+      <div class="curriculum-teacher-strip">
+        <img src="assets/faculty/default-profile.png" alt="" loading="lazy">
+        <span>Docente por definir</span>
+      </div>
+    `;
+  }
+  const visibleTeachers = teachers.slice(0, 3);
+  const remaining = teachers.length - visibleTeachers.length;
+  return `
+    <div class="curriculum-teacher-strip" aria-label="Docentes de ${course.title}">
+      <div>
+        ${visibleTeachers.map((teacher) => `
+          <img src="${teacher.image}" alt="${teacher.name}" loading="lazy">
+        `).join("")}
+      </div>
+      <span>${visibleTeachers.map((teacher) => teacher.name.split(" ").slice(0, 2).join(" ")).join(", ")}${remaining > 0 ? ` +${remaining}` : ""}</span>
+    </div>
+  `;
+}
+
+function renderTeacherPanel(course) {
+  const teachers = getCourseTeachers(course);
+  return `
+    <div class="curriculum-teachers-panel">
+      <h3>Docente que imparte la asignatura</h3>
+      <div>
+        ${teachers.length ? teachers.map((teacher) => `
+          <article>
+            <img src="${teacher.image}" alt="${teacher.name}" loading="lazy">
+            <div>
+              <strong>${teacher.name}</strong>
+              <span>${[teacher.title, teacher.formation, teacher.modality].filter(Boolean).join(" · ")}</span>
+              <small>${teacher.group || "Grupo registrado"}</small>
+            </div>
+          </article>
+        `).join("") : `
+          <article>
+            <img src="assets/faculty/default-profile.png" alt="" loading="lazy">
+            <div>
+              <strong>Docente por definir</strong>
+              <span>No registra docente asignado en la base actual.</span>
+            </div>
+          </article>
+        `}
+      </div>
+    </div>
+  `;
 }
 
 function filteredCourses() {
@@ -97,6 +220,7 @@ function renderGrid() {
               <span>${course.code}</span>
               <strong>${course.title}</strong>
               <small>${course.field}</small>
+              ${renderCourseAvatars(course)}
               <em>${course.prerequisites.length} prerreq. · ${course.unlocks.length} desbloquea</em>
             </button>
           `).join("")}
@@ -128,6 +252,7 @@ function renderDetail() {
       <span>${course.field}</span>
       <span>Total ${course.totalLearning}</span>
     </div>
+    ${renderTeacherPanel(course)}
     <div class="curriculum-chain ${prereqVisible ? "" : "is-hidden"}">
       <h3>Prerrequisitos</h3>
       <div>
