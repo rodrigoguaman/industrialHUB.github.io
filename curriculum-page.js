@@ -5,6 +5,8 @@ const curriculumField = document.querySelector("#curriculumField");
 const showPrerequisites = document.querySelector("#showPrerequisites");
 const curriculumGrid = document.querySelector("#curriculumGrid");
 const courseDetail = document.querySelector("#courseDetail");
+const curriculumNetwork = document.querySelector("#curriculumNetwork");
+const networkCourseSelect = document.querySelector("#networkCourseSelect");
 
 let activeLevel = "all";
 let activeField = "all";
@@ -77,6 +79,155 @@ function normalize(value) {
 
 function getCourse(code) {
   return curriculumData.courses.find((course) => course.code === code);
+}
+
+function collectNetworkCourses(course, direction) {
+  const visited = new Set([course.code]);
+  const linked = new Map();
+
+  function walk(currentCourse, depth) {
+    const items = direction === "before" ? currentCourse.prerequisites : currentCourse.unlocks;
+    items.forEach((item) => {
+      const target = getCourse(item.code);
+      if (!target || target.code === course.code) return;
+
+      const previous = linked.get(target.code);
+      linked.set(target.code, {
+        ...target,
+        depth: Math.min(previous?.depth || depth, depth),
+        direct: previous?.direct || depth === 1
+      });
+
+      if (visited.has(target.code)) return;
+      visited.add(target.code);
+      walk(target, depth + 1);
+    });
+  }
+
+  walk(course, 1);
+  return [...linked.values()].sort((a, b) => a.level - b.level || a.title.localeCompare(b.title));
+}
+
+function networkNodeType(course, selectedCourse, directPredecessors, directDependents, predecessors, dependents) {
+  if (course.code === selectedCourse.code) return "current";
+  if (directPredecessors.has(course.code)) return "direct-predecessor";
+  if (directDependents.has(course.code)) return "direct-dependent";
+  if (predecessors.has(course.code)) return "predecessor";
+  if (dependents.has(course.code)) return "dependent";
+  return "related";
+}
+
+function renderNetworkNode(course, selectedCourse, directPredecessors, directDependents, predecessors, dependents) {
+  const type = networkNodeType(course, selectedCourse, directPredecessors, directDependents, predecessors, dependents);
+  return `
+    <button type="button" class="curriculum-network-node curriculum-network-node--${type}" data-course="${course.code}">
+      <span>N${course.level} · ${course.code}</span>
+      <strong>${course.title}</strong>
+      <small>${course.field}</small>
+    </button>
+  `;
+}
+
+function renderNetworkSelect() {
+  if (!networkCourseSelect) return;
+
+  networkCourseSelect.innerHTML = curriculumData.courses
+    .slice()
+    .sort((a, b) => a.level - b.level || a.title.localeCompare(b.title))
+    .map((course) => `
+      <option value="${course.code}" ${course.code === activeCourseCode ? "selected" : ""}>
+        N${course.level} · ${course.code} · ${course.title}
+      </option>
+    `)
+    .join("");
+}
+
+function networkEdgesFor(courses, selectedCourse, directPredecessors, directDependents) {
+  const visibleCodes = new Set(courses.map((course) => course.code));
+  return courses.flatMap((course) =>
+    course.prerequisites
+      .filter((item) => visibleCodes.has(item.code))
+      .map((item) => ({
+        from: item.code,
+        to: course.code,
+        direct: (course.code === selectedCourse.code && directPredecessors.has(item.code)) ||
+          (item.code === selectedCourse.code && directDependents.has(course.code))
+      }))
+  );
+}
+
+function drawNetworkEdges() {
+  if (!curriculumNetwork) return;
+
+  const svg = curriculumNetwork.querySelector(".curriculum-network-lines");
+  const stage = curriculumNetwork.querySelector(".curriculum-network-stage");
+  if (!svg || !stage) return;
+
+  const edges = JSON.parse(curriculumNetwork.dataset.edges || "[]");
+  const stageRect = stage.getBoundingClientRect();
+  svg.setAttribute("viewBox", `0 0 ${stageRect.width} ${stageRect.height}`);
+  svg.innerHTML = edges.map((edge) => {
+    const from = stage.querySelector(`[data-network-node="${edge.from}"]`);
+    const to = stage.querySelector(`[data-network-node="${edge.to}"]`);
+    if (!from || !to) return "";
+
+    const fromRect = from.getBoundingClientRect();
+    const toRect = to.getBoundingClientRect();
+    const x1 = fromRect.right - stageRect.left;
+    const y1 = fromRect.top + fromRect.height / 2 - stageRect.top;
+    const x2 = toRect.left - stageRect.left;
+    const y2 = toRect.top + toRect.height / 2 - stageRect.top;
+    const curve = Math.max(42, Math.abs(x2 - x1) * 0.42);
+
+    return `<path class="${edge.direct ? "is-direct" : "is-extended"}" d="M ${x1} ${y1} C ${x1 + curve} ${y1}, ${x2 - curve} ${y2}, ${x2} ${y2}" />`;
+  }).join("");
+}
+
+function renderNetwork() {
+  if (!curriculumNetwork) return;
+
+  const course = getCourse(activeCourseCode) || curriculumData.courses[0];
+  const before = collectNetworkCourses(course, "before");
+  const after = collectNetworkCourses(course, "after");
+  const predecessors = new Set(before.map((item) => item.code));
+  const dependents = new Set(after.map((item) => item.code));
+  const directPredecessors = new Set(course.prerequisites.map((item) => item.code));
+  const directDependents = new Set(course.unlocks.map((item) => item.code));
+  const visibleCourses = [course, ...before, ...after]
+    .filter((item, index, list) => list.findIndex((courseItem) => courseItem.code === item.code) === index)
+    .sort((a, b) => a.level - b.level || a.title.localeCompare(b.title));
+  const levels = [...new Set(visibleCourses.map((item) => item.level))].sort((a, b) => a - b);
+  const edges = networkEdgesFor(visibleCourses, course, directPredecessors, directDependents);
+
+  curriculumNetwork.dataset.edges = JSON.stringify(edges);
+  curriculumNetwork.innerHTML = `
+    <div class="curriculum-network-summary">
+      <strong>${before.length}</strong><span>predecesoras</span>
+      <strong>${after.length}</strong><span>dependientes</span>
+      <strong>${edges.length}</strong><span>conexiones visibles</span>
+    </div>
+    <div class="curriculum-network-stage">
+      <svg class="curriculum-network-lines" aria-hidden="true"></svg>
+      <div class="curriculum-network-levels" style="--network-levels:${levels.length}">
+        ${levels.map((level) => {
+          const levelCourses = visibleCourses.filter((item) => item.level === level);
+          return `
+            <section class="curriculum-network-level" aria-label="Nivel ${level}">
+              <h3>N${level}</h3>
+              <div>
+                ${levelCourses.map((item) => `
+                  <div class="curriculum-network-node-wrap" data-network-node="${item.code}">
+                    ${renderNetworkNode(item, course, directPredecessors, directDependents, predecessors, dependents)}
+                  </div>
+                `).join("")}
+              </div>
+            </section>
+          `;
+        }).join("")}
+      </div>
+    </div>
+  `;
+  requestAnimationFrame(drawNetworkEdges);
 }
 
 function getCourseTeachers(course) {
@@ -178,7 +329,7 @@ function renderTinyBars(container, items, key = "totalLearning") {
     <div class="curriculum-bar-row">
       <span>${item.label}</span>
       <div><i style="width:${Math.round((item.value / max) * 100)}%"></i></div>
-      <strong>${item.value}</strong>
+      <strong>${item.suffix ? `${item.value} ${item.suffix}` : item.value}</strong>
     </div>
   `).join("");
 }
@@ -186,7 +337,7 @@ function renderTinyBars(container, items, key = "totalLearning") {
 function renderCharts() {
   renderTinyBars(
     document.querySelector("#levelLoadChart"),
-    curriculumData.levels.map((level) => ({ label: `Nivel ${level.level}`, value: level.totals.totalLearning }))
+    curriculumData.levels.map((level) => ({ label: `Nivel ${level.level}`, value: level.courses.length, suffix: "asig." }))
   );
 
   const fieldCounts = curriculumData.courses.reduce((map, course) => {
@@ -290,8 +441,10 @@ function renderGlossary() {
 
 function render() {
   renderControls();
+  renderNetworkSelect();
   renderCharts();
   renderGrid();
+  renderNetwork();
   renderDetail();
 }
 
@@ -308,6 +461,12 @@ curriculumField.addEventListener("change", (event) => {
   render();
 });
 showPrerequisites.addEventListener("change", renderDetail);
+networkCourseSelect?.addEventListener("change", (event) => {
+  activeCourseCode = event.target.value;
+  activeLevel = "all";
+  render();
+  document.querySelector("#red-materias")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 document.addEventListener("click", (event) => {
   const target = event.target.closest("[data-course]");
   if (!target) return;
@@ -315,6 +474,7 @@ document.addEventListener("click", (event) => {
   activeLevel = "all";
   render();
 });
+window.addEventListener("resize", drawNetworkEdges);
 
 renderMetrics();
 renderGlossary();

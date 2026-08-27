@@ -527,16 +527,390 @@ const abetDescription = document.querySelector("#abetDescription");
 const abetOutcomeCount = document.querySelector("#abetOutcomeCount");
 const abetOutcomes = document.querySelector("#abetOutcomes");
 const abetSummaryGrid = document.querySelector("#abetSummaryGrid");
+const languageToggle = document.querySelector("#languageToggle");
 let activeFilter = "todos";
 let searchTerm = "";
 let activeArea = knowledgeAreas[0].id;
 let activeAbet = abetResults[0].id;
+let activeLanguage = localStorage.getItem("industrialHubLanguage") || "es";
+
+const uiCopy = {
+  es: {
+    documentTitle: "Repositorio de Ingenieria Industrial",
+    brandSubtitle: "Repositorio academico",
+    nav: {
+      "#repositorio": "Repositorio",
+      "faculty.html": "Docentes",
+      "#areas": "Areas",
+      "curriculum.html": "Malla",
+      "#abet": "RDA ABET",
+      "assessment.html": "Assessment ABET",
+      "capstone.html": "Capstone",
+      "#investigacion": "Investigacion",
+      "#agenda": "Agenda"
+    },
+    headerAction: "Contribuir",
+    languageLabel: "Switch to English",
+    languageText: "EN",
+    heroKicker: "Ingenieria Industrial",
+    heroTitle: "Repositorio academico para estudiar, investigar y construir mejores sistemas.",
+    heroCopy: "Un espacio curado para apuntes, libros, papers, simulaciones, casos, laboratorios y herramientas clave de la carrera.",
+    searchLabel: "Buscar en el repositorio",
+    searchPlaceholder: "Ej. Lean, simulacion, ergonomia, optimizacion...",
+    searchAria: "Buscar",
+    metrics: ["recursos curados", "areas de conocimiento", "casos y laboratorios", "estandar visual y editorial"],
+    repositoryKicker: "Repositorio",
+    repositoryTitle: "Materiales esenciales",
+    repositoryCopy: "Una primera biblioteca organizada por tipo de contenido. Los datos son editables desde script.js mientras definimos la estructura final.",
+    filters: {
+      todos: "Todos",
+      apuntes: "Apuntes",
+      paper: "Papers",
+      herramienta: "Herramientas",
+      caso: "Casos"
+    },
+    areasKicker: "Matriz curricular",
+    areasTitle: "Areas de conocimiento",
+    areasCopy: "Informacion organizada desde el anexo Areas de Conocimiento Ingenieria Industrial, propuesta de la Comision Academica.",
+    coursesLabel: "asignaturas",
+    teachersLabel: "docentes",
+    coursesByCycle: "Asignaturas por ciclo",
+    linkedTeachers: "Docentes vinculados",
+    cycle: "Ciclo",
+    abetKicker: "Resultados de aprendizaje",
+    abetTitle: "RDA ABET y logros del rediseno",
+    abetCopy: "Correspondencia entre los resultados de aprendizaje ABET y los logros definidos en el rediseno curricular de Ingenieria Industrial.",
+    linkedOutcomes: "Logros del rediseno vinculados",
+    outcomes: "logros",
+    outcome: "logro",
+    redesignOutcomes: "de rediseno",
+    researchKicker: "Investigacion aplicada",
+    researchTitle: "De la teoria al impacto operacional",
+    researchCopy: "Este repositorio puede crecer hacia un portal con proyectos, datasets, tesis, dashboards y publicaciones de estudiantes y docentes.",
+    researchLinks: [
+      "Modelos de optimizacion para produccion",
+      "Casos de mejora continua y Six Sigma",
+      "Simulacion de procesos y servicios",
+      "Analitica para cadena de suministro"
+    ],
+    agendaKicker: "Agenda",
+    agendaTitle: "Actividades academicas",
+    agendaCopy: "Un bloque listo para eventos, convocatorias, entregas y seminarios.",
+    events: [
+      ["Seminario de simulacion discreta", "Modelado de lineas de espera y sistemas de servicio."],
+      ["Entrega de caso Lean", "Diagnostico, VSM actual y propuesta de mejora."],
+      ["Club de lectura de papers", "Optimizacion robusta aplicada a cadenas de suministro."]
+    ],
+    contributeKicker: "Construccion colaborativa",
+    contributeTitle: "Subamos el nivel del material de la carrera.",
+    contributeAction: "Proponer recurso",
+    footerTitle: "Industrial Hub - Repositorio de Ingenieria Industrial",
+    footerCopy: "Base inicial lista para personalizar con tu universidad, materias y documentos.",
+    emptyResources: "No hay recursos con ese criterio todavia.",
+    openResource: "Abrir recurso"
+  },
+  en: {
+    documentTitle: "Industrial Engineering Repository",
+    brandSubtitle: "Academic repository",
+    nav: {
+      "#repositorio": "Repository",
+      "faculty.html": "Faculty",
+      "#areas": "Areas",
+      "curriculum.html": "Curriculum",
+      "#abet": "ABET SLOs",
+      "assessment.html": "ABET Assessment",
+      "capstone.html": "Capstone",
+      "#investigacion": "Research",
+      "#agenda": "Agenda"
+    },
+    headerAction: "Contribute",
+    languageLabel: "Cambiar a espanol",
+    languageText: "ES",
+    heroKicker: "Industrial Engineering",
+    heroTitle: "An academic repository for studying, researching, and building better systems.",
+    heroCopy: "A curated space for notes, books, papers, simulations, cases, labs, and key tools for the program.",
+    searchLabel: "Search the repository",
+    searchPlaceholder: "E.g. Lean, simulation, ergonomics, optimization...",
+    searchAria: "Search",
+    metrics: ["curated resources", "knowledge areas", "cases and labs", "visual and editorial standard"],
+    repositoryKicker: "Repository",
+    repositoryTitle: "Essential materials",
+    repositoryCopy: "An initial library organized by content type. The data can be edited from script.js while the final structure is defined.",
+    filters: {
+      todos: "All",
+      apuntes: "Notes",
+      paper: "Papers",
+      herramienta: "Tools",
+      caso: "Cases"
+    },
+    areasKicker: "Curriculum matrix",
+    areasTitle: "Knowledge areas",
+    areasCopy: "Information organized from the Industrial Engineering Knowledge Areas annex proposed by the Academic Committee.",
+    coursesLabel: "courses",
+    teachersLabel: "faculty",
+    coursesByCycle: "Courses by cycle",
+    linkedTeachers: "Linked faculty",
+    cycle: "Cycle",
+    abetKicker: "Student outcomes",
+    abetTitle: "ABET SLOs and redesign outcomes",
+    abetCopy: "Alignment between ABET student outcomes and the outcomes defined in the Industrial Engineering curriculum redesign.",
+    linkedOutcomes: "Linked redesign outcomes",
+    outcomes: "outcomes",
+    outcome: "outcome",
+    redesignOutcomes: "from the redesign",
+    researchKicker: "Applied research",
+    researchTitle: "From theory to operational impact",
+    researchCopy: "This repository can grow into a portal with projects, datasets, theses, dashboards, and publications from students and faculty.",
+    researchLinks: [
+      "Optimization models for production",
+      "Continuous improvement and Six Sigma cases",
+      "Process and service simulation",
+      "Supply chain analytics"
+    ],
+    agendaKicker: "Agenda",
+    agendaTitle: "Academic activities",
+    agendaCopy: "A block ready for events, calls, deadlines, and seminars.",
+    events: [
+      ["Discrete simulation seminar", "Modeling queues and service systems."],
+      ["Lean case submission", "Diagnosis, current-state VSM, and improvement proposal."],
+      ["Paper reading club", "Robust optimization applied to supply chains."]
+    ],
+    contributeKicker: "Collaborative building",
+    contributeTitle: "Let's raise the quality of the program materials.",
+    contributeAction: "Suggest a resource",
+    footerTitle: "Industrial Hub - Industrial Engineering Repository",
+    footerCopy: "Initial base ready to customize with your university, courses, and documents.",
+    emptyResources: "No resources match that criterion yet.",
+    openResource: "Open resource"
+  }
+};
+
+const resourceTranslations = {
+  en: {
+    "Guia base de Investigacion de Operaciones": {
+      title: "Operations Research starter guide",
+      area: "Optimization",
+      description: "Structured summary of linear programming, sensitivity analysis, transportation, and assignment."
+    },
+    "Lean Manufacturing: caso de diagnostico VSM": {
+      title: "Lean Manufacturing: VSM diagnostic case",
+      area: "Production",
+      description: "Template for mapping value flow, detecting waste, and prioritizing improvements."
+    },
+    "Simulacion discreta con enfoque de servicios": {
+      title: "Discrete simulation for service systems",
+      area: "Simulation",
+      description: "Starter model for studying queues, resource utilization, and capacity scenarios."
+    },
+    "Paper club: supply chain resilience": {
+      title: "Paper club: supply chain resilience",
+      area: "Logistics",
+      description: "Reading selection for resilience, operational risk, and robust network design."
+    },
+    "Control estadistico de procesos": {
+      title: "Statistical process control",
+      area: "Quality",
+      description: "Control charts, process capability, sampling, and interpretation criteria."
+    },
+    "Dashboard de inventarios ABC": {
+      title: "ABC inventory dashboard",
+      area: "Data",
+      description: "Structure for classifying SKUs, estimating turnover, and visualizing operational criticality."
+    }
+  }
+};
+
+const areaTranslations = {
+  en: {
+    administracion: {
+      title: "Management",
+      summary: "Integrates management, costs, finance, human talent, marketing, and strategy to lead production systems.",
+      courses: ["Accounting", "Production costs and budgets", "Human talent management", "General economics", "Financial mathematics", "Marketing", "Financial management", "Strategic information systems", "Project design and management", "Strategic management"]
+    },
+    "matematica-estadistica": {
+      title: "Core Unit: Mathematics and Statistics",
+      summary: "Supports quantitative modeling through calculus, programming, statistics, inference, simulation, and experimental design.",
+      courses: ["Linear algebra", "Differential calculus", "Programming languages", "Integral calculus", "Differential equations", "Analytical statistics", "Numerical methods", "Statistical inference techniques", "Experimental design"]
+    },
+    "ciencias-fisica-quimica": {
+      title: "Core Unit: Physics and Chemistry",
+      summary: "Provides scientific foundations for understanding materials, energy, fluids, electricity, and industrial phenomena.",
+      courses: ["Physics I", "General chemistry", "Physics II", "Organic chemistry", "Thermodynamics", "Fluid transport", "Heat transfer", "Electrical engineering and technology"]
+    },
+    "industria-produccion": {
+      title: "Industry and Production",
+      summary: "Focuses on processes, production, logistics, quality, control, operations research, simulation, and environmental management.",
+      courses: ["Process engineering and ergonomics", "Lean Manufacturing and Six Sigma (I)", "Production organization", "Logistics and supply chain", "Lean Manufacturing and Six Sigma (II)", "Quality management", "Production control systems", "Energy technology", "Operations research", "Production simulation", "Introduction to Industrial Engineering", "Corporate environmental management"]
+    },
+    "diseno-industrial": {
+      title: "Industrial Design",
+      summary: "Brings together materials, machine design, CAD, equipment, maintenance, instrumentation, and product development.",
+      courses: ["Mechanics of materials", "Materials technology", "Machine design", "Industrial CAD design", "Machines, tools, and accessories", "Industrial equipment", "Maintenance engineering", "Instrumentation and control", "New product research and development"]
+    },
+    "factor-humano": {
+      title: "Human Factor in Industry",
+      summary: "Connects research, entrepreneurship, ethics, psychology, legislation, occupational safety, services, and innovation.",
+      courses: ["Research methodology", "Entrepreneurship development", "Ethics of science", "Industrial psychology", "Ecuadorian legislation", "Occupational health and safety", "Lean Services and Sigma Sigma I", "Innovation Management"]
+    }
+  }
+};
+
+const abetTranslations = {
+  en: {
+    ra1: {
+      title: "Problem solving",
+      description: "Identifies, formulates, and solves complex engineering problems by applying principles of engineering, science, and mathematics.",
+      outcomes: ["Proposes problem-solving alternatives using information from production management indicators.", "Interprets information based on mathematical, physical, and chemical models and their interrelationships."]
+    },
+    ra2: {
+      title: "Design",
+      description: "Applies engineering design to produce solutions that meet specified needs while considering public health, safety, welfare, and global, cultural, social, environmental, and economic factors.",
+      outcomes: ["Designs and implements management models aimed at process optimization.", "Builds simulation models based on different industrial engineering methodologies."]
+    },
+    ra6: {
+      title: "Experimentation",
+      description: "Develops and conducts appropriate experimentation, analyzes and interprets data, and uses engineering judgment to draw conclusions.",
+      outcomes: ["Proposes problem-solving alternatives using information from production management indicators.", "Evaluates existing transportation models in logistics management for goods and service processes.", "Identifies the elements of quality management systems and their interrelationships with a circular economy approach for value creation in production systems.", "Recommends the best procedure for optimizing a production system."]
+    },
+    ra3: {
+      title: "Communication",
+      description: "Communicates professional topics effectively to a range of audiences.",
+      outcomes: ["Argues the validity of decisions made in project formulation, execution, and evaluation."]
+    },
+    ra4: {
+      title: "Ethics and responsibility",
+      description: "Recognizes ethical and professional responsibilities in engineering situations and makes informed judgments considering the impact of engineering solutions in global, economic, environmental, and social contexts.",
+      outcomes: ["Selects the best methods, processes, and procedures comprehensively for human well-being, based on current national legal regulations.", "Identifies the impacts that project implementation would generate.", "Analyzes project risks that may arise during execution."]
+    },
+    ra5: {
+      title: "Teamwork",
+      description: "Works on a team whose members together provide leadership, create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives effectively.",
+      outcomes: ["Integrates regulations related to occupational health and safety, environment, and labor legislation with procedures and well-being to create a suitable work environment for the human factor."]
+    },
+    ra7: {
+      title: "Lifelong learning",
+      description: "Acquires and applies new knowledge as needed, using appropriate learning strategies.",
+      outcomes: ["Identifies the development problem where an intervention project will be proposed.", "Describes and connects the different components in a supply chain.", "Establishes practical logistics positioning criteria in the supply chain.", "Establishes control parameters in a real production system."]
+    }
+  }
+};
 
 function normalizeText(value) {
   return value
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+}
+
+function copy() {
+  return uiCopy[activeLanguage] || uiCopy.es;
+}
+
+function translatedResource(resource) {
+  const translation = resourceTranslations[activeLanguage]?.[resource.title];
+  return {
+    ...resource,
+    title: translation?.title || resource.title,
+    area: translation?.area || resource.area,
+    description: translation?.description || resource.description,
+    typeLabel: copy().filters[resource.type] || resource.type
+  };
+}
+
+function translatedArea(area) {
+  const translation = areaTranslations[activeLanguage]?.[area.id];
+  return {
+    ...area,
+    title: translation?.title || area.title,
+    summary: translation?.summary || area.summary,
+    courses: area.courses.map((course, index) => ({
+      ...course,
+      name: translation?.courses?.[index] || course.name
+    }))
+  };
+}
+
+function translatedAbet(result) {
+  const translation = abetTranslations[activeLanguage]?.[result.id];
+  return {
+    ...result,
+    title: translation?.title || result.title,
+    description: translation?.description || result.description,
+    outcomes: translation?.outcomes || result.outcomes
+  };
+}
+
+function setText(selector, value) {
+  const element = document.querySelector(selector);
+  if (element) element.textContent = value;
+}
+
+function applyStaticLanguage() {
+  const c = copy();
+  document.documentElement.lang = activeLanguage;
+  document.title = c.documentTitle;
+  setText(".brand small", c.brandSubtitle);
+  document.querySelectorAll(".main-nav a").forEach((link) => {
+    const label = c.nav[link.getAttribute("href")];
+    if (label) link.textContent = label;
+  });
+  setText(".header-action", c.headerAction);
+  if (languageToggle) {
+    languageToggle.textContent = c.languageText;
+    languageToggle.setAttribute("aria-label", c.languageLabel);
+    languageToggle.setAttribute("aria-pressed", String(activeLanguage === "en"));
+  }
+  setText(".hero-content .kicker", c.heroKicker);
+  setText(".hero-content h1", c.heroTitle);
+  setText(".hero-copy", c.heroCopy);
+  setText(".search-panel label", c.searchLabel);
+  if (searchInput) searchInput.placeholder = c.searchPlaceholder;
+  document.querySelector(".search-row button")?.setAttribute("aria-label", c.searchAria);
+  document.querySelectorAll(".metrics-band article span").forEach((item, index) => {
+    item.textContent = c.metrics[index] || item.textContent;
+  });
+  setText("#repositorio .kicker", c.repositoryKicker);
+  setText("#repositorio h2", c.repositoryTitle);
+  setText("#repositorio .section-heading p:not(.kicker)", c.repositoryCopy);
+  filters.forEach((button) => {
+    button.textContent = c.filters[button.dataset.filter] || button.textContent;
+  });
+  setText("#areas .kicker", c.areasKicker);
+  setText("#areas h2", c.areasTitle);
+  setText("#areas .section-heading p:not(.kicker)", c.areasCopy);
+  document.querySelectorAll(".area-stats span").forEach((item, index) => {
+    item.textContent = index === 0 ? c.coursesLabel : c.teachersLabel;
+  });
+  const areaPanelTitles = document.querySelectorAll(".area-panel h4");
+  if (areaPanelTitles[0]) areaPanelTitles[0].textContent = c.coursesByCycle;
+  if (areaPanelTitles[1]) areaPanelTitles[1].textContent = c.linkedTeachers;
+  setText("#abet .kicker", c.abetKicker);
+  setText("#abet h2", c.abetTitle);
+  setText("#abet .section-heading p:not(.kicker)", c.abetCopy);
+  setText(".abet-meter span", c.linkedOutcomes);
+  setText("#investigacion .kicker", c.researchKicker);
+  setText("#investigacion h2", c.researchTitle);
+  setText("#investigacion p:not(.kicker)", c.researchCopy);
+  document.querySelectorAll(".research-list a").forEach((link, index) => {
+    link.textContent = c.researchLinks[index] || link.textContent;
+  });
+  setText("#agenda .kicker", c.agendaKicker);
+  setText("#agenda h2", c.agendaTitle);
+  setText("#agenda .section-heading p:not(.kicker)", c.agendaCopy);
+  document.querySelectorAll(".timeline article").forEach((article, index) => {
+    const event = c.events[index];
+    if (!event) return;
+    const title = article.querySelector("h3");
+    const text = article.querySelector("p");
+    if (title) title.textContent = event[0];
+    if (text) text.textContent = event[1];
+  });
+  setText("#contribuir .kicker", c.contributeKicker);
+  setText("#contribuir h2", c.contributeTitle);
+  setText("#contribuir a", c.contributeAction);
+  const footerText = document.querySelectorAll(".site-footer p");
+  if (footerText[0]) footerText[0].textContent = c.footerTitle;
+  if (footerText[1]) footerText[1].textContent = c.footerCopy;
 }
 
 function renderResources() {
@@ -554,7 +928,7 @@ function renderResources() {
   if (!filtered.length) {
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "No hay recursos con ese criterio todavia.";
+    empty.textContent = copy().emptyResources;
     grid.appendChild(empty);
     return;
   }
@@ -562,16 +936,17 @@ function renderResources() {
   const fragment = document.createDocumentFragment();
 
   filtered.forEach((resource) => {
+    const item = translatedResource(resource);
     const card = document.createElement("article");
     card.className = "resource-card";
     card.innerHTML = `
       <div class="resource-meta">
-        <span>${resource.type}</span>
-        <span>${resource.area}</span>
+        <span>${item.typeLabel}</span>
+        <span>${item.area}</span>
       </div>
-      <h3>${resource.title}</h3>
-      <p>${resource.description}</p>
-      <a href="${resource.link}" aria-label="Abrir ${resource.title}">Abrir recurso</a>
+      <h3>${item.title}</h3>
+      <p>${item.description}</p>
+      <a href="${resource.link}" aria-label="${copy().openResource}: ${item.title}">${copy().openResource}</a>
     `;
     fragment.appendChild(card);
   });
@@ -630,6 +1005,7 @@ function renderAreaTabs() {
   areaTabs.innerHTML = "";
 
   knowledgeAreas.forEach((area) => {
+    const item = translatedArea(area);
     const button = document.createElement("button");
     button.className = `area-tab area-tab--${area.tone}`;
     button.type = "button";
@@ -637,8 +1013,8 @@ function renderAreaTabs() {
     button.setAttribute("aria-pressed", String(area.id === activeArea));
     button.innerHTML = `
       <span>${area.code}</span>
-      <strong>${area.title}</strong>
-      <small>${area.courses.length} asignaturas</small>
+      <strong>${item.title}</strong>
+      <small>${area.courses.length} ${copy().coursesLabel}</small>
     `;
     fragment.appendChild(button);
   });
@@ -649,7 +1025,8 @@ function renderAreaTabs() {
 function renderAreaDetail() {
   if (!areaCode || !areaCourses || !areaTeachers) return;
 
-  const area = knowledgeAreas.find((item) => item.id === activeArea) || knowledgeAreas[0];
+  const rawArea = knowledgeAreas.find((item) => item.id === activeArea) || knowledgeAreas[0];
+  const area = translatedArea(rawArea);
   areaCode.textContent = area.code;
   areaTitle.textContent = area.title;
   areaSummary.textContent = area.summary;
@@ -665,7 +1042,7 @@ function renderAreaDetail() {
     const item = document.createElement("article");
     item.className = "course-item";
     item.innerHTML = `
-      <span>Ciclo ${course.cycle}</span>
+      <span>${copy().cycle} ${course.cycle}</span>
       <strong>${course.name}</strong>
     `;
     courseFragment.appendChild(item);
@@ -691,12 +1068,13 @@ function renderAreasOverview() {
   areasOverview.innerHTML = "";
 
   knowledgeAreas.forEach((area) => {
+    const item = translatedArea(area);
     const card = document.createElement("article");
     card.className = `area-overview-card area-overview-card--${area.tone}`;
     card.innerHTML = `
       <span>${area.code}</span>
-      <h3>${area.title}</h3>
-      <p>${area.summary}</p>
+      <h3>${item.title}</h3>
+      <p>${item.summary}</p>
     `;
     fragment.appendChild(card);
   });
@@ -717,6 +1095,7 @@ function renderAbetList() {
   abetList.innerHTML = "";
 
   abetResults.forEach((result) => {
+    const item = translatedAbet(result);
     const button = document.createElement("button");
     button.type = "button";
     button.className = "abet-item";
@@ -724,8 +1103,8 @@ function renderAbetList() {
     button.setAttribute("aria-pressed", String(result.id === activeAbet));
     button.innerHTML = `
       <span>${result.code}</span>
-      <strong>${result.title}</strong>
-      <small>${result.outcomes.length} logros</small>
+      <strong>${item.title}</strong>
+      <small>${item.outcomes.length} ${copy().outcomes}</small>
     `;
     fragment.appendChild(button);
   });
@@ -736,7 +1115,8 @@ function renderAbetList() {
 function renderAbetDetail() {
   if (!abetCode || !abetOutcomes) return;
 
-  const result = abetResults.find((item) => item.id === activeAbet) || abetResults[0];
+  const rawResult = abetResults.find((item) => item.id === activeAbet) || abetResults[0];
+  const result = translatedAbet(rawResult);
   abetCode.textContent = result.code;
   abetTitle.textContent = result.title;
   abetDescription.textContent = result.description;
@@ -765,12 +1145,13 @@ function renderAbetSummary() {
   abetSummaryGrid.innerHTML = "";
 
   abetResults.forEach((result) => {
+    const item = translatedAbet(result);
     const card = document.createElement("article");
     card.className = "abet-summary-card";
     card.innerHTML = `
       <span>${result.code}</span>
-      <h3>${result.title}</h3>
-      <p>${result.outcomes.length} logro${result.outcomes.length === 1 ? "" : "s"} de rediseño</p>
+      <h3>${item.title}</h3>
+      <p>${item.outcomes.length} ${item.outcomes.length === 1 ? copy().outcome : copy().outcomes} ${copy().redesignOutcomes}</p>
     `;
     fragment.appendChild(card);
   });
@@ -803,6 +1184,15 @@ searchForm.addEventListener("submit", (event) => {
   searchInput.focus();
 });
 
+languageToggle?.addEventListener("click", () => {
+  activeLanguage = activeLanguage === "es" ? "en" : "es";
+  localStorage.setItem("industrialHubLanguage", activeLanguage);
+  applyStaticLanguage();
+  renderResources();
+  renderAreas();
+  renderAbet();
+});
+
 facultySearch?.addEventListener("input", renderFaculty);
 
 areaTabs?.addEventListener("click", (event) => {
@@ -821,7 +1211,9 @@ abetList?.addEventListener("click", (event) => {
   renderAbet();
 });
 
+applyStaticLanguage();
 renderResources();
 renderFaculty();
 renderAreas();
 renderAbet();
+

@@ -13,11 +13,131 @@ let activeCycle = "all";
 let activeQuery = "";
 let activeFacultyId = realFaculty.find((item) => item.subjects.length)?.id || realFaculty[0].id;
 
+const knowledgeAreaCourses = [
+  {
+    area: "Administración",
+    courses: [
+      "Contabilidad",
+      "Costos y presupuestos de producción",
+      "Gestión del talento humano",
+      "Economía general",
+      "Matemática financiera",
+      "Marketing",
+      "Gestión financiera",
+      "Sistemas de información estratégica",
+      "Diseño y gestión de proyectos",
+      "Gestión estratégica"
+    ]
+  },
+  {
+    area: "Unidad Básica: Matemática y Estadística",
+    courses: [
+      "Álgebra lineal",
+      "Cálculo diferencial",
+      "Lenguajes de programación",
+      "Cálculo integral",
+      "Ecuaciones diferenciales",
+      "Estadística analítica",
+      "Métodos numéricos",
+      "Técnicas de inferencia estadística",
+      "Diseño experimental"
+    ]
+  },
+  {
+    area: "Unidad Básica: Ciencias Física y Química",
+    courses: [
+      "Física I",
+      "Química general",
+      "Física II",
+      "Química orgánica",
+      "Termodinámica",
+      "Transporte de fluidos",
+      "Transferencia de calor",
+      "Ingeniería y tecnología eléctricas"
+    ]
+  },
+  {
+    area: "Industria y Producción",
+    courses: [
+      "Ingeniería de procesos y ergonomía",
+      "Lean Manufacturing y Six Sigma (I)",
+      "Organización de la producción",
+      "Logística y cadena de suministro",
+      "Lean Manufacturing y Six Sigma (II)",
+      "Gestión de calidad",
+      "Sistemas de control de la producción",
+      "Tecnología energética",
+      "Investigación operativa",
+      "Simulación de la producción",
+      "Introducción a la Ingeniería Industrial",
+      "Gestión ambiental empresarial"
+    ]
+  },
+  {
+    area: "Diseño Industrial",
+    courses: [
+      "Mecánica de materiales",
+      "Tecnología de materiales",
+      "Diseño de máquinas",
+      "Diseño industrial CAD",
+      "Máquinas, herramientas y accesorios",
+      "Equipo industrial",
+      "Ingeniería del mantenimiento",
+      "Instrumentación y control",
+      "Investigación y desarrollo de nuevos productos"
+    ]
+  },
+  {
+    area: "Factor Humano en la Industria",
+    courses: [
+      "Metodología de la investigación",
+      "Desarrollo de emprendedores",
+      "Ética de la ciencia",
+      "Psicología industrial",
+      "Legislación ecuatoriana",
+      "Seguridad y salud ocupacional",
+      "Lean Services y Sigma Sigma I",
+      "Innovation Management"
+    ]
+  }
+];
+
 function normalize(value) {
   return String(value || "")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
+}
+
+function normalizeSubjectName(value) {
+  return normalize(value)
+    .replace(/\b6\b/g, "six")
+    .replace(/\bsuministros\b/g, "suministro")
+    .replace(/\blaborales\s+(\d+)/g, "laborales $1")
+    .replace(/\b(g|p)\d+\b/g, "")
+    .replace(/\bi[12]\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+const courseAreaMap = knowledgeAreaCourses.reduce((map, group) => {
+  group.courses.forEach((course) => {
+    map.set(normalizeSubjectName(course), group.area);
+  });
+  return map;
+}, new Map());
+
+function subjectArea(subjectName) {
+  const normalizedSubject = normalizeSubjectName(subjectName);
+  const direct = courseAreaMap.get(normalizedSubject);
+  if (direct) return direct;
+
+  const fuzzy = [...courseAreaMap.entries()].find(([course]) => normalizedSubject.includes(course) || course.includes(normalizedSubject));
+  return fuzzy?.[1] || "Área no vinculada";
+}
+
+function facultyAreas(person) {
+  return uniq(visibleSubjects(person).map((subject) => subjectArea(subject.subject)).filter((area) => area !== "Área no vinculada"));
 }
 
 function uniq(values) {
@@ -170,17 +290,22 @@ function renderFacultyGrid() {
     }
   ].filter((section) => section.people.length);
 
-  const renderCard = (person) => `
+  const renderCard = (person) => {
+    const areas = facultyAreas(person);
+    const areaText = areas.length ? areas.slice(0, 2).join(" · ") + (areas.length > 2 ? ` · +${areas.length - 2}` : "") : "Sin asignaturas asignadas";
+    return `
             <button type="button" class="faculty-page-card" data-faculty="${person.id}" aria-pressed="${person.id === activeFacultyId}">
               <img src="${person.image}" alt="${person.name}" loading="lazy" />
               <div>
                 <span>${isDirector(person) ? "Director de carrera" : person.type}</span>
                 <strong>${person.name}</strong>
                 <p>${person.title} · ${person.formation}</p>
+                <small>${areaText}</small>
                 <small>${person.modality} · ${person.dedication} · ${visibleSubjects(person).length} asignaturas</small>
               </div>
             </button>
           `;
+  };
 
   facultyGridPage.innerHTML = people.length
     ? sections
@@ -231,7 +356,7 @@ function renderDetail() {
                   <article>
                     <span>Ciclo ${subject.cycle} · ${subject.role}</span>
                     <strong>${subject.subject}</strong>
-                    <small>ACD ${subject.acd} · APE ${subject.ape} · AA ${subject.aa} · Oferta ${subject.offer}</small>
+                    <small>Área ${subjectArea(subject.subject)} · ACD ${subject.acd} · APE ${subject.ape} · AA ${subject.aa} · Oferta ${subject.offer}</small>
                   </article>
                 `
               )

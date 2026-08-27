@@ -25,6 +25,7 @@
       <nav class="main-nav" aria-label="Navegación de malla curricular">
         <a href="#resumen">Resumen</a>
         <a href="#niveles">Niveles</a>
+        <a href="#red-materias">Red</a>
         <a href="#prerrequisitos">Prerrequisitos</a>
         <a href="#glosario">Glosario</a>
       </nav>
@@ -73,7 +74,7 @@
 
         <section class="curriculum-charts" id="niveles">
           <article>
-            <h2>Carga por nivel</h2>
+            <h2>Asignaturas por nivel</h2>
             <div id="levelLoadChart"></div>
           </article>
           <article>
@@ -102,6 +103,31 @@
             <h2>Lectura de la carga académica</h2>
           </div>
           <div class="curriculum-glossary-grid" id="curriculumGlossary"></div>
+        </section>
+
+        <section class="curriculum-network-section" id="red-materias">
+          <div class="section-heading compact">
+            <p class="kicker">Diagrama de red</p>
+            <h2>Predecesoras y dependientes por asignatura</h2>
+            <p>
+              Selecciona una asignatura para desplegar su red de encadenamientos por nivel:
+              a la izquierda se ubican sus predecesoras y a la derecha las materias que dependen de ella.
+            </p>
+          </div>
+
+          <div class="curriculum-network-toolbar">
+            <label for="networkCourseSelect">
+              <span>Asignatura</span>
+              <select id="networkCourseSelect"></select>
+            </label>
+            <div class="curriculum-network-legend" aria-label="Leyenda de red">
+              <span><i class="is-predecessor"></i> Predecesoras</span>
+              <span><i class="is-current"></i> Seleccionada</span>
+              <span><i class="is-dependent"></i> Dependientes</span>
+            </div>
+          </div>
+
+          <div class="curriculum-network" id="curriculumNetwork"></div>
         </section>
       </section>
     </main>
