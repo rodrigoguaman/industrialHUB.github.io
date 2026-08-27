@@ -2957,6 +2957,336 @@ h1 {
   background: #f4f7fb;
 }
 
+.syllabi-page {
+  --syllabi-blue: #003a70;
+  --syllabi-light: #005eb8;
+  --syllabi-red: #c8102e;
+  --syllabi-gold: #f2a900;
+  background: #f4f7fb;
+}
+
+.syllabi-header {
+  background: rgba(0, 35, 76, 0.9);
+}
+
+.syllabi-hero {
+  min-height: 56vh;
+  display: grid;
+  align-items: end;
+  padding: 150px clamp(20px, 5vw, 72px) 66px;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(0, 35, 76, 0.96), rgba(0, 94, 184, 0.78) 58%, rgba(200, 16, 46, 0.56)),
+    url("assets/capstone-lab-banner.jpeg") center / cover;
+}
+
+.syllabi-hero > div {
+  max-width: 980px;
+}
+
+.syllabi-hero p:not(.kicker) {
+  max-width: 780px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.6;
+}
+
+.syllabi-dashboard {
+  padding: clamp(42px, 7vw, 88px) clamp(20px, 5vw, 72px);
+}
+
+.syllabi-metrics,
+.syllabi-toolbar,
+.syllabi-layout,
+.syllabi-list {
+  display: grid;
+  gap: 14px;
+}
+
+.syllabi-metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.syllabi-metrics article,
+.syllabi-toolbar,
+.syllabi-preview,
+.syllabus-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.syllabi-metrics article {
+  padding: 18px;
+}
+
+.syllabi-metrics strong,
+.syllabi-metrics span {
+  display: block;
+}
+
+.syllabi-metrics strong {
+  color: var(--syllabi-blue);
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+.syllabi-metrics span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.syllabi-toolbar {
+  grid-template-columns: minmax(260px, 1fr) minmax(180px, 0.45fr) minmax(220px, 0.6fr);
+  align-items: end;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+.syllabi-toolbar label {
+  display: grid;
+  gap: 8px;
+}
+
+.syllabi-toolbar span {
+  color: var(--graphite);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.syllabi-toolbar input,
+.syllabi-toolbar select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: #f4f7fb;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 700;
+}
+
+.syllabi-layout {
+  grid-template-columns: minmax(320px, 0.42fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.syllabi-list {
+  max-height: 760px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.syllabus-card {
+  width: 100%;
+  padding: 14px;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.syllabus-card[aria-pressed="true"] {
+  border-color: var(--syllabi-red);
+  box-shadow: 0 14px 34px rgba(200, 16, 46, 0.12);
+}
+
+.syllabus-card span,
+.syllabus-card small,
+.syllabus-card strong {
+  display: block;
+}
+
+.syllabus-card span,
+.syllabus-card small {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.syllabus-card strong {
+  margin: 7px 0;
+  color: var(--graphite);
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.syllabi-preview {
+  position: sticky;
+  top: 96px;
+  overflow: hidden;
+  max-height: calc(100vh - 116px);
+  overflow-y: auto;
+}
+
+.syllabi-preview-head {
+  padding: 18px;
+  color: var(--white);
+  background: var(--syllabi-blue);
+}
+
+.syllabi-preview-head span,
+.syllabi-preview-head p {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.syllabi-preview-head h2 {
+  margin: 8px 0;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.1;
+}
+
+.syllabi-load-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.syllabi-load-grid div,
+.syllabi-load-grid.muted {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+.syllabi-load-grid strong,
+.syllabi-load-grid span {
+  display: block;
+}
+
+.syllabi-load-grid strong {
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.syllabi-load-grid span {
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.syllabi-load-grid.muted {
+  grid-template-columns: 1fr;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.syllabi-content-panel {
+  padding: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.syllabi-content-panel h3 {
+  margin: 0;
+  color: var(--graphite);
+  font-size: 20px;
+}
+
+.syllabi-content-units,
+.syllabi-similar-list {
+  display: grid;
+  gap: 10px;
+}
+
+.syllabi-unit-card,
+.syllabi-similar-list button {
+  overflow: hidden;
+  background: #f4f7fb;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.syllabi-unit-trigger,
+.syllabi-similar-list button {
+  width: 100%;
+  padding: 12px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.syllabi-unit-trigger[aria-expanded="true"] {
+  background: rgba(0, 94, 184, 0.08);
+}
+
+.syllabi-unit-trigger span,
+.syllabi-unit-trigger strong,
+.syllabi-unit-trigger em,
+.syllabi-similar-list span,
+.syllabi-similar-list strong,
+.syllabi-similar-list small {
+  display: block;
+}
+
+.syllabi-unit-trigger span,
+.syllabi-unit-trigger em,
+.syllabi-similar-list span,
+.syllabi-similar-list small {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.syllabi-unit-trigger strong,
+.syllabi-similar-list strong {
+  margin: 5px 0;
+  color: var(--graphite);
+  font-size: 14px;
+  line-height: 1.22;
+}
+
+.syllabi-subunit-list {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+.syllabi-subunit-list div {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.syllabi-subunit-list span {
+  color: var(--syllabi-red);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.syllabi-subunit-list p,
+.syllabi-similar-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.42;
+}
+
+.syllabi-similar-list button:hover,
+.syllabi-similar-list button:focus-visible {
+  border-color: var(--syllabi-light);
+  box-shadow: 0 10px 24px rgba(0, 94, 184, 0.12);
+}
+
 .capstone-header {
   background: rgba(0, 35, 76, 0.9);
 }
@@ -3754,6 +4084,8 @@ h1 {
   .faculty-toolbar,
   .faculty-stats,
   .faculty-page-grid,
+  .syllabi-metrics,
+  .syllabi-toolbar,
   .curriculum-metrics,
   .curriculum-toolbar,
   .curriculum-charts,
@@ -3793,6 +4125,7 @@ h1 {
   .assessment-dashboard,
   .assessment-dashboard--wide,
   .faculty-layout,
+  .syllabi-layout,
   .curriculum-layout,
   .curriculum-network,
   .capstone-featured {
@@ -3896,6 +4229,9 @@ h1 {
   .faculty-stats,
   .faculty-page-grid,
   .faculty-layout,
+  .syllabi-metrics,
+  .syllabi-toolbar,
+  .syllabi-layout,
   .curriculum-metrics,
   .curriculum-toolbar,
   .curriculum-charts,
@@ -3928,6 +4264,18 @@ h1 {
 
   .faculty-detail-panel {
     position: static;
+  }
+
+  .syllabi-preview {
+    position: static;
+  }
+
+  .syllabi-load-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .syllabi-list {
+    max-height: none;
   }
 
   .curriculum-detail {
