@@ -1,0 +1,108 @@
+--- PAGE 1 ---
+TOTAL INSCRITOS POR CURSO
+Nivel: Grado
+Unidad Académica: Facultad de Ciencias Químicas
+Programa: 65CQPINDU01-Ingeniería Industrial
+Periodo Matrícula: 202667 - PAO2 Grado Sep2026-Feb2027
+NRC Id Curso Título Curso Tipo Sección Liga Conec. Créditos Docente Máx. Cupos Matricul. Disponib. Area
+1681 MAES-00085 Cálculo integral CDE G1 144 C00107848-Flores Siguenza Pablo Andres 44 17 27 Niv el 2
+1673 CCFF-00030 Física II CDE G1 144 C00095764-Mejia Guaman Christian Fernando 44 17 27 Niv el 2
+1679 INDU-00012 Introd ing industrial CDE G1 96 C00022124-Alv arez Palomeque Lourdes Ximena 44 17 27 Niv el 2
+1685 TICS-00023 Lenguajes programación ACD G1 G1 S1 192 C00017479-Vanegas Peña Paul Fernando 44 17 27 Niv el 2
+1687 TICS-00023 Lenguajes programación APE S1 S1 G1 192 - 44 17 27 Niv el 2
+1676 CCFF-00031 Química orgánica ACD G1 G1 S1 144 C00017067-Iñiguez Moran Andrea Maria 44 17 27 Niv el 2
+1677 CCFF-00031 Química orgánica APE S1 S1 G1 144 C00017067-Iñiguez Moran Andrea Maria 22 17 5 Niv el 2
+1779 MAES-00087 Ecuaciones diferenciales CDE G1 144 C00015550-Sanchez Alv arracin Carlos Mauricio 35 22 13 Niv el 3
+1784 MAES-00088 Estadística analítica ACD G1 G1 S1 144 C00049942-Guaman Guachichullca Noe Rodrigo 44 22 22 Niv el 3
+1789 MAES-00088 Estadística analítica APE S1 S1 G1 144 - 44 22 22 Niv el 3
+1695 INGE-00016 Ing_Tec_Elec CDE G1 144 C00018928-Guaman Ortiz Franklin Eduardo 30 22 8 Niv el 3
+1719 INGE-00019 Mecánica materiales CDE G1 144 C00017273-Alv arez Lloret Edgar Paul 35 22 13 Niv el 3
+1691 CCFF-00033 Termodinámica CDE G1 144 C00095764-Mejia Guaman Christian Fernando 35 22 13 Niv el 3
+1870 EDCA-00224 Contabilidad CDE G1 96 C00055486-Coello Rey es Mateo Hernan 35 9 26 Niv el 4
+Tipo: Reportes
+Fuente: Sistema Académico Nova
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:44:53 PM Página: 1 / 5
+--- PAGE 2 ---
+NRC Id Curso Título Curso Tipo Sección Liga Conec. Créditos Docente Máx. Cupos Matricul. Disponib. Area
+1880 MAES-00090 Métodos numéricos CDE G1 144 C00028787-Narv aez Buestan Freddy Eduardo 35 9 26 Niv el 4
+1885 MAES-00091 Tecn inf estr CDE G1 144 C00055529-Lliv isaca Villazhañay Juan Carlos 35 9 26 Niv el 4
+1875 INDU-00022 Tecnología materiales CDE G1 144 C00017273-Alv arez Lloret Edgar Paul 35 9 26 Niv el 4
+1855 CCFF-00034 Transferencia calor CDE G1 96 C00028787-Narv aez Buestan Freddy Eduardo 35 9 26 Niv el 4
+1860 CCFF-00035 Transporte fluidos CDE G1 96 - 35 9 26 Niv el 4
+1899 EDCA-00225 Cost presup CDE G1 96 C00055486-Coello Rey es Mateo Hernan 35 20 15 Niv el 5
+1902 EDCA-00226 Desarrollo emprendedores CDE G1 96 C00029364-Peña Gonzalez Silv ia Alex andra 35 18 17 Niv el 5
+1904 INDU-00006 Diseño industrial cad CDE G1 144 C00046364-Vintimilla Alv arez Paola Fernanda 35 18 17 Niv el 5
+2064 INGE-00013 Diseño máquinas CDE G1 96 - 35 19 16 Niv el 5
+1908 INDU-00009 Ing procesos y erg ACD G1 G1 S1 144 C00022124-Alv arez Palomeque Lourdes Ximena 35 20 15 Niv el 5
+2057 INDU-00009 Ing procesos y erg APE S1 S1 G1 144 C00022124-Alv arez Palomeque Lourdes Ximena 17 17 0 Niv el 5
+2060 INDU-00009 Ing procesos y erg APE S2 S1 G1 144 C00022124-Alv arez Palomeque Lourdes Ximena 18 3 15 Niv el 5
+1893 CSCO-00121 Psicología industrial CDE G1 96 C00017851-Jerv es Mora Rodrigo Saul 35 21 14 Niv el 5
+1896 CSCO-00122 Ética ciencia CDE G1 48 C00017851-Jerv es Mora Rodrigo Saul 35 18 17 Niv el 5
+2072 CSCO-00119 Economía general CDE G1 96 C00127459-Cordero Ahiman Otilia Vanessa 35 23 12 Niv el 6
+2074 CSCO-00120 Gestión del talento humano CDE G1 96 C00017851-Jerv es Mora Rodrigo Saul 35 25 10 Niv el 6
+2090 INDU-00008 I+d ACD G1 G1 S1 144 C00049942-Guaman Guachichullca Noe Rodrigo 16 16 0 Niv el 6
+2095 INDU-00008 I+d APE S1 S1 G1 144 C00049230-Rojas Quinde Jenny Maritza 8 8 0 Niv el 6
+Tipo: Reportes
+Fuente: Sistema Académico Nova
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:44:53 PM Página: 2 / 5
+--- PAGE 3 ---
+NRC Id Curso Título Curso Tipo Sección Liga Conec. Créditos Docente Máx. Cupos Matricul. Disponib. Area
+2103 INDU-00008 I+d APE S2 S1 G1 144 C00049230-Rojas Quinde Jenny Maritza 8 8 0 Niv el 6
+2108 INDU-00008 I+d ACD G2 G2 S2 144 C00049942-Guaman Guachichullca Noe Rodrigo 16 8 8 Niv el 6
+2109 INDU-00008 I+d APE S3 S2 G2 144 C00049230-Rojas Quinde Jenny Maritza 8 6 2 Niv el 6
+2110 INDU-00008 I+d APE S4 S2 G2 144 C00049230-Rojas Quinde Jenny Maritza 8 2 6 Niv el 6
+2113 INDU-00013 Inv estigación operativ a CDE G1 144 C00032754-Jadan Av iles Diana Carolina 35 24 11 Niv el 6
+2075 DERE-00016 Legislación ecuatoriana ACD G1 G1 S1 48 C00055486-Coello Rey es Mateo Hernan 35 23 12 Niv el 6
+2079 DERE-00016 Legislación ecuatoriana APE S1 S1 G1 48 C00055486-Coello Rey es Mateo Hernan 18 15 3 Niv el 6
+2081 DERE-00016 Legislación ecuatoriana APE S2 S1 G1 48 C00055486-Coello Rey es Mateo Hernan 17 8 9 Niv el 6
+2117 INGE-00018 Maq herr CDE G1 96 C00028787-Narv aez Buestan Freddy Eduardo 35 26 9 Niv el 6
+2120 PPFS-00063 Ppp I CDE G1 96 C00028787-Narv aez Buestan Freddy Eduardo 35 22 13 Niv el 6
+2131 INGE-00014 Equipo industrial CDE G1 96 - 35 32 3 Niv el 7
+2125 EDCA-00230 Marketing CDE G1 96 C00127459-Cordero Ahiman Otilia Vanessa 35 35 0 Niv el 7
+2126 EDCA-00231 Matemática financiera CDE G1 96 C00055486-Coello Rey es Mateo Hernan 35 30 5 Niv el 7
+2127 INDU-00018 Organización producción CDE G1 96 C00046364-Vintimilla Alv arez Paola Fernanda 35 33 2 Niv el 7
+2136 PPFS-00065 Ppp II CDE G1 96 C00028787-Narv aez Buestan Freddy Eduardo 35 32 3 Niv el 7
+2129 INDU-00019 Seguridad y salud ocupacional CDE G1 144 C00026716-Espinoza Hernandez Paulina Rebeca 35 32 3 Niv el 7
+2134 INGE-00020 Tecnología energética CDE G1 96 C00012441-Montero Izquierdo Iv an Andres 35 35 0 Niv el 7
+2311 INGE-00015 Gestión ambiental empresarial CDE G1 96 C00022124-Alv arez Palomeque Lourdes Ximena 35 25 10 Niv el 8
+Tipo: Reportes
+Fuente: Sistema Académico Nova
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:44:53 PM Página: 3 / 5
+--- PAGE 4 ---
+NRC Id Curso Título Curso Tipo Sección Liga Conec. Créditos Docente Máx. Cupos Matricul. Disponib. Area
+2145 INDU-00007 Gestión calidad CDE G1 144 C00029364-Peña Gonzalez Silv ia Alex andra 35 25 10 Niv el 8
+2288 INDU-00010 Ingeniería del mantenimiento CDE G1 96 C00017273-Alv arez Lloret Edgar Paul 35 24 11 Niv el 8
+2289 INDU-00017 Logistica CDE G1 144 C00046364-Vintimilla Alv arez Paola Fernanda 35 28 7 Niv el 8
+2316 PPFS-00064 Ppp III CDE G1 96 C00028787-Narv aez Buestan Freddy Eduardo 35 25 10 Niv el 8
+2304 INDU-00021 Sis control prod CDE G1 144 C00107848-Flores Siguenza Pablo Andres 35 34 1 Niv el 8
+2423 MAES-00086 Diseño ex perimental CDE G1 144 C00055529-Lliv isaca Villazhañay Juan Carlos 26 18 8 Niv el 9
+2325 EDCA-00229 Gestión financiera CDE G1 96 C00127459-Cordero Ahiman Otilia Vanessa 26 15 11 Niv el 9
+2331 INGE-00017 Instrumentación y control CDE G1 96 C00107848-Flores Siguenza Pablo Andres 26 25 1 Niv el 9
+2426 PPFS-00066 Ppp IV CDE G1 48 C00028787-Narv aez Buestan Freddy Eduardo 26 24 2 Niv el 9
+2330 EDCA-00232 Sist inf geren CDE G1 96 C00055486-Coello Rey es Mateo Hernan 26 17 9 Niv el 9
+2461 TTIT-00051 Uic I CDE G1 96 C00032754-Jadan Av iles Diana Carolina 14 14 0 Niv el 9
+2502 EDCA-00227 Diseño y gestión proy ectos CDE G1 144 C00055486-Coello Rey es Mateo Hernan 24 12 12 Niv el 10
+2508 EDCA-00228 Gestión estratégica CDE G1 96 C00055486-Coello Rey es Mateo Hernan 24 13 11 Niv el 10
+2524 INDU-00020 Simulación producción CDE G1 144 C00015808-Arias Cisneros James Marlon 24 13 11 Niv el 10
+2531 TTIT-00052 Uic II CDE G1 192 C00046364-Vintimilla Alv arez Paola Fernanda 12 12 0 Niv el 10
+2666 INDU-00015 I1: Lean manuf II CDE G1 144 C00055529-Lliv isaca Villazhañay Juan Carlos 24 7 17 Gest manuf, Gest
+serv icios I10
+2656 INDU-00011 I2: Innov ation management CDE G1 144 C00093402-Barragan Landy Milton Francisco 24 8 16 Gest manuf, Gest
+serv icios I10
+2465 INDU-00014 I1: Lean manuf I CDE G1 144 C00055529-Lliv isaca Villazhañay Juan Carlos 26 13 13 Gest manuf, Gest
+serv icios I9
+Tipo: Reportes
+Fuente: Sistema Académico Nova
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:44:53 PM Página: 4 / 5
+--- PAGE 5 ---
+NRC Id Curso Título Curso Tipo Sección Liga Conec. Créditos Docente Máx. Cupos Matricul. Disponib. Area
+2470 INDU-00016 I2: Lean serv ice CDE G1 144 C00093402-Barragan Landy Milton Francisco 26 4 22 Gest manuf, Gest
+serv icios I9
+Tipo: Reportes
+Fuente: Sistema Académico Nova
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:44:53 PM Página: 5 / 5

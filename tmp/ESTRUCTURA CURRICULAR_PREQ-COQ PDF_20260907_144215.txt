@@ -1,0 +1,184 @@
+--- PAGE 1 ---
+ESTRUCTURA CURRICULAR/PREQ-COQ
+Nivel Académico: Grado
+Unidad Académica: Ciencias Químicas
+Programa: 65CQPINDU01 - Ingeniería Industrial
+Malla: 201867 - Malla Actualizada 2020 - Ingenieria Industrial
+Itinerarios: I1 Gestión de manufactura, I2 Gestión de serv icios
+Cod. Leg Código Curso No. Créditos/Horas Prerrequisitos (PR); Correquisitos (CR)
+ACD APE AA Cred/Hor Cod-Mat / Curso
+CQPINDU01 - Nivel 1
+19027 CCFF-00029 FÍSICA I 64.00 64.00 64.00 192.00
+19029 CCFF-00032 QUÍMICA GENERAL 48.00 48.00 48.00 144.00
+19028 EDUC-00023 METODOLOGÍA DE LA 32.00 32.00 32.00 96.00
+INVESTIGACIÓN
+19026 MAES-00084 CÁLCULO DIFERENCIAL 48.00 64.00 32.00 144.00
+19025 MAES-00089 ÁLGEBRA LINEAL 48.00 48.00 48.00 144.00
+Total Cursos: 5 Total Créditos/Horas: 720.00
+CQPINDU02 - Nivel 2
+19032 CCFF-00030 FÍSICA II 48.00 64.00 32.00 144.00 PR: MAES-00089 / Álgebra lineal Y MAES-00084 / Cálculo diferencial Y
+CCFF-00029 / Física I.
+19856 CCFF-00031 QUÍMICA ORGÁNICA 48.00 48.00 48.00 144.00 PR: CCFF-00032 / Química 1.
+19033 INDU-00012 INTRODUCCIÓN A LA 32.00 32.00 32.00 96.00 PR: MAES-00089 / Álgebra lineal Y EDUC-00023 / Met inv estigación.
+INGENIERÍA INDUSTRIAL
+19031 MAES-00085 CÁLCULO INTEGRAL 48.00 48.00 48.00 144.00 PR: MAES-00089 / Álgebra lineal Y MAES-00084 / Cálculo diferencial.
+19034 TICS-00023 LENGUAJES DE 64.00 64.00 64.00 192.00 PR: MAES-00089 / Álgebra lineal Y MAES-00084 / Cálculo diferencial.
+PROGRAMACIÓN
+Total Cursos: 5 Total Créditos/Horas: 720.00
+CQPINDU03 - Nivel 3
+19097 CCFF-00033 TERMODINÁMICA 48.00 48.00 48.00 144.00 PR: CCFF-00030 / Física II Y CCFF-00031 / Química orgánica.
+19095 INGE-00016 INGENIERÍA Y TECNOLOGÍA 48.00 48.00 48.00 144.00 PR: CCFF-00030 / Física II.
+ELÉCTRICAS
+19096 INGE-00019 MECÁNICA DE MATERIALES 48.00 48.00 48.00 144.00 PR: MAES-00085 / Cálculo integral Y CCFF-00030 / Física II.
+19093 MAES-00087 ECUACIONES 48.00 48.00 48.00 144.00 PR: MAES-00085 / Cálculo integral.
+DIFERENCIALES
+19094 MAES-00088 ESTADÍSTICA ANALÍTICA 48.00 48.00 48.00 144.00 PR: INDU-00012 / Introd ing industrial Y TICS-00023 / Lenguajes
+programación.
+Total Cursos: 5 Total Créditos/Horas: 720.00
+CQPINDU04 - Nivel 4
+19791 CCFF-00034 TRANSFERENCIA DE 32.00 32.00 32.00 96.00 PR: MAES-00087 / Ecuaciones diferenciales Y INGE-00016 / Ing_Tec_Elec Y
+CALOR CCFF-00033 / Termodinámica.
+19789 CCFF-00035 TRANSPORTE DE FLUIDOS 32.00 32.00 32.00 96.00 PR: MAES-00087 / Ecuaciones diferenciales Y CCFF-00033 /
+Termodinámica Y INGE-00016 / Ing_Tec_Elec.
+19788 EDCA-00224 CONTABILIDAD 32.00 32.00 32.00 96.00 PR: MAES-00088 / Estadística analítica.
+Tipo: Reporte
+Fuente: Sistema de Gestión Académica NOVA
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:42:37 PM Página: 1 / 4
+--- PAGE 2 ---
+Cod. Leg Código Curso No. Créditos/Horas Prerrequisitos (PR); Correquisitos (CR)
+ACD APE AA Cred/Hor Cod-Mat / Curso
+19790 INDU-00022 TECNOLOGÍA DE 48.00 48.00 48.00 144.00 PR: INGE-00019 / Mecánica materiales.
+MATERIALES
+19020 MAES-00090 MÉTODOS NUMÉRICOS 48.00 48.00 48.00 144.00 PR: TICS-00023 / Lenguajes programación Y MAES-00087 / Ecuaciones
+diferenciales.
+19021 MAES-00091 TÉCNICAS DE INFERENCIA 48.00 48.00 48.00 144.00 PR: MAES-00088 / Estadística analítica.
+ESTADÍSTICA
+Total Cursos: 6 Total Créditos/Horas: 720.00
+CQPINDU05 - Nivel 5
+19855 CSCO-00121 PSICOLOGÍA INDUSTRIAL 32.00 32.00 32.00 96.00 PR: EDCA-00224 / Contabilidad.
+19798 CSCO-00122 ÉTICA DE LA CIENCIA 16.00 16.00 16.00 48.00 PR: EDCA-00224 / Contabilidad.
+19850 EDCA-00225 COSTOS Y 32.00 32.00 32.00 96.00 PR: EDCA-00224 / Contabilidad.
+PRESUPUESTOS DE
+PRODUCCIÓN
+19851 EDCA-00226 DESARROLLO DE 32.00 32.00 32.00 96.00 PR: EDCA-00224 / Contabilidad.
+EMPRENDEDORES
+19853 INDU-00006 DISEÑO INDUSTRIAL CAD 48.00 48.00 48.00 144.00 PR: MAES-00090 / Métodos numéricos Y INDU-00022 / Tecnología
+materiales.
+19854 INDU-00009 INGENIERÍA DE PROCESOS 48.00 48.00 48.00 144.00 PR: MAES-00090 / Métodos numéricos Y MAES-00091 / Tecn inf estr.
+Y ERGONOMÍA
+19852 INGE-00013 DISEÑO DE MÁQUINAS 32.00 32.00 32.00 96.00 PR: CCFF-00035 / Transporte fluidos Y INDU-00022 / Tecnología materiales
+Y CCFF-00034 / Transferencia calor.
+Total Cursos: 7 Total Créditos/Horas: 720.00
+CQPINDU06 - Nivel 6
+19861 CSCO-00119 ECONOMÍA GENERAL 32.00 32.00 32.00 96.00 PR: EDCA-00225 / Cost presup.
+19039 CSCO-00120 GESTIÓN DEL TALENTO 32.00 32.00 32.00 96.00 PR: CSCO-00121 / Psicología industrial.
+HUMANO
+19862 DERE-00016 LEGISLACIÓN 16.00 16.00 16.00 48.00 PR: EDCA-00225 / Cost presup.
+ECUATORIANA
+19038 INDU-00008 INVESTIGACIÓN Y 48.00 32.00 64.00 144.00 PR: INDU-00009 / Ing procesos y erg Y INDU-00006 / Diseño industrial cad Y
+DESARROLLO DE NUEVOS EDCA-00226 / Desarrollo emprendedores Y EDCA-00225 / Cost presup.
+PRODUCTOS
+19037 INDU-00013 INVESTIGACIÓN OPERATIVA 48.00 48.00 48.00 144.00 PR: INDU-00009 / Ing procesos y erg Y EDCA-00225 / Cost presup Y CSCO-
+00122 / Ética ciencia.
+19863 INGE-00018 MÁQUINAS, 32.00 48.00 16.00 96.00 PR: INGE-00013 / Diseño máquinas Y INDU-00006 / Diseño industrial cad.
+HERRAMIENTAS Y
+ACCESORIOS
+PPFS-00063 PRÁCTICAS PRE 0.00 16.00 80.00 96.00 PR: MAES-00091 / Tecn inf estr Y INDU-00009 / Ing procesos y erg.
+PROFESIONALES I
+(SERVICIO COMUNITARIO)
+Total Cursos: 7 Total Créditos/Horas: 720.00
+CQPINDU07 - Nivel 7
+19847 EDCA-00230 MARKETING 32.00 32.00 32.00 96.00 PR: INDU-00008 / I+d.
+19858 EDCA-00231 MATEMÁTICA FINANCIERA 32.00 16.00 48.00 96.00 PR: CSCO-00119 / Economía general.
+19035 INDU-00018 ORGANIZACIÓN DE LA 32.00 32.00 32.00 96.00 PR: INDU-00013 / Inv estigación operativ a.
+PRODUCCIÓN
+19036 INDU-00019 SEGURIDAD Y SALUD 48.00 48.00 48.00 144.00 PR: CSCO-00120 / Gestión del talento humano Y DERE-00016 / Legislación
+Tipo: Reporte
+Fuente: Sistema de Gestión Académica NOVA
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:42:40 PM Página: 2 / 4
+--- PAGE 3 ---
+Cod. Leg Código Curso No. Créditos/Horas Prerrequisitos (PR); Correquisitos (CR)
+ACD APE AA Cred/Hor Cod-Mat / Curso
+OCUPACIONAL ecuatoriana.
+19857 INGE-00014 EQUIPO INDUSTRIAL 32.00 32.00 32.00 96.00 PR: INGE-00018 / Maq herr.
+19860 INGE-00020 TECNOLOGÍA ENERGÉTICA 32.00 32.00 32.00 96.00 PR: INGE-00018 / Maq herr.
+PPFS-00065 PRÁCTICAS PRE 0.00 16.00 80.00 96.00 PR: INDU-00013 / Inv estigación operativ a Y CSCO-00120 / Gestión del
+PROFESIONALES II talento humano Y PPFS-00063 / Ppp I.
+(LABORALES 1)
+Total Cursos: 7 Total Créditos/Horas: 720.00
+CQPINDU08 - Nivel 8
+19023 INDU-00007 GESTIÓN DE CALIDAD 48.00 48.00 48.00 144.00 PR: INDU-00018 / Organización producción O FQUI-00405 / Plan. y cont.
+producción I.
+19844 INDU-00010 INGENIERÍA DEL 32.00 32.00 32.00 96.00 PR: INGE-00014 / Equipo industrial Y INGE-00020 / Tecnología energética.
+MANTENIMIENTO
+19846 INDU-00017 LOGÍSTICA Y CADENA DE 48.00 48.00 48.00 144.00 PR: INDU-00018 / Organización producción O FQUI-00405 / Plan. y cont.
+SUMINISTROS producción I.
+19849 INDU-00021 SISTEMAS DE CONTROL DE 48.00 48.00 48.00 144.00 PR: INDU-00018 / Organización producción O FQUI-00405 / Plan. y cont.
+LA PRODUCCIÓN producción I.
+19845 INGE-00015 GESTIÓN AMBIENTAL 32.00 32.00 32.00 96.00 PR: INDU-00019 / Seguridad y salud ocupacional Y INGE-00020 / Tecnología
+EMPRESARIAL energética.
+PPFS-00064 PRÁCTICAS PRE 0.00 16.00 80.00 96.00 PR: INDU-00019 / Seguridad y salud ocupacional.
+PROFESIONALES III
+(LABORALES 2)
+Total Cursos: 6 Total Créditos/Horas: 720.00
+CQPINDU09 - Nivel 9
+19843 EDCA-00229 GESTIÓN FINANCIERA 32.00 32.00 32.00 96.00 PR: EDCA-00230 / Marketing Y (INDU-00021 / Sis control prod O FQUI-
+00410 / Planeacion y control II) Y (IDIO-00215 / Pasle B1-inglés).
+19022 EDCA-00232 SISTEMAS DE 32.00 32.00 32.00 96.00 PR: INDU-00007 / Gestión calidad Y INDU-00017 / Logistica Y (INDU-00021 /
+INFORMACIÓN Sis control prod O FQUI-00410 / Planeacion y control II) Y (IDIO-00215 /
+ESTRATÉGICA Pasle B1-inglés).
+19024 INGE-00017 INSTRUMENTACIÓN Y 32.00 32.00 32.00 96.00 PR: INDU-00010 / Ingeniería del mantenimiento Y (IDIO-00215 / Pasle B1-
+CONTROL inglés).
+19797 MAES-00086 DISEÑO EXPERIMENTAL 48.00 48.00 48.00 144.00 PR: INDU-00007 / Gestión calidad Y (INDU-00021 / Sis control prod O FQUI-
+00410 / Planeacion y control II) Y (IDIO-00215 / Pasle B1-inglés).
+PPFS-00066 PRÁCTICAS PRE 0.00 16.00 32.00 48.00 PR: INDU-00007 / Gestión calidad Y IDIO-00215 / Pasle B1-inglés.
+PROFESIONALES IV
+(LABORALES 3)
+TTIT-00051 UNIDAD DE INTEGRACIÓN 0.00 16.00 80.00 96.00 PR: INDU-00021 / Sis control prod O FQUI-00410 / Planeacion y control II Y
+CURRICULAR 1 (IDIO-00215 / Pasle B1-inglés).
+Total Cursos: 6 Total Créditos/Horas: 576.00
+CQPINDUI9 - Gest manuf, Gest servicios I9
+38664 INDU-00014 I1 LEAN MANUFACTURING Y 48.00 48.00 48.00 144.00 PR: INDU-00007 / Gestión calidad Y INDU-00017 / Logistica Y (INDU-00021 /
+6 SIGMA (I) I1 Sis control prod O FQUI-00410 / Planeacion y control II) Y (IDIO-00215 /
+Pasle B1-inglés).
+40661 INDU-00016 I2 LEAN SERVICES Y SIGMA 48.00 48.00 48.00 144.00 PR: INDU-00007 / Gestión calidad Y INDU-00017 / Logistica Y (INDU-00021 /
+SIGMA (I) I2 Sis control prod O FQUI-00410 / Planeacion y control II) Y (IDIO-00215 /
+Pasle B1-inglés).
+Total Cursos: 1 Total Créditos/Horas: 144.00
+CQPINDU10 - Nivel 10
+Tipo: Reporte
+Fuente: Sistema de Gestión Académica NOVA
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:42:43 PM Página: 3 / 4
+--- PAGE 4 ---
+Cod. Leg Código Curso No. Créditos/Horas Prerrequisitos (PR); Correquisitos (CR)
+ACD APE AA Cred/Hor Cod-Mat / Curso
+19792 EDCA-00227 DISEÑO Y GESTIÓN DE 48.00 48.00 48.00 144.00 PR: EDCA-00229 / Gestión financiera O FQUI-00401 / Administración
+PROYECTOS financiera.
+19794 EDCA-00228 GESTIÓN ESTRATÉGICA 32.00 32.00 32.00 96.00 PR: EDCA-00232 / Sist inf geren Y (EDCA-00229 / Gestión financiera O FQUI-
+00401 / Administración financiera).
+23309 INDU-00020 SIMULACIÓN DE LA 48.00 48.00 48.00 144.00 PR: EDCA-00232 / Sist inf geren Y MAES-00086 / Diseño ex perimental Y
+PRODUCCIÓN (INDU-00021 / Sis control prod O FQUI-00410 / Planeacion y control II).
+TTIT-00052 UNIDAD DE INTEGRACIÓN 0.00 16.00 176.00 192.00 PR: INGE-00017 / Instrumentación y control Y TTIT-00051 / Uic I.
+CURRICULAR 2
+Total Cursos: 4 Total Créditos/Horas: 576.00
+CQPINDUI10 - Gest manuf, Gest servicios I10
+40665 INDU-00011 I2 INNOVATION 48.00 48.00 48.00 144.00 PR: EDCA-00232 / Sist inf geren Y MAES-00086 / Diseño ex perimental Y
+MANAGEMENT I2 TTIT-00051 / Uic I Y PPFS-00066 / Ppp IV Y (INDU-00016 / I2: Lean serv ice
+O INDU-00014 / I1: Lean manuf I).
+38665 INDU-00015 I1 LEAN MANUFACTURING Y 48.00 48.00 48.00 144.00 PR: EDCA-00232 / Sist inf geren Y INGE-00017 / Instrumentación y control Y
+SIX SIGMA (II) I1 MAES-00086 / Diseño ex perimental Y TTIT-00051 / Uic I Y PPFS-00066 /
+Ppp IV Y INDU-00014 / I1: Lean manuf I Y (EDCA-00229 / Gestión financiera
+O FQUI-00401 / Administración financiera).
+Total Cursos: 1 Total Créditos/Horas: 144.00
+Total de créditos/horas de Total de créditos/horas de Total de créditos/horas de
+2192 2208 2800
+aprendizaje con el Docente aprendizaje experimental aprendizaje autónomo
+Total 7200
+Nro. Asignaturas 60
+Tipo: Reporte
+Fuente: Sistema de Gestión Académica NOVA
+Usuario: rodrigo.guaman@ucuenca.edu.ec
+Fecha: 9/7/2026 2:42:44 PM Página: 4 / 4
