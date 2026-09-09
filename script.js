@@ -1,60 +1,3 @@
-const resources = [
-  {
-    title: "Guia base de Investigacion de Operaciones",
-    type: "apuntes",
-    area: "Optimizacion",
-    level: "Fundamentos",
-    description:
-      "Resumen estructurado de programacion lineal, sensibilidad, transporte y asignacion.",
-    link: "#"
-  },
-  {
-    title: "Lean Manufacturing: caso de diagnostico VSM",
-    type: "caso",
-    area: "Produccion",
-    level: "Aplicado",
-    description:
-      "Plantilla para mapear flujo de valor, detectar desperdicios y priorizar mejoras.",
-    link: "#"
-  },
-  {
-    title: "Simulacion discreta con enfoque de servicios",
-    type: "herramienta",
-    area: "Simulacion",
-    level: "Laboratorio",
-    description:
-      "Modelo inicial para estudiar colas, utilizacion de recursos y escenarios de capacidad.",
-    link: "#"
-  },
-  {
-    title: "Paper club: supply chain resilience",
-    type: "paper",
-    area: "Logistica",
-    level: "Lectura",
-    description:
-      "Seleccion de lecturas para resiliencia, riesgo operativo y diseno robusto de redes.",
-    link: "#"
-  },
-  {
-    title: "Control estadistico de procesos",
-    type: "apuntes",
-    area: "Calidad",
-    level: "Intermedio",
-    description:
-      "Cartas de control, capacidad de proceso, muestreo y criterios de interpretacion.",
-    link: "#"
-  },
-  {
-    title: "Dashboard de inventarios ABC",
-    type: "herramienta",
-    area: "Datos",
-    level: "Practico",
-    description:
-      "Estructura para clasificar SKUs, estimar rotacion y visualizar criticidad operativa.",
-    link: "#"
-  }
-];
-
 const knowledgeAreas = [
   {
     id: "administracion",
@@ -505,12 +448,71 @@ const faculty = [
   }
 ];
 
-const grid = document.querySelector("#resourceGrid");
-const filters = document.querySelectorAll(".filter");
-const searchInput = document.querySelector("#resourceSearch");
-const searchForm = document.querySelector("#searchForm");
+const careerCommittees = {
+  program: "Ingeniería Industrial",
+  lead: {
+    title: "Director de carrera",
+    name: "GUAMAN GUACHICHULLCA NOÉ RODRIGO"
+  },
+  groups: [
+    {
+      title: "Comisión Académica de Carrera",
+      members: [
+        "ESPINOZA HERNÁNDEZ PAULINA REBECA",
+        "ÁLVAREZ LLORET ÉDGAR PAÚL",
+        "FLORES SIGUENZA PABLO ANDRÉS",
+        "DIANA CAROLINA JADÁN AVILÉS"
+      ]
+    },
+    {
+      title: "Tutorías para seguimiento de prácticas preprofesionales",
+      members: [
+        "JERVES MORA RODRIGO SAÚL",
+        "ISABEL QUITO",
+        "NARVAEZ BUESTÁN FREDDY EDUARDO"
+      ]
+    },
+    {
+      title: "Seguimiento a graduados",
+      members: ["ANDREA ÍÑIGUEZ"]
+    },
+    {
+      title: "Tutorías de acompañamiento",
+      members: ["JERVES MORA RODRIGO SAÚL"]
+    },
+    {
+      title: "Representante de vinculación con la sociedad",
+      members: ["NARVAEZ BUESTÁN FREDDY EDUARDO"]
+    },
+    {
+      title: "Representante de la Comisión de Gestión Ambiental",
+      members: ["FRANKLIN GUAMÁN"]
+    },
+    {
+      title: "Unidad de Titulación",
+      members: [
+        "LLIVISACA VILLAZHAÑAY JUAN CARLOS",
+        "ÁLVAREZ LLORET ÉDGAR PAÚL",
+        "ESPINOZA HERNÁNDEZ PAULINA REBECA"
+      ]
+    },
+    {
+      title: "Equipo técnico y representación",
+      members: [
+        { name: "JENNY ROJAS", role: "Técnico docente FABLAB" },
+        { name: "FERNANDO CAJAMARCA", role: "Técnico docente Laboratorio de manufactura flexible" },
+        { name: "ISABEL QUITO", role: "Técnico de acreditación internacional" },
+        { name: "JOHANNA GUILLÉN", role: "Secretaria de la carrera" },
+        { name: "SALOMÉ QUINDE", role: "Presidenta de Asociación de Estudiantes" }
+      ]
+    }
+  ]
+};
+
 const facultyGrid = document.querySelector("#facultyGrid");
 const facultySearch = document.querySelector("#facultySearch");
+const committeesLead = document.querySelector("#committeesLead");
+const committeesGrid = document.querySelector("#committeesGrid");
 const areaTabs = document.querySelector("#areaTabs");
 const areaCode = document.querySelector("#areaCode");
 const areaTitle = document.querySelector("#areaTitle");
@@ -528,8 +530,6 @@ const abetOutcomeCount = document.querySelector("#abetOutcomeCount");
 const abetOutcomes = document.querySelector("#abetOutcomes");
 const abetSummaryGrid = document.querySelector("#abetSummaryGrid");
 const languageToggle = document.querySelector("#languageToggle");
-let activeFilter = "todos";
-let searchTerm = "";
 let activeArea = knowledgeAreas[0].id;
 let activeAbet = abetResults[0].id;
 let activeLanguage = localStorage.getItem("industrialHubLanguage") || "es";
@@ -539,7 +539,6 @@ const uiCopy = {
     documentTitle: "Repositorio de Ingenieria Industrial",
     brandSubtitle: "Repositorio academico",
     nav: {
-      "#repositorio": "Repositorio",
       "faculty.html": "Docentes",
       "#areas": "Areas",
       "curriculum.html": "Malla",
@@ -547,9 +546,7 @@ const uiCopy = {
       "syllabi.html": "Sílabos",
       "#abet": "RDA ABET",
       "assessment.html": "Assessment ABET",
-      "capstone.html": "Capstone",
-      "#investigacion": "Investigacion",
-      "#agenda": "Agenda"
+      "capstone.html": "Capstone"
     },
     headerAction: "Contribuir",
     languageLabel: "Switch to English",
@@ -557,20 +554,7 @@ const uiCopy = {
     heroKicker: "Ingenieria Industrial",
     heroTitle: "Repositorio academico para estudiar, investigar y construir mejores sistemas.",
     heroCopy: "Un espacio curado para apuntes, libros, papers, simulaciones, casos, laboratorios y herramientas clave de la carrera.",
-    searchLabel: "Buscar en el repositorio",
-    searchPlaceholder: "Ej. Lean, simulacion, ergonomia, optimizacion...",
-    searchAria: "Buscar",
     metrics: ["recursos curados", "areas de conocimiento", "casos y laboratorios", "estandar visual y editorial"],
-    repositoryKicker: "Repositorio",
-    repositoryTitle: "Materiales esenciales",
-    repositoryCopy: "Una primera biblioteca organizada por tipo de contenido. Los datos son editables desde script.js mientras definimos la estructura final.",
-    filters: {
-      todos: "Todos",
-      apuntes: "Apuntes",
-      paper: "Papers",
-      herramienta: "Herramientas",
-      caso: "Casos"
-    },
     areasKicker: "Matriz curricular",
     areasTitle: "Areas de conocimiento",
     areasCopy: "Informacion organizada desde el anexo Areas de Conocimiento Ingenieria Industrial, propuesta de la Comision Academica.",
@@ -586,23 +570,6 @@ const uiCopy = {
     outcomes: "logros",
     outcome: "logro",
     redesignOutcomes: "de rediseno",
-    researchKicker: "Investigacion aplicada",
-    researchTitle: "De la teoria al impacto operacional",
-    researchCopy: "Este repositorio puede crecer hacia un portal con proyectos, datasets, tesis, dashboards y publicaciones de estudiantes y docentes.",
-    researchLinks: [
-      "Modelos de optimizacion para produccion",
-      "Casos de mejora continua y Six Sigma",
-      "Simulacion de procesos y servicios",
-      "Analitica para cadena de suministro"
-    ],
-    agendaKicker: "Agenda",
-    agendaTitle: "Actividades academicas",
-    agendaCopy: "Un bloque listo para eventos, convocatorias, entregas y seminarios.",
-    events: [
-      ["Seminario de simulacion discreta", "Modelado de lineas de espera y sistemas de servicio."],
-      ["Entrega de caso Lean", "Diagnostico, VSM actual y propuesta de mejora."],
-      ["Club de lectura de papers", "Optimizacion robusta aplicada a cadenas de suministro."]
-    ],
     contributeKicker: "Construccion colaborativa",
     contributeTitle: "Subamos el nivel del material de la carrera.",
     contributeAction: "Proponer recurso",
@@ -615,7 +582,6 @@ const uiCopy = {
     documentTitle: "Industrial Engineering Repository",
     brandSubtitle: "Academic repository",
     nav: {
-      "#repositorio": "Repository",
       "faculty.html": "Faculty",
       "#areas": "Areas",
       "curriculum.html": "Curriculum",
@@ -623,9 +589,7 @@ const uiCopy = {
       "syllabi.html": "Syllabi",
       "#abet": "ABET SLOs",
       "assessment.html": "ABET Assessment",
-      "capstone.html": "Capstone",
-      "#investigacion": "Research",
-      "#agenda": "Agenda"
+      "capstone.html": "Capstone"
     },
     headerAction: "Contribute",
     languageLabel: "Cambiar a espanol",
@@ -633,20 +597,7 @@ const uiCopy = {
     heroKicker: "Industrial Engineering",
     heroTitle: "An academic repository for studying, researching, and building better systems.",
     heroCopy: "A curated space for notes, books, papers, simulations, cases, labs, and key tools for the program.",
-    searchLabel: "Search the repository",
-    searchPlaceholder: "E.g. Lean, simulation, ergonomics, optimization...",
-    searchAria: "Search",
     metrics: ["curated resources", "knowledge areas", "cases and labs", "visual and editorial standard"],
-    repositoryKicker: "Repository",
-    repositoryTitle: "Essential materials",
-    repositoryCopy: "An initial library organized by content type. The data can be edited from script.js while the final structure is defined.",
-    filters: {
-      todos: "All",
-      apuntes: "Notes",
-      paper: "Papers",
-      herramienta: "Tools",
-      caso: "Cases"
-    },
     areasKicker: "Curriculum matrix",
     areasTitle: "Knowledge areas",
     areasCopy: "Information organized from the Industrial Engineering Knowledge Areas annex proposed by the Academic Committee.",
@@ -662,23 +613,6 @@ const uiCopy = {
     outcomes: "outcomes",
     outcome: "outcome",
     redesignOutcomes: "from the redesign",
-    researchKicker: "Applied research",
-    researchTitle: "From theory to operational impact",
-    researchCopy: "This repository can grow into a portal with projects, datasets, theses, dashboards, and publications from students and faculty.",
-    researchLinks: [
-      "Optimization models for production",
-      "Continuous improvement and Six Sigma cases",
-      "Process and service simulation",
-      "Supply chain analytics"
-    ],
-    agendaKicker: "Agenda",
-    agendaTitle: "Academic activities",
-    agendaCopy: "A block ready for events, calls, deadlines, and seminars.",
-    events: [
-      ["Discrete simulation seminar", "Modeling queues and service systems."],
-      ["Lean case submission", "Diagnosis, current-state VSM, and improvement proposal."],
-      ["Paper reading club", "Robust optimization applied to supply chains."]
-    ],
     contributeKicker: "Collaborative building",
     contributeTitle: "Let's raise the quality of the program materials.",
     contributeAction: "Suggest a resource",
@@ -686,41 +620,6 @@ const uiCopy = {
     footerCopy: "Initial base ready to customize with your university, courses, and documents.",
     emptyResources: "No resources match that criterion yet.",
     openResource: "Open resource"
-  }
-};
-
-const resourceTranslations = {
-  en: {
-    "Guia base de Investigacion de Operaciones": {
-      title: "Operations Research starter guide",
-      area: "Optimization",
-      description: "Structured summary of linear programming, sensitivity analysis, transportation, and assignment."
-    },
-    "Lean Manufacturing: caso de diagnostico VSM": {
-      title: "Lean Manufacturing: VSM diagnostic case",
-      area: "Production",
-      description: "Template for mapping value flow, detecting waste, and prioritizing improvements."
-    },
-    "Simulacion discreta con enfoque de servicios": {
-      title: "Discrete simulation for service systems",
-      area: "Simulation",
-      description: "Starter model for studying queues, resource utilization, and capacity scenarios."
-    },
-    "Paper club: supply chain resilience": {
-      title: "Paper club: supply chain resilience",
-      area: "Logistics",
-      description: "Reading selection for resilience, operational risk, and robust network design."
-    },
-    "Control estadistico de procesos": {
-      title: "Statistical process control",
-      area: "Quality",
-      description: "Control charts, process capability, sampling, and interpretation criteria."
-    },
-    "Dashboard de inventarios ABC": {
-      title: "ABC inventory dashboard",
-      area: "Data",
-      description: "Structure for classifying SKUs, estimating turnover, and visualizing operational criticality."
-    }
   }
 };
 
@@ -806,19 +705,35 @@ function normalizeText(value) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function copy() {
-  return uiCopy[activeLanguage] || uiCopy.es;
+function compactPersonName(value) {
+  return normalizeText(value)
+    .replace(/\b(ing|fis|psic|bqf|cpa|ms|msc|mba|phd|docente|tecnico|tecnica|director|carrera|industrial)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
 }
 
-function translatedResource(resource) {
-  const translation = resourceTranslations[activeLanguage]?.[resource.title];
+function resolveCommitteePerson(member) {
+  const name = typeof member === "string" ? member : member.name;
+  const explicitRole = typeof member === "string" ? "" : member.role;
+  const targetTokens = compactPersonName(name).split(" ").filter((token) => token.length > 2);
+  const match = faculty.find((person) => {
+    const haystack = compactPersonName(person.name);
+    return targetTokens.length && targetTokens.every((token) => haystack.includes(token));
+  }) || faculty.find((person) => {
+    const haystackTokens = compactPersonName(person.name).split(" ");
+    return targetTokens.filter((token) => haystackTokens.includes(token)).length >= Math.min(2, targetTokens.length);
+  });
+
   return {
-    ...resource,
-    title: translation?.title || resource.title,
-    area: translation?.area || resource.area,
-    description: translation?.description || resource.description,
-    typeLabel: copy().filters[resource.type] || resource.type
+    name,
+    role: explicitRole || match?.role || "Integrante",
+    email: match?.email || "",
+    image: match?.image || "assets/faculty/default-profile.png"
   };
+}
+
+function copy() {
+  return uiCopy[activeLanguage] || uiCopy.es;
 }
 
 function translatedArea(area) {
@@ -867,17 +782,8 @@ function applyStaticLanguage() {
   setText(".hero-content .kicker", c.heroKicker);
   setText(".hero-content h1", c.heroTitle);
   setText(".hero-copy", c.heroCopy);
-  setText(".search-panel label", c.searchLabel);
-  if (searchInput) searchInput.placeholder = c.searchPlaceholder;
-  document.querySelector(".search-row button")?.setAttribute("aria-label", c.searchAria);
   document.querySelectorAll(".metrics-band article span").forEach((item, index) => {
     item.textContent = c.metrics[index] || item.textContent;
-  });
-  setText("#repositorio .kicker", c.repositoryKicker);
-  setText("#repositorio h2", c.repositoryTitle);
-  setText("#repositorio .section-heading p:not(.kicker)", c.repositoryCopy);
-  filters.forEach((button) => {
-    button.textContent = c.filters[button.dataset.filter] || button.textContent;
   });
   setText("#areas .kicker", c.areasKicker);
   setText("#areas h2", c.areasTitle);
@@ -892,70 +798,12 @@ function applyStaticLanguage() {
   setText("#abet h2", c.abetTitle);
   setText("#abet .section-heading p:not(.kicker)", c.abetCopy);
   setText(".abet-meter span", c.linkedOutcomes);
-  setText("#investigacion .kicker", c.researchKicker);
-  setText("#investigacion h2", c.researchTitle);
-  setText("#investigacion p:not(.kicker)", c.researchCopy);
-  document.querySelectorAll(".research-list a").forEach((link, index) => {
-    link.textContent = c.researchLinks[index] || link.textContent;
-  });
-  setText("#agenda .kicker", c.agendaKicker);
-  setText("#agenda h2", c.agendaTitle);
-  setText("#agenda .section-heading p:not(.kicker)", c.agendaCopy);
-  document.querySelectorAll(".timeline article").forEach((article, index) => {
-    const event = c.events[index];
-    if (!event) return;
-    const title = article.querySelector("h3");
-    const text = article.querySelector("p");
-    if (title) title.textContent = event[0];
-    if (text) text.textContent = event[1];
-  });
   setText("#contribuir .kicker", c.contributeKicker);
   setText("#contribuir h2", c.contributeTitle);
   setText("#contribuir a", c.contributeAction);
   const footerText = document.querySelectorAll(".site-footer p");
   if (footerText[0]) footerText[0].textContent = c.footerTitle;
   if (footerText[1]) footerText[1].textContent = c.footerCopy;
-}
-
-function renderResources() {
-  const query = normalizeText(searchTerm);
-  const filtered = resources.filter((resource) => {
-    const matchesFilter = activeFilter === "todos" || resource.type === activeFilter;
-    const searchable = normalizeText(
-      `${resource.title} ${resource.type} ${resource.area} ${resource.level} ${resource.description}`
-    );
-    return matchesFilter && searchable.includes(query);
-  });
-
-  grid.innerHTML = "";
-
-  if (!filtered.length) {
-    const empty = document.createElement("p");
-    empty.className = "empty-state";
-    empty.textContent = copy().emptyResources;
-    grid.appendChild(empty);
-    return;
-  }
-
-  const fragment = document.createDocumentFragment();
-
-  filtered.forEach((resource) => {
-    const item = translatedResource(resource);
-    const card = document.createElement("article");
-    card.className = "resource-card";
-    card.innerHTML = `
-      <div class="resource-meta">
-        <span>${item.typeLabel}</span>
-        <span>${item.area}</span>
-      </div>
-      <h3>${item.title}</h3>
-      <p>${item.description}</p>
-      <a href="${resource.link}" aria-label="${copy().openResource}: ${item.title}">${copy().openResource}</a>
-    `;
-    fragment.appendChild(card);
-  });
-
-  grid.appendChild(fragment);
 }
 
 function renderFaculty() {
@@ -1000,6 +848,42 @@ function renderFaculty() {
   });
 
   facultyGrid.appendChild(fragment);
+}
+
+function renderCommitteeMember(member, roleOverride = "") {
+  const person = resolveCommitteePerson(member);
+  const role = roleOverride || person.role;
+  return `
+    <article class="committee-person">
+      <img src="${person.image}" alt="${person.name}" loading="lazy">
+      <div>
+        <span>${role}</span>
+        <strong>${person.name}</strong>
+        ${
+          person.email
+            ? `<a href="mailto:${person.email}">${person.email}</a>`
+            : `<small>Correo pendiente de registro</small>`
+        }
+      </div>
+    </article>
+  `;
+}
+
+function renderCommittees() {
+  if (!committeesLead || !committeesGrid) return;
+
+  committeesLead.innerHTML = renderCommitteeMember(careerCommittees.lead.name, careerCommittees.lead.title);
+  committeesGrid.innerHTML = careerCommittees.groups.map((group) => `
+    <article class="committee-card">
+      <div class="committee-card__head">
+        <h3>${group.title}</h3>
+        <span>${group.members.length} integrante${group.members.length === 1 ? "" : "s"}</span>
+      </div>
+      <div class="committee-members">
+        ${group.members.map((member) => renderCommitteeMember(member)).join("")}
+      </div>
+    </article>
+  `).join("");
 }
 
 function renderAreaTabs() {
@@ -1169,30 +1053,11 @@ function renderAbet() {
   renderAbetSummary();
 }
 
-filters.forEach((button) => {
-  button.addEventListener("click", () => {
-    activeFilter = button.dataset.filter;
-    filters.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-    renderResources();
-  });
-});
-
-searchInput.addEventListener("input", (event) => {
-  searchTerm = event.target.value;
-  renderResources();
-});
-
-searchForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  searchInput.focus();
-});
-
 languageToggle?.addEventListener("click", () => {
   activeLanguage = activeLanguage === "es" ? "en" : "es";
   localStorage.setItem("industrialHubLanguage", activeLanguage);
   applyStaticLanguage();
-  renderResources();
+  renderCommittees();
   renderAreas();
   renderAbet();
 });
@@ -1216,8 +1081,8 @@ abetList?.addEventListener("click", (event) => {
 });
 
 applyStaticLanguage();
-renderResources();
 renderFaculty();
+renderCommittees();
 renderAreas();
 renderAbet();
 

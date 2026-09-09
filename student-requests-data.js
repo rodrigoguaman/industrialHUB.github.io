@@ -1,9 +1,9 @@
 const studentRequestsData = {
   "summary": {
     "courseCount": 62,
-    "withCapacity": 57,
-    "totalAvailable": 721,
-    "totalEnrolled": 1370,
+    "withCapacity": 58,
+    "totalAvailable": 640,
+    "totalEnrolled": 1475,
     "levels": 10,
     "period": "202667 - PAO2 Grado Sep2026-Feb2027"
   },
@@ -89,10 +89,22 @@ const studentRequestsData = {
         }
       ],
       "capacity": {
-        "max": 0,
-        "enrolled": 0,
-        "available": 0,
-        "sections": []
+        "max": 24,
+        "enrolled": 1,
+        "available": 23,
+        "sections": [
+          {
+            "nrc": "1665",
+            "courseCode": "EDUC-00023",
+            "title": "METODOLOGÍA DE LA INVESTIGACIÓN",
+            "type": "CDE",
+            "section": "G1",
+            "teacher": "Flores Siguenza Pablo Andres",
+            "max": 24,
+            "enrolled": 1,
+            "available": 23
+          }
+        ]
       }
     },
     {
@@ -564,8 +576,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 22,
-        "available": 13,
+        "enrolled": 29,
+        "available": 6,
         "sections": [
           {
             "nrc": "1691",
@@ -575,8 +587,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Mejia Guaman Christian Fernando",
             "max": 35,
-            "enrolled": 22,
-            "available": 13
+            "enrolled": 29,
+            "available": 6
           }
         ]
       }
@@ -620,8 +632,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 30,
-        "enrolled": 22,
-        "available": 8,
+        "enrolled": 30,
+        "available": 0,
         "sections": [
           {
             "nrc": "1695",
@@ -631,8 +643,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Guaman Ortiz Franklin Eduardo",
             "max": 30,
-            "enrolled": 22,
-            "available": 8
+            "enrolled": 30,
+            "available": 0
           }
         ]
       }
@@ -676,8 +688,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 22,
-        "available": 13,
+        "enrolled": 26,
+        "available": 9,
         "sections": [
           {
             "nrc": "1719",
@@ -687,8 +699,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Alvarez Lloret Edgar Paul",
             "max": 35,
-            "enrolled": 22,
-            "available": 13
+            "enrolled": 26,
+            "available": 9
           }
         ]
       }
@@ -739,8 +751,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 23,
-        "available": 12,
+        "enrolled": 32,
+        "available": 3,
         "sections": [
           {
             "nrc": "1779",
@@ -750,8 +762,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Sanchez Alv arracin Carlos Mauricio",
             "max": 35,
-            "enrolled": 23,
-            "available": 12
+            "enrolled": 32,
+            "available": 3
           }
         ]
       }
@@ -802,8 +814,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 88,
-        "enrolled": 46,
-        "available": 42,
+        "enrolled": 86,
+        "available": 2,
         "sections": [
           {
             "nrc": "1784",
@@ -813,8 +825,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Guaman Guachichullca Noe Rodrigo",
             "max": 44,
-            "enrolled": 23,
-            "available": 21
+            "enrolled": 43,
+            "available": 1
           },
           {
             "nrc": "1789",
@@ -824,8 +836,8 @@ const studentRequestsData = {
             "section": "S1",
             "teacher": "Sin docente asignado",
             "max": 44,
-            "enrolled": 23,
-            "available": 21
+            "enrolled": 43,
+            "available": 1
           }
         ]
       }
@@ -939,8 +951,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 19,
-        "available": 16,
+        "enrolled": 22,
+        "available": 13,
         "sections": [
           {
             "nrc": "1860",
@@ -950,8 +962,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Sin docente asignado",
             "max": 35,
-            "enrolled": 19,
-            "available": 16
+            "enrolled": 22,
+            "available": 13
           }
         ]
       }
@@ -1009,8 +1021,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 12,
-        "available": 23,
+        "enrolled": 22,
+        "available": 13,
         "sections": [
           {
             "nrc": "1870",
@@ -1020,8 +1032,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Coello Reyes Mateo Hernan",
             "max": 35,
-            "enrolled": 12,
-            "available": 23
+            "enrolled": 22,
+            "available": 13
           }
         ]
       }
@@ -1065,8 +1077,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 21,
-        "available": 14,
+        "enrolled": 25,
+        "available": 10,
         "sections": [
           {
             "nrc": "1875",
@@ -1076,8 +1088,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Alvarez Lloret Edgar Paul",
             "max": 35,
-            "enrolled": 21,
-            "available": 14
+            "enrolled": 25,
+            "available": 10
           }
         ]
       }
@@ -1128,8 +1140,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 19,
-        "available": 16,
+        "enrolled": 27,
+        "available": 8,
         "sections": [
           {
             "nrc": "1880",
@@ -1139,8 +1151,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Narvaez Buestan Freddy Eduardo",
             "max": 35,
-            "enrolled": 19,
-            "available": 16
+            "enrolled": 27,
+            "available": 8
           }
         ]
       }
@@ -1184,8 +1196,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 18,
-        "available": 17,
+        "enrolled": 27,
+        "available": 8,
         "sections": [
           {
             "nrc": "1885",
@@ -1195,8 +1207,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Llivisaca Villazhañay Juan Carlos",
             "max": 35,
-            "enrolled": 18,
-            "available": 17
+            "enrolled": 27,
+            "available": 8
           }
         ]
       }
@@ -1282,8 +1294,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 20,
-        "available": 15,
+        "enrolled": 21,
+        "available": 14,
         "sections": [
           {
             "nrc": "1896",
@@ -1293,8 +1305,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Jerves Mora Rodrigo Saul",
             "max": 35,
-            "enrolled": 20,
-            "available": 15
+            "enrolled": 21,
+            "available": 14
           }
         ]
       }
@@ -1401,8 +1413,8 @@ const studentRequestsData = {
       ],
       "capacity": {
         "max": 35,
-        "enrolled": 22,
-        "available": 13,
+        "enrolled": 23,
+        "available": 12,
         "sections": [
           {
             "nrc": "1902",
@@ -1412,8 +1424,8 @@ const studentRequestsData = {
             "section": "G1",
             "teacher": "Peña Gonzalez Silvia Alexandra",
             "max": 35,
-            "enrolled": 22,
-            "available": 13
+            "enrolled": 23,
+            "available": 12
           }
         ]
       }

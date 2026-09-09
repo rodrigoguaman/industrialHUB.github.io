@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horarios de clases | Industrial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="schedule-page">
+    <header class="site-header schedule-header">
+      <a class="brand" href="index.html" aria-label="Volver al inicio">
+        <span class="brand-mark">II</span>
+        <span>
+          <strong>Industrial Hub</strong>
+          <small>Horarios CII</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación de horarios">
+        <a href="#resumen">Resumen</a>
+        <a href="#horario">Horario</a>
+        <a href="#estadistica">Estadística</a>
+      </nav>
+
+      <a class="header-action" href="index.html">Inicio</a>
+    </header>
+
+    <main>
+      <section class="schedule-hero" id="resumen">
+        <div>
+          <p class="kicker">Horarios de clases</p>
+          <h1>Consulta dinámica por nivel, paralelo, día, aula y docente.</h1>
+          <p>
+            Horario académico de Ingeniería Industrial para el periodo
+            septiembre 2026 - febrero 2027, estructurado desde la matriz adjunta.
+          </p>
+        </div>
+      </section>
+
+      <section class="schedule-dashboard" id="horario">
+        <div class="schedule-metrics">
+          <article><strong id="scheduleLevelCount"></strong><span>niveles</span></article>
+          <article><strong id="scheduleBlockCount"></strong><span>bloques</span></article>
+          <article><strong id="scheduleCourseCount"></strong><span>asignaturas</span></article>
+          <article><strong id="scheduleSessionCount"></strong><span>clases</span></article>
+        </div>
+
+        <div class="schedule-toolbar" aria-label="Filtros de horarios">
+          <label>
+            <span>Nivel</span>
+            <select id="scheduleBlockSelect"></select>
+          </label>
+          <label>
+            <span>Día</span>
+            <select id="scheduleDaySelect"></select>
+          </label>
+          <label>
+            <span>Docente</span>
+            <select id="scheduleTeacherSelect"></select>
+          </label>
+          <label>
+            <span>Aula</span>
+            <select id="scheduleRoomSelect"></select>
+          </label>
+          <label class="schedule-search">
+            <span>Buscar</span>
+            <input id="scheduleSearch" type="search" placeholder="Asignatura, docente, aula..." />
+          </label>
+        </div>
+
+        <section class="schedule-week-panel" aria-labelledby="scheduleWeekTitle">
+          <div class="schedule-panel-head">
+            <div>
+              <p class="kicker">Vista semanal</p>
+              <h2 id="scheduleWeekTitle">Horario filtrado</h2>
+            </div>
+            <span id="scheduleResultCount"></span>
+          </div>
+          <div class="schedule-week-grid" id="scheduleWeekGrid"></div>
+        </section>
+      </section>
+
+      <section class="schedule-section schedule-section--light" id="estadistica">
+        <div class="section-heading compact">
+          <p class="kicker">Estadística</p>
+          <h2>Distribución de sesiones</h2>
+          <p>
+            Concentración de clases por día y docentes con mayor presencia en el horario.
+          </p>
+        </div>
+        <div class="schedule-stats-grid">
+          <article>
+            <h3>Clases por día</h3>
+            <div class="schedule-bars" id="scheduleDayBars"></div>
+          </article>
+          <article>
+            <h3>Docentes con más sesiones</h3>
+            <div class="schedule-bars" id="scheduleTeacherBars"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Industrial Hub CII · Universidad de Cuenca</p>
+    </footer>
+
+    <script src="faculty-data.js"></script>
+    <script src="schedule-data.js"></script>
+    <script src="schedule-page.js"></script>
+  </body>
+</html>

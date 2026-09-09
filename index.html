@@ -23,17 +23,16 @@
       </a>
 
       <nav class="main-nav" aria-label="Navegacion principal">
-        <a href="#repositorio">Repositorio</a>
         <a href="faculty.html">Docentes</a>
+        <a href="#comisiones">Comisiones</a>
         <a href="#areas">Areas</a>
         <a href="curriculum.html">Malla</a>
         <a href="student-requests.html">Solicitudes</a>
+        <a href="schedule.html">Horarios</a>
         <a href="syllabi.html">Sílabos</a>
         <a href="#abet">RDA ABET</a>
         <a href="assessment.html">Assessment ABET</a>
         <a href="capstone.html">Capstone</a>
-        <a href="#investigacion">Investigacion</a>
-        <a href="#agenda">Agenda</a>
       </nav>
 
       <div class="header-actions">
@@ -48,8 +47,8 @@
       <section class="hero" aria-label="Inicio">
         <img
           class="hero-image"
-          src="assets/capstone-lab-banner.jpeg"
-          alt="Laboratorio moderno de ingenieria industrial con analitica, sistemas productivos y colaboracion academica"
+          src="assets/industrial-index-banner.jpeg"
+          alt="Equipo de Ingenieria Industrial durante una jornada academica ABET"
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -59,21 +58,6 @@
             Un espacio curado para apuntes, libros, papers, simulaciones, casos,
             laboratorios y herramientas clave de la carrera.
           </p>
-
-          <form class="search-panel" id="searchForm">
-            <label for="resourceSearch">Buscar en el repositorio</label>
-            <div class="search-row">
-              <input
-                id="resourceSearch"
-                type="search"
-                placeholder="Ej. Lean, simulacion, ergonomia, optimizacion..."
-                autocomplete="off"
-              />
-              <button type="submit" aria-label="Buscar">
-                <span aria-hidden="true">⌕</span>
-              </button>
-            </div>
-          </form>
         </div>
       </section>
 
@@ -96,25 +80,18 @@
         </article>
       </section>
 
-      <section class="section-wrap" id="repositorio">
-        <div class="section-heading">
-          <p class="kicker">Repositorio</p>
-          <h2>Materiales esenciales</h2>
+      <section class="committees-section" id="comisiones">
+        <div class="section-heading compact">
+          <p class="kicker">Carrera: Ingeniería Industrial</p>
+          <h2>Comisiones de carrera</h2>
           <p>
-            Una primera biblioteca organizada por tipo de contenido. Los datos son
-            editables desde <code>script.js</code> mientras definimos la estructura final.
+            Organización académica y de apoyo para la gestión curricular,
+            prácticas, titulación, vinculación, acreditación y representación estudiantil.
           </p>
         </div>
 
-        <div class="filter-bar" aria-label="Filtros de recursos">
-          <button class="filter active" data-filter="todos">Todos</button>
-          <button class="filter" data-filter="apuntes">Apuntes</button>
-          <button class="filter" data-filter="paper">Papers</button>
-          <button class="filter" data-filter="herramienta">Herramientas</button>
-          <button class="filter" data-filter="caso">Casos</button>
-        </div>
-
-        <div class="resource-grid" id="resourceGrid"></div>
+        <div class="committees-lead" id="committeesLead"></div>
+        <div class="committees-grid" id="committeesGrid"></div>
       </section>
 
       <section class="faculty-section" id="docentes" hidden>
@@ -217,55 +194,6 @@
         </div>
 
         <div class="abet-summary-grid" id="abetSummaryGrid"></div>
-      </section>
-
-      <section class="research-band" id="investigacion">
-        <div>
-          <p class="kicker">Investigacion aplicada</p>
-          <h2>De la teoria al impacto operacional</h2>
-          <p>
-            Este repositorio puede crecer hacia un portal con proyectos, datasets,
-            tesis, dashboards y publicaciones de estudiantes y docentes.
-          </p>
-        </div>
-        <div class="research-list">
-          <a href="#repositorio">Modelos de optimizacion para produccion</a>
-          <a href="#repositorio">Casos de mejora continua y Six Sigma</a>
-          <a href="#repositorio">Simulacion de procesos y servicios</a>
-          <a href="#repositorio">Analitica para cadena de suministro</a>
-        </div>
-      </section>
-
-      <section class="section-wrap two-column" id="agenda">
-        <div class="section-heading">
-          <p class="kicker">Agenda</p>
-          <h2>Actividades academicas</h2>
-          <p>Un bloque listo para eventos, convocatorias, entregas y seminarios.</p>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <time datetime="2026-07-15">15 Jul</time>
-            <div>
-              <h3>Seminario de simulacion discreta</h3>
-              <p>Modelado de lineas de espera y sistemas de servicio.</p>
-            </div>
-          </article>
-          <article>
-            <time datetime="2026-08-02">02 Ago</time>
-            <div>
-              <h3>Entrega de caso Lean</h3>
-              <p>Diagnostico, VSM actual y propuesta de mejora.</p>
-            </div>
-          </article>
-          <article>
-            <time datetime="2026-08-21">21 Ago</time>
-            <div>
-              <h3>Club de lectura de papers</h3>
-              <p>Optimizacion robusta aplicada a cadenas de suministro.</p>
-            </div>
-          </article>
-        </div>
       </section>
 
       <section class="contribute" id="contribuir">
