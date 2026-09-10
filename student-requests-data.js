@@ -1,9 +1,9 @@
 const studentRequestsData = {
   "summary": {
     "courseCount": 62,
-    "withCapacity": 58,
-    "totalAvailable": 640,
-    "totalEnrolled": 1475,
+    "withCapacity": 61,
+    "totalAvailable": 740,
+    "totalEnrolled": 1480,
     "levels": 10,
     "period": "202667 - PAO2 Grado Sep2026-Feb2027"
   },
@@ -31,10 +31,22 @@ const studentRequestsData = {
         }
       ],
       "capacity": {
-        "max": 0,
-        "enrolled": 0,
-        "available": 0,
-        "sections": []
+        "max": 35,
+        "enrolled": 1,
+        "available": 34,
+        "sections": [
+          {
+            "nrc": "1655",
+            "courseCode": "CCFF-00029",
+            "title": "FÍSICA I",
+            "type": "CDE",
+            "section": "G1",
+            "teacher": "Mejia Guaman Christian Fernando",
+            "max": 35,
+            "enrolled": 1,
+            "available": 34
+          }
+        ]
       }
     },
     {
@@ -60,10 +72,22 @@ const studentRequestsData = {
         }
       ],
       "capacity": {
-        "max": 0,
-        "enrolled": 0,
-        "available": 0,
-        "sections": []
+        "max": 35,
+        "enrolled": 1,
+        "available": 34,
+        "sections": [
+          {
+            "nrc": "1662",
+            "courseCode": "CCFF-00032",
+            "title": "QUÍMICA GENERAL",
+            "type": "CDE",
+            "section": "G1",
+            "teacher": "Iñiguez Moran Andrea Maria",
+            "max": 35,
+            "enrolled": 1,
+            "available": 34
+          }
+        ]
       }
     },
     {
@@ -194,10 +218,22 @@ const studentRequestsData = {
         }
       ],
       "capacity": {
-        "max": 0,
-        "enrolled": 0,
-        "available": 0,
-        "sections": []
+        "max": 35,
+        "enrolled": 3,
+        "available": 32,
+        "sections": [
+          {
+            "nrc": "1668",
+            "courseCode": "MAES-00089",
+            "title": "ÁLGEBRA LINEAL",
+            "type": "CDE",
+            "section": "G1",
+            "teacher": "Guaman Ortiz Franklin Eduardo",
+            "max": 35,
+            "enrolled": 3,
+            "available": 32
+          }
+        ]
       }
     },
     {
@@ -317,7 +353,7 @@ const studentRequestsData = {
             "courseCode": "CCFF-00031",
             "title": "QUÍMICA ORGÁNICA",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Iñiguez Moran Andrea Maria",
             "max": 44,
             "enrolled": 17,
@@ -328,7 +364,7 @@ const studentRequestsData = {
             "courseCode": "CCFF-00031",
             "title": "QUÍMICA ORGÁNICA",
             "type": "APE",
-            "section": "S1",
+            "section": "S1 S1 G1",
             "teacher": "Iñiguez Moran Andrea Maria",
             "max": 22,
             "enrolled": 17,
@@ -510,7 +546,7 @@ const studentRequestsData = {
             "courseCode": "TICS-00023",
             "title": "LENGUAJES DE PROGRAMACIÓN",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Vanegas Peña Paul Fernando",
             "max": 44,
             "enrolled": 17,
@@ -521,8 +557,8 @@ const studentRequestsData = {
             "courseCode": "TICS-00023",
             "title": "LENGUAJES DE PROGRAMACIÓN",
             "type": "APE",
-            "section": "S1",
-            "teacher": "Sin docente asignado",
+            "section": "S1 S1 G1",
+            "teacher": "-",
             "max": 44,
             "enrolled": 17,
             "available": 27
@@ -822,7 +858,7 @@ const studentRequestsData = {
             "courseCode": "MAES-00088",
             "title": "ESTADÍSTICA ANALÍTICA",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Guaman Guachichullca Noe Rodrigo",
             "max": 44,
             "enrolled": 43,
@@ -833,8 +869,8 @@ const studentRequestsData = {
             "courseCode": "MAES-00088",
             "title": "ESTADÍSTICA ANALÍTICA",
             "type": "APE",
-            "section": "S1",
-            "teacher": "Sin docente asignado",
+            "section": "S1 S1 G1",
+            "teacher": "-",
             "max": 44,
             "enrolled": 43,
             "available": 1
@@ -960,7 +996,7 @@ const studentRequestsData = {
             "title": "TRANSPORTE DE FLUIDOS",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Sin docente asignado",
+            "teacher": "-",
             "max": 35,
             "enrolled": 22,
             "available": 13
@@ -1205,7 +1241,7 @@ const studentRequestsData = {
             "title": "TÉCNICAS DE INFERENCIA ESTADÍSTICA",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Llivisaca Villazhañay Juan Carlos",
+            "teacher": "Lliv isaca Villazhañay Juan Carlos",
             "max": 35,
             "enrolled": 27,
             "available": 8
@@ -1554,7 +1590,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00009",
             "title": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Alvarez Palomeque Lourdes Ximena",
             "max": 35,
             "enrolled": 22,
@@ -1565,7 +1601,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00009",
             "title": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
             "type": "APE",
-            "section": "S1",
+            "section": "S1 S1 G1",
             "teacher": "Alvarez Palomeque Lourdes Ximena",
             "max": 17,
             "enrolled": 17,
@@ -1576,7 +1612,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00009",
             "title": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
             "type": "APE",
-            "section": "S2",
+            "section": "S2 S1 G1",
             "teacher": "Alvarez Palomeque Lourdes Ximena",
             "max": 18,
             "enrolled": 5,
@@ -1640,7 +1676,7 @@ const studentRequestsData = {
             "title": "DISEÑO DE MÁQUINAS",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Sin docente asignado",
+            "teacher": "-",
             "max": 35,
             "enrolled": 22,
             "available": 13
@@ -1793,7 +1829,7 @@ const studentRequestsData = {
             "courseCode": "DERE-00016",
             "title": "LEGISLACIÓN ECUATORIANA",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Coello Reyes Mateo Hernan",
             "max": 35,
             "enrolled": 26,
@@ -1804,7 +1840,7 @@ const studentRequestsData = {
             "courseCode": "DERE-00016",
             "title": "LEGISLACIÓN ECUATORIANA",
             "type": "APE",
-            "section": "S1",
+            "section": "S1 S1 G1",
             "teacher": "Coello Reyes Mateo Hernan",
             "max": 18,
             "enrolled": 17,
@@ -1815,7 +1851,7 @@ const studentRequestsData = {
             "courseCode": "DERE-00016",
             "title": "LEGISLACIÓN ECUATORIANA",
             "type": "APE",
-            "section": "S2",
+            "section": "S2 S1 G1",
             "teacher": "Coello Reyes Mateo Hernan",
             "max": 17,
             "enrolled": 9,
@@ -1885,7 +1921,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "ACD",
-            "section": "G1",
+            "section": "G1 G1 S1",
             "teacher": "Guaman Guachichullca Noe Rodrigo",
             "max": 16,
             "enrolled": 16,
@@ -1896,7 +1932,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "APE",
-            "section": "S1",
+            "section": "S1 S1 G1",
             "teacher": "Rojas Quinde Jenny Maritza",
             "max": 8,
             "enrolled": 8,
@@ -1907,7 +1943,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "APE",
-            "section": "S2",
+            "section": "S2 S1 G1",
             "teacher": "Rojas Quinde Jenny Maritza",
             "max": 8,
             "enrolled": 8,
@@ -1918,7 +1954,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "ACD",
-            "section": "G2",
+            "section": "G2 G2 S2",
             "teacher": "Guaman Guachichullca Noe Rodrigo",
             "max": 16,
             "enrolled": 11,
@@ -1929,7 +1965,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "APE",
-            "section": "S3",
+            "section": "S3 S2 G2",
             "teacher": "Rojas Quinde Jenny Maritza",
             "max": 8,
             "enrolled": 7,
@@ -1940,7 +1976,7 @@ const studentRequestsData = {
             "courseCode": "INDU-00008",
             "title": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS",
             "type": "APE",
-            "section": "S4",
+            "section": "S4 S2 G2",
             "teacher": "Rojas Quinde Jenny Maritza",
             "max": 8,
             "enrolled": 4,
@@ -2395,7 +2431,7 @@ const studentRequestsData = {
             "title": "EQUIPO INDUSTRIAL",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Sin docente asignado",
+            "teacher": "-",
             "max": 35,
             "enrolled": 32,
             "available": 3
@@ -2451,7 +2487,7 @@ const studentRequestsData = {
             "title": "TECNOLOGÍA ENERGÉTICA",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Montero Izquierdo Ivan Andres",
+            "teacher": "Montero Izquierdo Iv an Andres",
             "max": 35,
             "enrolled": 35,
             "available": 0
@@ -3232,7 +3268,7 @@ const studentRequestsData = {
             "title": "DISEÑO EXPERIMENTAL",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Llivisaca Villazhañay Juan Carlos",
+            "teacher": "Lliv isaca Villazhañay Juan Carlos",
             "max": 26,
             "enrolled": 18,
             "available": 8
@@ -3456,7 +3492,7 @@ const studentRequestsData = {
             "title": "LEAN MANUFACTURING Y 6 SIGMA (I) I1",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Llivisaca Villazhañay Juan Carlos",
+            "teacher": "Lliv isaca Villazhañay Juan Carlos",
             "max": 26,
             "enrolled": 13,
             "available": 13
@@ -3912,7 +3948,7 @@ const studentRequestsData = {
             "title": "LEAN MANUFACTURING Y SIX SIGMA (II) I1",
             "type": "CDE",
             "section": "G1",
-            "teacher": "Llivisaca Villazhañay Juan Carlos",
+            "teacher": "Lliv isaca Villazhañay Juan Carlos",
             "max": 24,
             "enrolled": 7,
             "available": 17

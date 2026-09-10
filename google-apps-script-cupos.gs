@@ -78,7 +78,9 @@ function doGet(event) {
   const params = event.parameter || {};
   const payload = params.action === "status"
     ? getStatusPayload_(params.query || "")
-    : { ok: true, service: "Solicitudes de cupo" };
+    : params.action === "debugHeaders"
+      ? getDebugHeadersPayload_()
+      : { ok: true, service: "Solicitudes de cupo" };
   const body = JSON.stringify(payload);
 
   if (params.callback) {
@@ -139,18 +141,81 @@ function getStatusPayload_(query) {
       codigo: record["Código académico"] || "",
       nrc: record["NRC"] || "",
       docente: record["Docente"] || "",
-      estadoSolicitud: record["Estado de la solicitud"] || "Recibida",
-      estadoSecretaria: record["Estado del trámite en secretaría"] || "Pendiente"
+      estadoSolicitud: valueFromRecord_(record, [
+        "Estado de la solicitud",
+        "Estado solicitud",
+        "Solicitud",
+        "Disposición de la carrera",
+        "Disposicion de la carrera",
+        "Estado carrera",
+        "Carrera"
+      ]) || "Recibida",
+      estadoSecretaria: valueFromRecord_(record, [
+        "Estado del trámite en secretaría",
+        "Estado del tramite en secretaria",
+        "Estado secretaría",
+        "Estado secretaria",
+        "Secretaría",
+        "Secretaria"
+      ]) || "Pendiente"
     }));
 
   return { ok: true, records: records };
 }
 
+function getDebugHeadersPayload_() {
+  const sheet = getOrCreateSheet_();
+  ensureHeaders_(sheet);
+  const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  return {
+    ok: true,
+    sheet: SHEET_NAME,
+    headers: headers.map((header, index) => ({
+      column: index + 1,
+      header: header,
+      normalized: normalizeHeader_(header)
+    }))
+  };
+}
+
 function rowToRecord_(headers, row) {
   return headers.reduce((record, header, index) => {
-    record[header] = row[index];
+    const cleanHeader = String(header || "").trim();
+    if (!cleanHeader) return record;
+
+    const value = row[index];
+    record.__columns.push({ header: cleanHeader, value: value });
+
+    if (record[cleanHeader] === undefined || record[cleanHeader] === "") {
+      record[cleanHeader] = value;
+    }
+
     return record;
-  }, {});
+  }, { __columns: [] });
+}
+
+function valueFromRecord_(record, aliases) {
+  const normalizedAliases = aliases.map(normalizeHeader_);
+  const matchingColumns = (record.__columns || []).filter((column) =>
+    normalizedAliases.indexOf(normalizeHeader_(column.header)) !== -1
+  );
+  const filledColumn = matchingColumns.find((column) => String(column.value || "").trim() !== "");
+
+  if (filledColumn) return filledColumn.value;
+
+  const key = Object.keys(record).find((header) =>
+    normalizedAliases.indexOf(normalizeHeader_(header)) !== -1
+  );
+  return key && key !== "__columns" ? record[key] : "";
+}
+
+function normalizeHeader_(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
 }
 
 function normalize_(value) {
