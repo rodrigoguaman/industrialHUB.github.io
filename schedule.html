@@ -25,7 +25,6 @@
       <nav class="main-nav" aria-label="Navegación de horarios">
         <a href="#resumen">Resumen</a>
         <a href="#horario">Horario</a>
-        <a href="#estadistica">Estadística</a>
       </nav>
 
       <a class="header-action" href="index.html">Inicio</a>
@@ -35,77 +34,127 @@
       <section class="schedule-hero" id="resumen">
         <div>
           <p class="kicker">Horarios de clases</p>
-          <h1>Consulta dinámica por nivel, paralelo, día, aula y docente.</h1>
+          <h1>Consulta dinámica por ciclo con lectura clara de aulas y sesiones.</h1>
           <p>
             Horario académico de Ingeniería Industrial para el periodo
-            septiembre 2026 - febrero 2027, estructurado desde la matriz adjunta.
+            septiembre 2026 - febrero 2027, estructurado desde la matriz oficial adjunta.
           </p>
         </div>
       </section>
 
       <section class="schedule-dashboard" id="horario">
         <div class="schedule-metrics">
-          <article><strong id="scheduleLevelCount"></strong><span>niveles</span></article>
+          <article><strong id="scheduleLevelCount"></strong><span>ciclos</span></article>
           <article><strong id="scheduleBlockCount"></strong><span>bloques</span></article>
           <article><strong id="scheduleCourseCount"></strong><span>asignaturas</span></article>
           <article><strong id="scheduleSessionCount"></strong><span>clases</span></article>
         </div>
 
-        <div class="schedule-toolbar" aria-label="Filtros de horarios">
-          <label>
-            <span>Nivel</span>
-            <select id="scheduleBlockSelect"></select>
-          </label>
-          <label>
-            <span>Día</span>
-            <select id="scheduleDaySelect"></select>
-          </label>
-          <label>
-            <span>Docente</span>
-            <select id="scheduleTeacherSelect"></select>
-          </label>
-          <label>
-            <span>Aula</span>
-            <select id="scheduleRoomSelect"></select>
-          </label>
-          <label class="schedule-search">
-            <span>Buscar</span>
-            <input id="scheduleSearch" type="search" placeholder="Asignatura, docente, aula..." />
-          </label>
-        </div>
-
-        <section class="schedule-week-panel" aria-labelledby="scheduleWeekTitle">
-          <div class="schedule-panel-head">
-            <div>
-              <p class="kicker">Vista semanal</p>
-              <h2 id="scheduleWeekTitle">Horario filtrado</h2>
-            </div>
-            <span id="scheduleResultCount"></span>
+        <section class="schedule-room-guide" aria-labelledby="scheduleRoomGuideTitle">
+          <div class="schedule-guide-head">
+            <p class="kicker">Guía de aulas</p>
+            <h2 id="scheduleRoomGuideTitle">Codificación de aulas</h2>
           </div>
-          <div class="schedule-week-grid" id="scheduleWeekGrid"></div>
+          <div class="schedule-guide-layout">
+            <div>
+              <div class="schedule-code-flow" aria-label="Estructura del código de aula">
+                <article>
+                  <span>Campus</span>
+                  <dl>
+                    <div><dt>CB</dt><dd>Campus Balzay</dd></div>
+                    <div><dt>CC</dt><dd>Campus Central</dd></div>
+                    <div><dt>TEC</dt><dd>Tecnológico</dd></div>
+                  </dl>
+                </article>
+                <i>+</i>
+                <article>
+                  <span>Bloque</span>
+                  <dl>
+                    <div><dt>B</dt><dd>Aulario 1</dd></div>
+                    <div><dt>C</dt><dd>Aulario 2</dd></div>
+                  </dl>
+                </article>
+                <i>+</i>
+                <article>
+                  <span>Planta</span>
+                  <dl>
+                    <div><dt>1</dt><dd>Planta baja</dd></div>
+                    <div><dt>2</dt><dd>Primera planta alta</dd></div>
+                    <div><dt>3</dt><dd>Segunda planta alta</dd></div>
+                  </dl>
+                </article>
+                <i>+</i>
+                <article>
+                  <span>Aula</span>
+                  <strong>Nro.</strong>
+                </article>
+              </div>
+              <div class="schedule-room-dynamic" id="scheduleRoomGuide"></div>
+            </div>
+            <div class="schedule-aulario-grid" aria-label="Referencia visual de aularios">
+              <figure>
+                <img src="assets/schedule-aulario-1.png" alt="Bloque B - Aulario 1" />
+                <figcaption>Bloque B - Aulario 1</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/schedule-aulario-2.png" alt="Bloque C - Aulario 2" />
+                <figcaption>Bloque C - Aulario 2</figcaption>
+              </figure>
+            </div>
+          </div>
         </section>
+
+        <div class="schedule-browser">
+          <aside class="schedule-cycle-nav" aria-label="Ciclos">
+            <span>Ciclos</span>
+            <div id="scheduleCycleButtons"></div>
+          </aside>
+
+          <section class="schedule-week-panel" aria-labelledby="scheduleWeekTitle">
+            <div class="schedule-panel-head">
+              <div class="schedule-panel-brand">
+                <div class="schedule-panel-logo" aria-label="Industrial Hub">
+                  <span>II</span>
+                  <div>
+                    <strong>Industrial Hub</strong>
+                    <small>Horarios CII</small>
+                  </div>
+                </div>
+                <div>
+                  <p class="kicker">Vista semanal</p>
+                  <h2 id="scheduleWeekTitle">Horario por ciclo</h2>
+                </div>
+              </div>
+              <div class="schedule-panel-actions">
+                <img src="assets/industrial-cii-logo.jpeg" alt="Ingeniería Industrial" />
+                <a class="schedule-download" href="assets/horario-cii-2027.pdf" download>
+                  Descargar PDF
+                </a>
+                <span id="scheduleResultCount"></span>
+              </div>
+            </div>
+            <div class="schedule-week-grid" id="scheduleWeekGrid"></div>
+          </section>
+        </div>
       </section>
 
-      <section class="schedule-section schedule-section--light" id="estadistica">
-        <div class="section-heading compact">
-          <p class="kicker">Estadística</p>
-          <h2>Distribución de sesiones</h2>
-          <p>
-            Concentración de clases por día y docentes con mayor presencia en el horario.
-          </p>
-        </div>
-        <div class="schedule-stats-grid">
-          <article>
-            <h3>Clases por día</h3>
-            <div class="schedule-bars" id="scheduleDayBars"></div>
-          </article>
-          <article>
-            <h3>Docentes con más sesiones</h3>
-            <div class="schedule-bars" id="scheduleTeacherBars"></div>
-          </article>
-        </div>
-      </section>
     </main>
+
+    <div class="schedule-modal" id="scheduleModal" aria-hidden="true">
+      <div class="schedule-modal__backdrop" data-schedule-modal-close></div>
+      <article class="schedule-modal__panel" role="dialog" aria-modal="true" aria-labelledby="scheduleModalTitle">
+        <button class="schedule-modal__close" type="button" data-schedule-modal-close aria-label="Cerrar">×</button>
+        <img class="schedule-modal__image" id="scheduleModalImage" src="" alt="" />
+        <div class="schedule-modal__content">
+          <img class="schedule-modal__teacher" id="scheduleModalTeacherImage" src="" alt="" />
+          <p class="kicker" id="scheduleModalRoomType"></p>
+          <h2 id="scheduleModalTitle"></h2>
+          <p id="scheduleModalMeta"></p>
+          <dl class="schedule-modal__details" id="scheduleModalDetails"></dl>
+          <div class="schedule-modal__hours" id="scheduleModalHours"></div>
+        </div>
+      </article>
+    </div>
 
     <footer class="site-footer">
       <p>Industrial Hub CII · Universidad de Cuenca</p>

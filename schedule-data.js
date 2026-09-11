@@ -1,15 +1,12 @@
 const scheduleDashboardData = {
   "period": "Septiembre 2026 - febrero 2027",
-  "source": "Horario CII.xlsx",
+  "source": "HORARIO CII2027.pdf",
   "blocks": [
     {
-      "id": "n1-a",
       "level": 1,
       "parallel": "A",
-      "title": "Nivel 1 - Paralelo A",
       "courses": [
         {
-          "id": "N1-A-1",
           "level": 1,
           "parallel": "A",
           "subject": "QUÍMICA GENERAL",
@@ -18,12 +15,12 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C1-A-1",
           "baseSubject": "quimica general",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N1-A-2",
           "level": 1,
           "parallel": "A",
           "subject": "METODOLOGÍA DE LA INVESTIGACIÓN",
@@ -32,12 +29,12 @@ const scheduleDashboardData = {
             "ACD": 2.0,
             "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C1-A-2",
           "baseSubject": "metodologia de la investigacion",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N1-A-3",
           "level": 1,
           "parallel": "A",
           "subject": "FÍSICA I",
@@ -46,12 +43,12 @@ const scheduleDashboardData = {
             "ACD": 4.0,
             "APE/A": 4.0
           },
-          "totalHours": 8.0,
+          "id": "C1-A-3",
           "baseSubject": "fisica i",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 8.0
         },
         {
-          "id": "N1-A-4",
           "level": 1,
           "parallel": "A",
           "subject": "CÁLCULO DIFERENCIAL",
@@ -60,12 +57,12 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 4.0
           },
-          "totalHours": 7.0,
+          "id": "C1-A-4",
           "baseSubject": "calculo diferencial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 7.0
         },
         {
-          "id": "N1-A-5",
           "level": 1,
           "parallel": "A",
           "subject": "ÁLGEBRA LINEAL",
@@ -74,9 +71,10 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C1-A-5",
           "baseSubject": "algebra lineal",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         }
       ],
       "sessions": [
@@ -86,10 +84,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I APE",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
@@ -98,10 +96,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I APE",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
@@ -110,7 +108,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -122,7 +120,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -134,7 +132,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -146,10 +144,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I APE",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
@@ -158,10 +156,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I APE",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
@@ -170,7 +168,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -182,7 +180,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I",
           "room": "CB-B001",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N1-A-3",
+          "courseId": "C1-A-3",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -194,7 +192,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -206,7 +204,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -218,10 +216,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL APE G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -230,10 +228,10 @@ const scheduleDashboardData = {
           "subject": "METODOLOGÍA DE LA INVESTIGACIÓN APE",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N1-A-2",
+          "courseId": "C1-A-2",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "metodologia de la investigacion"
         },
         {
@@ -242,7 +240,7 @@ const scheduleDashboardData = {
           "subject": "METODOLOGÍA DE LA INVESTIGACIÓN",
           "room": "CB-B001",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N1-A-2",
+          "courseId": "C1-A-2",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -254,7 +252,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -266,7 +264,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -278,10 +276,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL APE G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -290,10 +288,10 @@ const scheduleDashboardData = {
           "subject": "METODOLOGÍA DE LA INVESTIGACIÓN APE",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N1-A-2",
+          "courseId": "C1-A-2",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "metodologia de la investigacion"
         },
         {
@@ -302,7 +300,7 @@ const scheduleDashboardData = {
           "subject": "METODOLOGÍA DE LA INVESTIGACIÓN",
           "room": "CB-B001",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N1-A-2",
+          "courseId": "C1-A-2",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -314,22 +312,22 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL APE G1",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "algebra lineal"
         },
         {
           "day": "Lunes",
           "time": "11:00-12:00",
           "subject": "QUÍMICA GENERAL APE G1",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -338,10 +336,10 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL APE G1",
           "room": "CB-C103",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "algebra lineal"
         },
         {
@@ -350,7 +348,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -362,7 +360,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA GENERAL G1",
           "room": "CB-B001",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -372,12 +370,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "12:00-13:00",
           "subject": "QUÍMICA GENERAL APE G1",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -386,10 +384,10 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL APE G1",
           "room": "CB-C103",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-A-5",
+          "courseId": "C1-A-5",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "algebra lineal"
         },
         {
@@ -398,7 +396,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA GENERAL G1",
           "room": "CB-B001",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -410,7 +408,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA GENERAL G1",
           "room": "CB-B001",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
           "component": "ACD",
@@ -420,12 +418,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "13:00-14:00",
           "subject": "QUÍMICA GENERAL APE G1",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-A-1",
+          "courseId": "C1-A-1",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -434,10 +432,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL APE G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -446,22 +444,21 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL APE G1",
           "room": "CB-B001",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N1-A-4",
+          "courseId": "C1-A-4",
           "level": 1,
           "parallel": "A",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         }
-      ]
+      ],
+      "id": "c1-a",
+      "title": "Ciclo 1 - Paralelo A"
     },
     {
-      "id": "n1-b",
       "level": 1,
       "parallel": "B",
-      "title": "Nivel 1 - Paralelo B",
       "courses": [
         {
-          "id": "N1-B-1",
           "level": 1,
           "parallel": "B",
           "subject": "QUÍMICA GENERAL",
@@ -470,12 +467,12 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C1-B-1",
           "baseSubject": "quimica general",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N1-B-2",
           "level": 1,
           "parallel": "B",
           "subject": "ÁLGEBRA LINEAL",
@@ -484,12 +481,12 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C1-B-2",
           "baseSubject": "algebra lineal",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N1-B-3",
           "level": 1,
           "parallel": "B",
           "subject": "CÁLCULO DIFERENCIAL G2",
@@ -498,12 +495,12 @@ const scheduleDashboardData = {
             "ACD": 3.0,
             "APE/A": 4.0
           },
-          "totalHours": 7.0,
+          "id": "C1-B-3",
           "baseSubject": "calculo diferencial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 7.0
         },
         {
-          "id": "N1-B-4",
           "level": 1,
           "parallel": "B",
           "subject": "FÍSICA 1 G2",
@@ -512,9 +509,23 @@ const scheduleDashboardData = {
             "ACD": 4.0,
             "APE/A": 4.0
           },
-          "totalHours": 8.0,
-          "baseSubject": "fisica i",
-          "component": "ACD"
+          "id": "C1-B-4",
+          "baseSubject": "fisica 1",
+          "component": "ACD",
+          "totalHours": 8.0
+        },
+        {
+          "level": 1,
+          "parallel": "B",
+          "subject": "FÍSICA 1 G2 APE",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "hours": {
+            "APE/A": 4.0
+          },
+          "id": "C1-B-5",
+          "baseSubject": "fisica 1",
+          "component": "APE/A",
+          "totalHours": 4.0
         }
       ],
       "sessions": [
@@ -524,7 +535,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -536,7 +547,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2",
           "room": "CB-B401",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -548,10 +559,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2 APE",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -560,7 +571,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -572,7 +583,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2",
           "room": "CB-B401",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -584,10 +595,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2 APE",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -596,7 +607,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA GENERAL G2",
           "room": "CB-B005",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -608,7 +619,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -620,7 +631,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2",
           "room": "CB-B401",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -632,7 +643,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA GENERAL G2",
           "room": "CB-B005",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -644,19 +655,19 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2 APE",
           "room": "CB-B403",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "algebra lineal"
         },
         {
           "day": "Jueves",
           "time": "10:00-11:00",
           "subject": "QUÍMICA GENERAL G2",
-          "room": "POSGRADOS",
+          "room": "CB-B309",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -668,10 +679,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2 APE",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -680,7 +691,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I G2",
           "room": "CB-B403",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "courseId": "C1-B-4",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -692,7 +703,7 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2",
           "room": "CB-B202",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -704,10 +715,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO DIFERENCIAL G2 APE",
           "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-3",
+          "courseId": "C1-B-3",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo diferencial"
         },
         {
@@ -716,7 +727,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I G2",
           "room": "CB-B403",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "courseId": "C1-B-4",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -728,22 +739,22 @@ const scheduleDashboardData = {
           "subject": "ÁLGEBRA LINEAL G2 APE",
           "room": "CB-B202",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N1-B-2",
+          "courseId": "C1-B-2",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "algebra lineal"
         },
         {
           "day": "Martes",
           "time": "14:00-15:00",
           "subject": "QUÍMICA GENERAL APE G2",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -752,7 +763,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I G2",
           "room": "CB-C103",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "courseId": "C1-B-4",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -763,23 +774,23 @@ const scheduleDashboardData = {
           "time": "14:00-15:00",
           "subject": "FÍSICA I G2 APE",
           "room": "CB-B001",
-          "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C1-B-5",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
           "day": "Martes",
           "time": "15:00-16:00",
           "subject": "QUÍMICA GENERAL APE G2",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -788,7 +799,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA I G2",
           "room": "CB-C103",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "courseId": "C1-B-4",
           "level": 1,
           "parallel": "B",
           "component": "ACD",
@@ -799,23 +810,23 @@ const scheduleDashboardData = {
           "time": "15:00-16:00",
           "subject": "FÍSICA I G2 APE",
           "room": "CB-B001",
-          "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C1-B-5",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
           "day": "Martes",
           "time": "16:00-17:00",
           "subject": "QUÍMICA GENERAL APE G2",
-          "room": "CC-C1 05",
+          "room": "CC-CC-C105",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N1-B-1",
+          "courseId": "C1-B-1",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica general"
         },
         {
@@ -823,11 +834,11 @@ const scheduleDashboardData = {
           "time": "16:00-17:00",
           "subject": "FÍSICA I G2 APE",
           "room": "CB-C103",
-          "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C1-B-5",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         },
         {
@@ -835,140 +846,128 @@ const scheduleDashboardData = {
           "time": "16:00-17:00",
           "subject": "FÍSICA I G2 APE",
           "room": "CB-B001",
-          "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N1-B-4",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C1-B-5",
           "level": 1,
           "parallel": "B",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica i"
         }
-      ]
+      ],
+      "id": "c1-b",
+      "title": "Ciclo 1 - Paralelo B"
     },
     {
-      "id": "n2-general",
       "level": 2,
       "parallel": "General",
-      "title": "Nivel 2",
       "courses": [
         {
-          "id": "N2-General-1",
           "level": 2,
           "parallel": "General",
           "subject": "QUÍMICA ORGÁNICA ACD G1",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
           "hours": {
             "ACD": 3.0,
-            "APE/A": 3.0,
-            "AA": 0
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C2-GENERAL-1",
           "baseSubject": "quimica organica",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N2-General-2",
           "level": 2,
           "parallel": "General",
           "subject": "QUÍMICA ORGÁNICA APE SG1",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
           "hours": {
-            "ACD": 0,
-            "APE/A": 3.0,
-            "AA": 0
+            "APE/A": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C2-GENERAL-2",
           "baseSubject": "quimica organica",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 3.0
         },
         {
-          "id": "N2-General-3",
           "level": 2,
           "parallel": "General",
           "subject": "QUÍMICA ORGÁNICA APE SG2",
           "teacher": "MGT. FREDDY BUSTAMANTE",
           "hours": {
-            "ACD": 0,
-            "APE/A": 3.0,
-            "AA": 0
+            "APE/A": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C2-GENERAL-3",
           "baseSubject": "quimica organica",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 3.0
         },
         {
-          "id": "N2-General-4",
           "level": 2,
           "parallel": "General",
           "subject": "LENGUAJES DE PROGRAMACION ACD",
           "teacher": "MGT. PAUL VANEGAS",
           "hours": {
-            "ACD": 4.0,
-            "APE/A": 0,
-            "AA": 0
+            "ACD": 4.0
           },
-          "totalHours": 4.0,
+          "id": "C2-GENERAL-4",
           "baseSubject": "lenguajes de programacion",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N2-General-5",
           "level": 2,
           "parallel": "General",
           "subject": "LENGUAJES DE PROGRAMACION APE",
-          "teacher": "MGT. Fernando Cajamarca",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
           "hours": {
-            "ACD": 0,
-            "APE/A": 4.0,
-            "AA": 0
+            "APE/A": 4.0
           },
-          "totalHours": 4.0,
+          "id": "C2-GENERAL-5",
           "baseSubject": "lenguajes de programacion",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 4.0
         },
         {
-          "id": "N2-General-6",
           "level": 2,
           "parallel": "General",
           "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL",
           "teacher": "MGT. XIMENA ÁLVAREZ",
           "hours": {
             "ACD": 2.0,
-            "APE/A": 2.0,
-            "AA": 0
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C2-GENERAL-6",
           "baseSubject": "introd a la ingenieria industrial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N2-General-7",
           "level": 2,
           "parallel": "General",
           "subject": "FÍSICA II",
           "teacher": "PhD. CRISTIAN MEJÍA",
           "hours": {
             "ACD": 3.0,
-            "APE/A": 4.0,
-            "AA": 0
+            "APE/A": 4.0
           },
-          "totalHours": 7.0,
+          "id": "C2-GENERAL-7",
           "baseSubject": "fisica ii",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 7.0
         },
         {
-          "id": "N2-General-8",
           "level": 2,
           "parallel": "General",
           "subject": "CÁLCULO INTEGRAL",
           "teacher": "MGT. PABLO FLORES",
           "hours": {
             "ACD": 3.0,
-            "APE/A": 3.0,
-            "AA": 0
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C2-GENERAL-8",
           "baseSubject": "calculo integral",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         }
       ],
       "sessions": [
@@ -976,9 +975,9 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "08:00-09:00",
           "subject": "QUÍMICA ORGÁNICA",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-1",
+          "courseId": "C2-GENERAL-1",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -987,13 +986,13 @@ const scheduleDashboardData = {
         {
           "day": "Viernes",
           "time": "08:00-09:00",
-          "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL G1 APE SG2",
+          "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL G1",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N2-General-6",
+          "courseId": "C2-GENERAL-6",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "introd a la ingenieria industrial"
         },
         {
@@ -1002,7 +1001,7 @@ const scheduleDashboardData = {
           "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N2-General-6",
+          "courseId": "C2-GENERAL-6",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1014,10 +1013,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL APE",
           "room": "CB-B105",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo integral"
         },
         {
@@ -1026,7 +1025,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA ORGÁNICA",
           "room": "CB-B202",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-1",
+          "courseId": "C2-GENERAL-1",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1038,22 +1037,22 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II APE",
           "room": "CB-B202",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica ii"
         },
         {
           "day": "Viernes",
           "time": "09:00-10:00",
-          "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL G1 APE SG2",
+          "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL G1",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N2-General-6",
+          "courseId": "C2-GENERAL-6",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "introd a la ingenieria industrial"
         },
         {
@@ -1062,7 +1061,7 @@ const scheduleDashboardData = {
           "subject": "INTROD. A LA INGENIERÍA INDUSTRIAL",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N2-General-6",
+          "courseId": "C2-GENERAL-6",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1074,10 +1073,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL APE",
           "room": "CB-B105",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo integral"
         },
         {
@@ -1086,7 +1085,7 @@ const scheduleDashboardData = {
           "subject": "QUÍMICA ORGÁNICA",
           "room": "CB-B202",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-1",
+          "courseId": "C2-GENERAL-1",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1098,10 +1097,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II APE",
           "room": "CB-B202",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica ii"
         },
         {
@@ -1110,7 +1109,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II",
           "room": "CB-B105",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1122,7 +1121,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II",
           "room": "CB-B105",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1132,12 +1131,12 @@ const scheduleDashboardData = {
           "day": "Miércoles",
           "time": "11:00-12:00",
           "subject": "LENGUAJES DE PROGRAM. APE",
-          "room": "POSGRADOS",
-          "teacher": "MGT. Fernando Cajamarca",
-          "courseId": "N2-General-5",
+          "room": "CB-B305",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C2-GENERAL-5",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lenguajes de programacion"
         },
         {
@@ -1146,10 +1145,10 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II APE",
           "room": "CB-B202",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica ii"
         },
         {
@@ -1158,7 +1157,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL",
           "room": "CB-B106",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1170,7 +1169,7 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II",
           "room": "CB-B105",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1182,22 +1181,22 @@ const scheduleDashboardData = {
           "subject": "FÍSICA II APE",
           "room": "CB-B105",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N2-General-7",
+          "courseId": "C2-GENERAL-7",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "fisica ii"
         },
         {
           "day": "Miércoles",
           "time": "12:00-13:00",
           "subject": "LENGUAJES DE PROGRAM. APE",
-          "room": "POSGRADOS",
-          "teacher": "MGT. Fernando Cajamarca",
-          "courseId": "N2-General-5",
+          "room": "CB-B305",
+          "teacher": "MGT. FERNANDO CAJAMARCA",
+          "courseId": "C2-GENERAL-5",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lenguajes de programacion"
         },
         {
@@ -1206,10 +1205,10 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL APE",
           "room": "CB-B106",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "calculo integral"
         },
         {
@@ -1218,7 +1217,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL",
           "room": "CB-B001",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1228,24 +1227,24 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "14:00-15:00",
           "subject": "QUÍMICA ORGÁNICA G1 APE",
-          "room": "C1 114",
+          "room": "CC-C114",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-2",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
           "day": "Viernes",
           "time": "14:00-15:00",
           "subject": "QUÍMICA ORGÁNICA G2 APE",
-          "room": "C1 114",
-          "teacher": "MGT. FREDDY BUSTAMANTE",
-          "courseId": "N2-General-3",
+          "room": "CC-C114",
+          "teacher": "MGT. ANDREA ÍÑIGUEZ",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
@@ -1254,7 +1253,7 @@ const scheduleDashboardData = {
           "subject": "CÁLCULO INTEGRAL",
           "room": "CB-B001",
           "teacher": "MGT. PABLO FLORES",
-          "courseId": "N2-General-8",
+          "courseId": "C2-GENERAL-8",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1266,7 +1265,7 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM.",
           "room": "CB-B202",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1276,24 +1275,24 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "15:00-16:00",
           "subject": "QUÍMICA ORGÁNICA G1 APE",
-          "room": "C1 114",
+          "room": "CC-C114",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-2",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
           "day": "Viernes",
           "time": "15:00-16:00",
           "subject": "QUÍMICA ORGÁNICA G2 APE",
-          "room": "C1 114",
-          "teacher": "MGT. FREDDY BUSTAMANTE",
-          "courseId": "N2-General-3",
+          "room": "CC-C114",
+          "teacher": "MGT. ANDREA ÍÑIGUEZ",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
@@ -1302,7 +1301,7 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM.",
           "room": "CB-B202",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1312,24 +1311,24 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "16:00-17:00",
           "subject": "QUÍMICA ORGÁNICA G1 APE",
-          "room": "C1 114",
+          "room": "CC-C114",
           "teacher": "MGT. ANDREA ÍÑIGUEZ",
-          "courseId": "N2-General-2",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
           "day": "Viernes",
           "time": "16:00-17:00",
           "subject": "QUÍMICA ORGÁNICA G2 APE",
-          "room": "C1 114",
-          "teacher": "MGT. FREDDY BUSTAMANTE",
-          "courseId": "N2-General-3",
+          "room": "CC-C114",
+          "teacher": "MGT. ANDREA ÍÑIGUEZ",
+          "courseId": "C2-GENERAL-2",
           "level": 2,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "quimica organica"
         },
         {
@@ -1338,7 +1337,7 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM. ACD",
           "room": "CB-C004",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1350,7 +1349,7 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM. ACD",
           "room": "VIRTUAL",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1362,7 +1361,7 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM. ACD",
           "room": "CB-C004",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
@@ -1374,22 +1373,21 @@ const scheduleDashboardData = {
           "subject": "LENGUAJES DE PROGRAM. ACD",
           "room": "VIRTUAL",
           "teacher": "MGT. PAUL VANEGAS",
-          "courseId": "N2-General-4",
+          "courseId": "C2-GENERAL-4",
           "level": 2,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "lenguajes de programacion"
         }
-      ]
+      ],
+      "id": "c2-general",
+      "title": "Ciclo 2"
     },
     {
-      "id": "n3-general",
       "level": 3,
       "parallel": "General",
-      "title": "Nivel 3",
       "courses": [
         {
-          "id": "N3-General-1",
           "level": 3,
           "parallel": "General",
           "subject": "TERMODINÁMICA",
@@ -1399,12 +1397,12 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C3-GENERAL-1",
           "baseSubject": "termodinamica",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         },
         {
-          "id": "N3-General-2",
           "level": 3,
           "parallel": "General",
           "subject": "MECÁNICA DE MATERIALES",
@@ -1414,12 +1412,12 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C3-GENERAL-2",
           "baseSubject": "mecanica de materiales",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         },
         {
-          "id": "N3-General-3",
           "level": 3,
           "parallel": "General",
           "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS",
@@ -1429,42 +1427,38 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C3-GENERAL-3",
           "baseSubject": "ingenieria y tecnologia electricas",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         },
         {
-          "id": "N3-General-4",
           "level": 3,
           "parallel": "General",
           "subject": "ESTADÍSTICA ANALÍTICA ACD",
           "teacher": "MGT. RODRIGO GUAMÁN",
           "hours": {
-            "ACD": 3.0,
-            "APE/A": 0,
-            "AA": 0
+            "ACD": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C3-GENERAL-4",
           "baseSubject": "estadistica analitica",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         },
         {
-          "id": "N3-General-5",
           "level": 3,
           "parallel": "General",
           "subject": "ESTADÍSTICA ANALÍTICA APE",
-          "teacher": "Mgt. Isabel Quito",
+          "teacher": "ING. ISABEL QUITO",
           "hours": {
-            "ACD": 0,
-            "APE/A": 3.0,
-            "AA": 0
+            "APE/A": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C3-GENERAL-5",
           "baseSubject": "estadistica analitica",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 3.0
         },
         {
-          "id": "N3-General-6",
           "level": 3,
           "parallel": "General",
           "subject": "ECUACIONES DIFERENCIALES",
@@ -1474,9 +1468,10 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C3-GENERAL-6",
           "baseSubject": "ecuaciones diferenciales",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         }
       ],
       "sessions": [
@@ -1486,7 +1481,7 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES",
           "room": "CB-B105",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1495,14 +1490,14 @@ const scheduleDashboardData = {
         {
           "day": "Martes",
           "time": "07:00-08:00",
-          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG2 APE",
-          "room": "Lab man flex",
+          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICA",
+          "room": "SLab man flex",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "ingenieria y tecnologia electricas"
+          "component": "ACD",
+          "baseSubject": "ingenieria y tecnologia electrica"
         },
         {
           "day": "Jueves",
@@ -1510,10 +1505,10 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES APE",
           "room": "CB-B106",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "mecanica de materiales"
         },
         {
@@ -1522,7 +1517,7 @@ const scheduleDashboardData = {
           "subject": "TERMODINÁMICA",
           "room": "CB-B106",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1534,7 +1529,7 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES",
           "room": "CB-B105",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1543,14 +1538,14 @@ const scheduleDashboardData = {
         {
           "day": "Martes",
           "time": "08:00-09:00",
-          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG2 APE",
-          "room": "Lab man flex",
+          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICA",
+          "room": "SLab man flex",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "ingenieria y tecnologia electricas"
+          "component": "ACD",
+          "baseSubject": "ingenieria y tecnologia electrica"
         },
         {
           "day": "Jueves",
@@ -1558,10 +1553,10 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES APE",
           "room": "CB-B106",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "mecanica de materiales"
         },
         {
@@ -1570,7 +1565,7 @@ const scheduleDashboardData = {
           "subject": "TERMODINÁMICA",
           "room": "CB-B106",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1582,7 +1577,7 @@ const scheduleDashboardData = {
           "subject": "ESTADÍSTICA ANALÍTICA ACD",
           "room": "CB-C003",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N3-General-4",
+          "courseId": "C3-GENERAL-4",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1594,22 +1589,22 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES APE",
           "room": "CB-B106",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ecuaciones diferenciales"
         },
         {
           "day": "Miércoles",
           "time": "09:00-10:00",
           "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG1 APE",
-          "room": "CB-B001 CB-B001",
+          "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria y tecnologia electricas"
         },
         {
@@ -1617,11 +1612,11 @@ const scheduleDashboardData = {
           "time": "09:00-10:00",
           "subject": "ESTADÍSTICA ANALÍTICA APE",
           "room": "CB-B201",
-          "teacher": "Mgt. Isabel Quito",
-          "courseId": "N3-General-5",
+          "teacher": "ING. ISABEL QUITO",
+          "courseId": "C3-GENERAL-5",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "estadistica analitica"
         },
         {
@@ -1630,7 +1625,7 @@ const scheduleDashboardData = {
           "subject": "TERMODINÁMICA",
           "room": "CB-B106",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1642,7 +1637,7 @@ const scheduleDashboardData = {
           "subject": "ESTADÍSTICA ANALÍTICA ACD",
           "room": "CB-C003",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N3-General-4",
+          "courseId": "C3-GENERAL-4",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1654,22 +1649,22 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES APE",
           "room": "CB-B106",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ecuaciones diferenciales"
         },
         {
           "day": "Miércoles",
           "time": "10:00-11:00",
           "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG1 APE",
-          "room": "CB-B001 CB-B001",
+          "room": "CB-B001",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria y tecnologia electricas"
         },
         {
@@ -1677,11 +1672,11 @@ const scheduleDashboardData = {
           "time": "10:00-11:00",
           "subject": "ESTADÍSTICA ANALÍTICA APE",
           "room": "CB-B201",
-          "teacher": "Mgt. Isabel Quito",
-          "courseId": "N3-General-5",
+          "teacher": "ING. ISABEL QUITO",
+          "courseId": "C3-GENERAL-5",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "estadistica analitica"
         },
         {
@@ -1690,7 +1685,7 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES",
           "room": "CB-B403",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1701,11 +1696,11 @@ const scheduleDashboardData = {
           "time": "11:00-12:00",
           "subject": "ESTADÍSTICA ANALÍTICA APE",
           "room": "CB-C003",
-          "teacher": "Mgt. Isabel Quito",
-          "courseId": "N3-General-5",
+          "teacher": "ING. ISABEL QUITO",
+          "courseId": "C3-GENERAL-5",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "estadistica analitica"
         },
         {
@@ -1714,7 +1709,7 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES",
           "room": "CB-B403",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1726,7 +1721,7 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES",
           "room": "CB-B106",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1735,14 +1730,14 @@ const scheduleDashboardData = {
         {
           "day": "Viernes",
           "time": "11:00-12:00",
-          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG2 APE",
-          "room": "CB-C102",
+          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS S",
+          "room": "GCB-C102",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "ingenieria y tecnologia electricas"
+          "component": "ACD",
+          "baseSubject": "ingenieria y tecnologia electricas s"
         },
         {
           "day": "Lunes",
@@ -1750,7 +1745,7 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES",
           "room": "CB-B403",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1762,7 +1757,7 @@ const scheduleDashboardData = {
           "subject": "ESTADÍSTICA ANALÍTICA ACD",
           "room": "CB-C003",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N3-General-4",
+          "courseId": "C3-GENERAL-4",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1774,7 +1769,7 @@ const scheduleDashboardData = {
           "subject": "MECÁNICA DE MATERIALES",
           "room": "CB-B403",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N3-General-2",
+          "courseId": "C3-GENERAL-2",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1786,7 +1781,7 @@ const scheduleDashboardData = {
           "subject": "ECUACIONES DIFERENCIALES",
           "room": "CB-B106",
           "teacher": "MGT. CARLOS SÁNCHEZ",
-          "courseId": "N3-General-6",
+          "courseId": "C3-GENERAL-6",
           "level": 3,
           "parallel": "General",
           "component": "ACD",
@@ -1795,61 +1790,60 @@ const scheduleDashboardData = {
         {
           "day": "Viernes",
           "time": "12:00-13:00",
-          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS SG2 APE",
-          "room": "CB-C102",
+          "subject": "INGENIERÍA Y TECNOLOGÍA ELÉCTRICAS S",
+          "room": "GCB-C102",
           "teacher": "MGT. FRANKLIN GUAMÁN",
-          "courseId": "N3-General-3",
+          "courseId": "C3-GENERAL-3",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "ingenieria y tecnologia electricas"
+          "component": "ACD",
+          "baseSubject": "ingenieria y tecnologia electricas s"
         },
         {
           "day": "Viernes",
           "time": "15:00-16:00",
           "subject": "TERMODINÁMICA G2 APE",
-          "room": "TEC LFQ - CB-B106",
+          "room": "TEC LFQ -",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "termodinamica"
         },
         {
           "day": "Viernes",
           "time": "16:00-17:00",
           "subject": "TERMODINÁMICA G2 APE",
-          "room": "TEC LFQ - CB-B106",
+          "room": "TEC LFQ -",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "termodinamica"
         },
         {
           "day": "Viernes",
           "time": "17:00-18:00",
           "subject": "TERMODINÁMICA G2 APE",
-          "room": "TEC LFQ - CB-B106",
+          "room": "TEC LFQ -",
           "teacher": "PhD. CRISTIAN MEJÍA",
-          "courseId": "N3-General-1",
+          "courseId": "C3-GENERAL-1",
           "level": 3,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "termodinamica"
         }
-      ]
+      ],
+      "id": "c3-general",
+      "title": "Ciclo 3"
     },
     {
-      "id": "n4-general",
       "level": 4,
       "parallel": "General",
-      "title": "Nivel 4",
       "courses": [
         {
-          "id": "N4-General-1",
           "level": 4,
           "parallel": "General",
           "subject": "TRANSFERENCIA DE CALOR",
@@ -1859,12 +1853,12 @@ const scheduleDashboardData = {
             "APE/A": 2.0,
             "AA": 2.0
           },
-          "totalHours": 6.0,
+          "id": "C4-GENERAL-1",
           "baseSubject": "transferencia de calor",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N4-General-2",
           "level": 4,
           "parallel": "General",
           "subject": "TECNOLOGÍA DE MATERIALES",
@@ -1874,12 +1868,12 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C4-GENERAL-2",
           "baseSubject": "tecnologia de materiales",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         },
         {
-          "id": "N4-General-3",
           "level": 4,
           "parallel": "General",
           "subject": "TRANSPORTE DE FLUÍDOS",
@@ -1889,12 +1883,12 @@ const scheduleDashboardData = {
             "APE/A": 2.0,
             "AA": 2.0
           },
-          "totalHours": 6.0,
+          "id": "C4-GENERAL-3",
           "baseSubject": "transporte de fluidos",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N4-General-4",
           "level": 4,
           "parallel": "General",
           "subject": "CONTABILIDAD",
@@ -1904,27 +1898,26 @@ const scheduleDashboardData = {
             "APE/A": 2.0,
             "AA": 2.0
           },
-          "totalHours": 6.0,
+          "id": "C4-GENERAL-4",
           "baseSubject": "contabilidad",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N4-General-5",
           "level": 4,
           "parallel": "General",
           "subject": "TÉCNICAS DE INFERENCIA ESTADÍSTICA APE",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
           "hours": {
             "ACD": 3.0,
-            "APE/A": 0,
             "AA": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C4-GENERAL-5",
           "baseSubject": "tecnicas de inferencia estadistica",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 6.0
         },
         {
-          "id": "N4-General-6",
           "level": 4,
           "parallel": "General",
           "subject": "MÉTODOS NUMÉRICOS",
@@ -1934,9 +1927,10 @@ const scheduleDashboardData = {
             "APE/A": 3.0,
             "AA": 3.0
           },
-          "totalHours": 9.0,
+          "id": "C4-GENERAL-6",
           "baseSubject": "metodos numericos",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         }
       ],
       "sessions": [
@@ -1946,7 +1940,7 @@ const scheduleDashboardData = {
           "subject": "MÉTODOS NUMÉRICOS",
           "room": "CB-B403",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -1958,10 +1952,10 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. MÉTODOS NUMÉRICOS",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
+          "component": "APE/A",
           "baseSubject": "metodos numericos"
         },
         {
@@ -1970,10 +1964,10 @@ const scheduleDashboardData = {
           "subject": "TÉCNICAS DE INF. ESTADÍSTICA APE SG1",
           "room": "CB-B105",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "tecnicas de inferencia estadistica"
         },
         {
@@ -1982,7 +1976,7 @@ const scheduleDashboardData = {
           "subject": "MÉTODOS NUMÉRICOS",
           "room": "CB-B403",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -1994,10 +1988,10 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. MÉTODOS NUMÉRICOS",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
+          "component": "APE/A",
           "baseSubject": "metodos numericos"
         },
         {
@@ -2006,10 +2000,10 @@ const scheduleDashboardData = {
           "subject": "TÉCNICAS DE INF. ESTADÍSTICA APE SG1",
           "room": "CB-B105",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "tecnicas de inferencia estadistica"
         },
         {
@@ -2018,7 +2012,7 @@ const scheduleDashboardData = {
           "subject": "TECNOLOGÍA DE MATERIALES",
           "room": "POSGRADOS",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N4-General-2",
+          "courseId": "C4-GENERAL-2",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -2030,11 +2024,23 @@ const scheduleDashboardData = {
           "subject": "TÉCNICAS DE INF. ESTADÍSTICA",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "tecnicas de inferencia estadistica"
+        },
+        {
+          "day": "Miércoles",
+          "time": "09:00-10:00",
+          "subject": "TECNOLOGÍA DE MATERIALES",
+          "room": "CB-B201",
+          "teacher": "MGT. PAÚL ÁLVAREZ",
+          "courseId": "C4-GENERAL-2",
+          "level": 4,
+          "parallel": "General",
+          "component": "ACD",
+          "baseSubject": "tecnologia de materiales"
         },
         {
           "day": "Jueves",
@@ -2042,11 +2048,11 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. TEC. DE MATERIALES",
           "room": "LAB MAN FLEX",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N4-General-2",
+          "courseId": "C4-GENERAL-2",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
-          "baseSubject": "tecnologia de materiales"
+          "component": "APE/A",
+          "baseSubject": "tec de materiales"
         },
         {
           "day": "Viernes",
@@ -2054,10 +2060,10 @@ const scheduleDashboardData = {
           "subject": "TRANSFERENCIA DE CALOR APE",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N4-General-1",
+          "courseId": "C4-GENERAL-1",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "transferencia de calor"
         },
         {
@@ -2066,7 +2072,7 @@ const scheduleDashboardData = {
           "subject": "TECNOLOGÍA DE MATERIALES",
           "room": "POSGRADOS",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N4-General-2",
+          "courseId": "C4-GENERAL-2",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -2075,14 +2081,26 @@ const scheduleDashboardData = {
         {
           "day": "Martes",
           "time": "10:00-11:00",
-          "subject": "TÉCNICAS DE INF. ESTADÍSTICA APE SG1",
-          "room": "CB-C003",
+          "subject": "TÉCNICAS DE INF. ESTADÍSTICA APE SG",
+          "room": "1 CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "tecnicas de inferencia estadistica"
+          "component": "APE/A",
+          "baseSubject": "tecnicas de inferencia estadistica sg"
+        },
+        {
+          "day": "Miércoles",
+          "time": "10:00-11:00",
+          "subject": "PRÁCT. TEC. DE MATERIALES",
+          "room": "CB-B201",
+          "teacher": "MGT. PAÚL ÁLVAREZ",
+          "courseId": "C4-GENERAL-2",
+          "level": 4,
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "tec de materiales"
         },
         {
           "day": "Jueves",
@@ -2090,11 +2108,11 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. TEC. DE MATERIALES",
           "room": "LAB MAN FLEX",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N4-General-2",
+          "courseId": "C4-GENERAL-2",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
-          "baseSubject": "tecnologia de materiales"
+          "component": "APE/A",
+          "baseSubject": "tec de materiales"
         },
         {
           "day": "Viernes",
@@ -2102,10 +2120,10 @@ const scheduleDashboardData = {
           "subject": "TRANSFERENCIA DE CALOR APE",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N4-General-1",
+          "courseId": "C4-GENERAL-1",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "transferencia de calor"
         },
         {
@@ -2114,10 +2132,10 @@ const scheduleDashboardData = {
           "subject": "TÉCNICAS DE INF. ESTADÍSTICA",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "tecnicas de inferencia estadistica"
         },
         {
@@ -2126,11 +2144,23 @@ const scheduleDashboardData = {
           "subject": "TRANSFERENCIA DE CALOR",
           "room": "CB-B401",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N4-General-1",
+          "courseId": "C4-GENERAL-1",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "transferencia de calor"
+        },
+        {
+          "day": "Miércoles",
+          "time": "11:00-12:00",
+          "subject": "CONTABILIDAD APE",
+          "room": "CB-B201",
+          "teacher": "MGT. MATEO COELLO",
+          "courseId": "C4-GENERAL-4",
+          "level": 4,
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "contabilidad"
         },
         {
           "day": "Jueves",
@@ -2138,7 +2168,7 @@ const scheduleDashboardData = {
           "subject": "TRANSPORTE DE FLUÍDOS",
           "room": "CB-B403",
           "teacher": "MGT.ALEXANDRA GUANUCHI",
-          "courseId": "N4-General-3",
+          "courseId": "C4-GENERAL-3",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -2150,10 +2180,10 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. MÉTODOS NUMÉRICOS",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
+          "component": "APE/A",
           "baseSubject": "metodos numericos"
         },
         {
@@ -2162,10 +2192,10 @@ const scheduleDashboardData = {
           "subject": "TÉCNICAS DE INF. ESTADÍSTICA",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N4-General-5",
+          "courseId": "C4-GENERAL-5",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "tecnicas de inferencia estadistica"
         },
         {
@@ -2174,11 +2204,23 @@ const scheduleDashboardData = {
           "subject": "TRANSFERENCIA DE CALOR",
           "room": "CB-B401",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N4-General-1",
+          "courseId": "C4-GENERAL-1",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "transferencia de calor"
+        },
+        {
+          "day": "Miércoles",
+          "time": "12:00-13:00",
+          "subject": "CONTABILIDAD APE",
+          "room": "CB-B201",
+          "teacher": "MGT. MATEO COELLO",
+          "courseId": "C4-GENERAL-4",
+          "level": 4,
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "contabilidad"
         },
         {
           "day": "Jueves",
@@ -2186,7 +2228,7 @@ const scheduleDashboardData = {
           "subject": "TRANSPORTE DE FLUÍDOS",
           "room": "CB-B403",
           "teacher": "MGT.ALEXANDRA GUANUCHI",
-          "courseId": "N4-General-3",
+          "courseId": "C4-GENERAL-3",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -2198,10 +2240,10 @@ const scheduleDashboardData = {
           "subject": "PRÁCT. MÉTODOS NUMÉRICOS",
           "room": "CB-B105",
           "teacher": "MGT. FREDDY NARVÁEZ",
-          "courseId": "N4-General-6",
+          "courseId": "C4-GENERAL-6",
           "level": 4,
           "parallel": "General",
-          "component": "ACD",
+          "component": "APE/A",
           "baseSubject": "metodos numericos"
         },
         {
@@ -2210,19 +2252,19 @@ const scheduleDashboardData = {
           "subject": "TRANSPORTE DE FLUÍDOS APE",
           "room": "CB-B201",
           "teacher": "MGT.ALEXANDRA GUANUCHI",
-          "courseId": "N4-General-3",
+          "courseId": "C4-GENERAL-3",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "transporte de fluidos"
         },
         {
           "day": "Jueves",
           "time": "15:00-16:00",
           "subject": "CONTABILIDAD",
-          "room": "POSGRADOS",
+          "room": "CB-B309",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N4-General-4",
+          "courseId": "C4-GENERAL-4",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
@@ -2234,148 +2276,129 @@ const scheduleDashboardData = {
           "subject": "TRANSPORTE DE FLUÍDOS APE",
           "room": "CB-B201",
           "teacher": "MGT.ALEXANDRA GUANUCHI",
-          "courseId": "N4-General-3",
+          "courseId": "C4-GENERAL-3",
           "level": 4,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "transporte de fluidos"
         },
         {
           "day": "Jueves",
           "time": "16:00-17:00",
           "subject": "CONTABILIDAD",
-          "room": "POSGRADOS",
+          "room": "CB-B309",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N4-General-4",
+          "courseId": "C4-GENERAL-4",
           "level": 4,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "contabilidad"
-        },
-        {
-          "day": "Lunes",
-          "time": "17:00-18:00",
-          "subject": "CENTRO DOCENTE - JUNTA DE CURSO",
-          "room": "Por definir",
-          "teacher": "Por definir",
-          "courseId": null,
-          "level": 4,
-          "parallel": "General",
-          "component": "",
-          "baseSubject": "centro docente junta de curso"
         }
-      ]
+      ],
+      "id": "c4-general",
+      "title": "Ciclo 4"
     },
     {
-      "id": "n5-general",
       "level": 5,
       "parallel": "General",
-      "title": "Nivel 5",
       "courses": [
         {
-          "id": "N5-General-1",
           "level": 5,
           "parallel": "General",
           "subject": "COSTOS Y PRESUPUESTOS DE PRODUCCIÓN",
           "teacher": "MGT. MATEO COELLO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C5-GENERAL-1",
           "baseSubject": "costos y presupuestos de produccion",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N5-General-2",
           "level": 5,
           "parallel": "General",
           "subject": "DESARROLLO DE EMPRENDEDORES",
           "teacher": "PhD. SILVIA PEÑA",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C5-GENERAL-2",
           "baseSubject": "desarrollo de emprendedores",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N5-General-3",
           "level": 5,
           "parallel": "General",
           "subject": "DISEÑO DE MÁQUINAS",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C5-GENERAL-3",
           "baseSubject": "diseno de maquinas",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N5-General-4",
           "level": 5,
           "parallel": "General",
           "subject": "DISEÑO INDUSTRIAL CAD",
           "teacher": "MGT. PAOLA VINTIMILLA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C5-GENERAL-4",
           "baseSubject": "diseno industrial cad",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N5-General-5",
           "level": 5,
           "parallel": "General",
           "subject": "ÉTICA DE LA CIENCIA",
           "teacher": "MGT. SAÚL JERVES",
           "hours": {
-            "HORAS C": 1.0,
-            "HORAS P": 1.0,
-            "HORAS T": 0
+            "ACD": 1.0,
+            "APE/A": 1.0
           },
-          "totalHours": 2.0,
+          "id": "C5-GENERAL-5",
           "baseSubject": "etica de la ciencia",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 2.0
         },
         {
-          "id": "N5-General-6",
           "level": 5,
           "parallel": "General",
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
           "teacher": "MGT. XIMENA ÁLVAREZ",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 6.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 6.0
           },
-          "totalHours": 9.0,
+          "id": "C5-GENERAL-6",
           "baseSubject": "ingenieria de procesos y ergonomia",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 9.0
         },
         {
-          "id": "N5-General-7",
           "level": 5,
           "parallel": "General",
           "subject": "PSICOLOGÍA INDUSTRIAL",
           "teacher": "MGT. SAÚL JERVES",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C5-GENERAL-7",
           "baseSubject": "psicologia industrial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         }
       ],
       "sessions": [
@@ -2385,7 +2408,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO INDUSTRIAL CAD",
           "room": "CB-C003",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2397,7 +2420,7 @@ const scheduleDashboardData = {
           "subject": "PSICOLOGÍA INDUSTRIAL",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-7",
+          "courseId": "C5-GENERAL-7",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2409,7 +2432,7 @@ const scheduleDashboardData = {
           "subject": "ÉTICA DE LA CIENCIA",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-5",
+          "courseId": "C5-GENERAL-5",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2421,10 +2444,10 @@ const scheduleDashboardData = {
           "subject": "PSICOLOGÍA INDUSTRIAL APE",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-7",
+          "courseId": "C5-GENERAL-7",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "psicologia industrial"
         },
         {
@@ -2433,7 +2456,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO INDUSTRIAL CAD",
           "room": "CB-C003",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2445,7 +2468,7 @@ const scheduleDashboardData = {
           "subject": "PSICOLOGÍA INDUSTRIAL",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-7",
+          "courseId": "C5-GENERAL-7",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2457,7 +2480,7 @@ const scheduleDashboardData = {
           "subject": "ÉTICA DE LA CIENCIA",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-5",
+          "courseId": "C5-GENERAL-5",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2469,19 +2492,19 @@ const scheduleDashboardData = {
           "subject": "PSICOLOGÍA INDUSTRIAL APE",
           "room": "CB-B201",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N5-General-7",
+          "courseId": "C5-GENERAL-7",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "psicologia industrial"
         },
         {
           "day": "Lunes",
           "time": "09:00-10:00",
           "subject": "DESARROLLO DE EMPRENDEDORES",
-          "room": "Por definir",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N5-General-2",
+          "courseId": "C5-GENERAL-2",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2493,7 +2516,7 @@ const scheduleDashboardData = {
           "subject": "COSTOS Y PRESUPUESTOS DE PRODUCCIÓN",
           "room": "CB-B201",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N5-General-1",
+          "courseId": "C5-GENERAL-1",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2503,21 +2526,21 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "09:00-10:00",
           "subject": "DISEÑO INDUSTRIAL CAD APE",
-          "room": "posgrados",
+          "room": "CB-B308",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno industrial cad"
         },
         {
           "day": "Lunes",
           "time": "10:00-11:00",
           "subject": "DESARROLLO DE EMPRENDEDORES",
-          "room": "Por definir",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N5-General-2",
+          "courseId": "C5-GENERAL-2",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2529,7 +2552,7 @@ const scheduleDashboardData = {
           "subject": "COSTOS Y PRESUPUESTOS DE PRODUCCIÓN",
           "room": "CB-B201",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N5-General-1",
+          "courseId": "C5-GENERAL-1",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2539,12 +2562,12 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "10:00-11:00",
           "subject": "DISEÑO INDUSTRIAL CAD APE",
-          "room": "posgrados",
+          "room": "CB-B308",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno industrial cad"
         },
         {
@@ -2553,10 +2576,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG2",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2565,7 +2588,7 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2577,7 +2600,7 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2589,10 +2612,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG2",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2601,10 +2624,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG1",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2613,7 +2636,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO INDUSTRIAL CAD",
           "room": "CB-C003",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2625,7 +2648,7 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2637,10 +2660,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG1",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2649,10 +2672,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG2",
           "room": "Aula taller",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2661,10 +2684,10 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DE PROCESOS Y ERGONOMÍA APE SG1",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N5-General-6",
+          "courseId": "C5-GENERAL-6",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria de procesos y ergonomia"
         },
         {
@@ -2673,22 +2696,22 @@ const scheduleDashboardData = {
           "subject": "DISEÑO INDUSTRIAL CAD APE",
           "room": "CB-C003",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N5-General-4",
+          "courseId": "C5-GENERAL-4",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno industrial cad"
         },
         {
           "day": "Miércoles",
           "time": "14:00-15:00",
           "subject": "COSTOS Y PRESUPUESTOS DE PRODUCCIÓN APE",
-          "room": "POSGRADOS",
+          "room": "CB-B305",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N5-General-1",
+          "courseId": "C5-GENERAL-1",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "costos y presupuestos de produccion"
         },
         {
@@ -2697,10 +2720,10 @@ const scheduleDashboardData = {
           "subject": "DISEÑO DE MÁQUINAS APE G1",
           "room": "CB-B202",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N5-General-3",
+          "courseId": "C5-GENERAL-3",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno de maquinas"
         },
         {
@@ -2709,7 +2732,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO DE MÁQUINAS",
           "room": "CB-B201",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N5-General-3",
+          "courseId": "C5-GENERAL-3",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2719,21 +2742,21 @@ const scheduleDashboardData = {
           "day": "Miércoles",
           "time": "15:00-16:00",
           "subject": "COSTOS Y PRESUPUESTOS DE PRODUCCIÓN APE",
-          "room": "POSGRADOS",
+          "room": "CB-B305",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N5-General-1",
+          "courseId": "C5-GENERAL-1",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "costos y presupuestos de produccion"
         },
         {
           "day": "Jueves",
           "time": "15:00-16:00",
           "subject": "DESARROLLO DE EMPRENDEDORES",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N5-General-2",
+          "courseId": "C5-GENERAL-2",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2745,10 +2768,10 @@ const scheduleDashboardData = {
           "subject": "DISEÑO DE MÁQUINAS APE G1",
           "room": "CB-B202",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N5-General-3",
+          "courseId": "C5-GENERAL-3",
           "level": 5,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno de maquinas"
         },
         {
@@ -2757,7 +2780,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO DE MÁQUINAS",
           "room": "CB-B201",
           "teacher": "MGT. Jhonathan Darío Santos Benitez",
-          "courseId": "N5-General-3",
+          "courseId": "C5-GENERAL-3",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
@@ -2767,171 +2790,156 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "16:00-17:00",
           "subject": "DESARROLLO DE EMPRENDEDORES",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N5-General-2",
+          "courseId": "C5-GENERAL-2",
           "level": 5,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "desarrollo de emprendedores"
         }
-      ]
+      ],
+      "id": "c5-general",
+      "title": "Ciclo 5"
     },
     {
-      "id": "n6-g1",
       "level": 6,
-      "parallel": "G1",
-      "title": "Nivel 6 - Paralelo G1",
+      "parallel": "General",
       "courses": [
         {
-          "id": "N6-G1-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "MAQUINAS, HERRAMIENTAS Y ACCESORIOS",
           "teacher": "MGT. FREDDY NARVAEZ",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 3.0
           },
-          "totalHours": 5.0,
+          "id": "C6-GENERAL-1",
           "baseSubject": "maquinas herramientas y accesorios",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 5.0
         },
         {
-          "id": "N6-G1-2",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "ECONOMÍA GENERAL",
           "teacher": "PHD. OTILIA CORDERO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C6-GENERAL-2",
           "baseSubject": "economia general",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N6-G1-3",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "GESTIÓN DEL TALENTO HUMANO",
           "teacher": "MGT. SAÚL JERVES",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C6-GENERAL-3",
           "baseSubject": "gestion del talento humano",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N6-G1-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS P1",
           "teacher": "MGT. RODRIGO GUAMÁN",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 0,
-            "HORAS T": 0
+            "ACD": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C6-GENERAL-4",
           "baseSubject": "investigacion y desarrollo de nuevos productos",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         },
         {
-          "id": "N6-G1-5",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS P1 APE",
           "teacher": "MGT. JENNY ROJAS",
           "hours": {
-            "HORAS C": 0,
-            "HORAS P": 4.0,
-            "HORAS T": 0
+            "APE/A": 4.0
           },
-          "totalHours": 4.0,
+          "id": "C6-GENERAL-5",
           "baseSubject": "investigacion y desarrollo de nuevos productos",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 4.0
         },
         {
-          "id": "N6-G1-6",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS P2",
           "teacher": "MGT. RODRIGO GUAMÁN",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 0,
-            "HORAS T": 0
+            "ACD": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C6-GENERAL-6",
           "baseSubject": "investigacion y desarrollo de nuevos productos",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         },
         {
-          "id": "N6-G1-7",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS P2 APE",
           "teacher": "MGT. JENNY ROJAS",
           "hours": {
-            "HORAS C": 0,
-            "HORAS P": 4.0,
-            "HORAS T": 0
+            "APE/A": 4.0
           },
-          "totalHours": 4.0,
+          "id": "C6-GENERAL-7",
           "baseSubject": "investigacion y desarrollo de nuevos productos",
-          "component": "APE"
+          "component": "APE/A",
+          "totalHours": 4.0
         },
         {
-          "id": "N6-G1-8",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "INVESTIGACIÓN OPERATIVA",
           "teacher": "MGT. DIANA JADÁN",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C6-GENERAL-8",
           "baseSubject": "investigacion operativa",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N6-G1-9",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "LEGISLACIÓN ECUATORIANA",
           "teacher": "MGT. MATEO COELLO",
           "hours": {
-            "HORAS C": 1.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 1.0,
+            "APE/A": 2.0
           },
-          "totalHours": 3.0,
+          "id": "C6-GENERAL-9",
           "baseSubject": "legislacion ecuatoriana",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         },
         {
-          "id": "N6-G1-10",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "PRÁCTICAS PRE PROFESIONALES I (VINCULACIÓN)",
           "teacher": "MGT. FREDDY NARVAEZ",
           "hours": {
-            "HORAS C": 0,
-            "HORAS P": 0,
-            "HORAS T": 1.0
+            "AA": 1.0
           },
-          "totalHours": 1.0,
+          "id": "C6-GENERAL-10",
           "baseSubject": "pre profesionales i vinculacion",
-          "component": "ACD"
+          "component": "APE/A",
+          "totalHours": 1.0
         }
       ],
       "sessions": [
@@ -2941,9 +2949,9 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DEL TALENTO HUMANO",
           "room": "CB-B106",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N6-G1-3",
+          "courseId": "C6-GENERAL-3",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "gestion del talento humano"
         },
@@ -2953,9 +2961,9 @@ const scheduleDashboardData = {
           "subject": "LEGISLACIÓN ECUATORIANA ACD",
           "room": "CB-B004",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N6-G1-9",
+          "courseId": "C6-GENERAL-9",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "legislacion ecuatoriana"
         },
@@ -2965,33 +2973,33 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DEL TALENTO HUMANO APE",
           "room": "CB-B106",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N6-G1-3",
+          "courseId": "C6-GENERAL-3",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "gestion del talento humano"
         },
         {
           "day": "Jueves",
           "time": "07:00-08:00",
           "subject": "INVESTIGACIÓN OPERATIVA APE",
-          "room": "Por definir",
-          "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "room": "CB-B308",
+          "teacher": "MGT. DIANA JADÁN",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "investigacion operativa"
         },
         {
           "day": "Viernes",
           "time": "07:00-08:00",
           "subject": "INVESTIGACIÓN OPERATIVA",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N6-G1-8",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion operativa"
         },
@@ -3001,9 +3009,9 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DEL TALENTO HUMANO",
           "room": "CB-B106",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N6-G1-3",
+          "courseId": "C6-GENERAL-3",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "gestion del talento humano"
         },
@@ -3013,10 +3021,10 @@ const scheduleDashboardData = {
           "subject": "LEGISLACIÓN ECUATORIANA APE SG1",
           "room": "CB-B004",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N6-G1-9",
+          "courseId": "C6-GENERAL-9",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "legislacion ecuatoriana"
         },
         {
@@ -3025,33 +3033,33 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DEL TALENTO HUMANO APE",
           "room": "CB-B106",
           "teacher": "MGT. SAÚL JERVES",
-          "courseId": "N6-G1-3",
+          "courseId": "C6-GENERAL-3",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "gestion del talento humano"
         },
         {
           "day": "Jueves",
           "time": "08:00-09:00",
           "subject": "INVESTIGACIÓN OPERATIVA APE",
-          "room": "Por definir",
-          "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "room": "CB-B308",
+          "teacher": "MGT. DIANA JADÁN",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "investigacion operativa"
         },
         {
           "day": "Viernes",
           "time": "08:00-09:00",
           "subject": "INVESTIGACIÓN OPERATIVA",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N6-G1-8",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion operativa"
         },
@@ -3059,11 +3067,11 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "09:00-10:00",
           "subject": "INVESTIGACIÓN OPERATIVA",
-          "room": "POSGRADOS",
+          "room": "CB-B306",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N6-G1-8",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion operativa"
         },
@@ -3073,11 +3081,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG1",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Jueves",
@@ -3085,33 +3093,33 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG3",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Viernes",
           "time": "09:00-10:00",
           "subject": "ECONOMÍA GENERAL APE",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N6-G1-2",
+          "courseId": "C6-GENERAL-2",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "economia general"
         },
         {
           "day": "Lunes",
           "time": "10:00-11:00",
           "subject": "INVESTIGACIÓN OPERATIVA",
-          "room": "POSGRADOS",
+          "room": "CB-B306",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N6-G1-8",
+          "courseId": "C6-GENERAL-8",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion operativa"
         },
@@ -3121,9 +3129,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P2",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-6",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3133,11 +3141,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG1",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Jueves",
@@ -3145,22 +3153,22 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG3",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Viernes",
           "time": "10:00-11:00",
           "subject": "ECONOMÍA GENERAL APE",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N6-G1-2",
+          "courseId": "C6-GENERAL-2",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "economia general"
         },
         {
@@ -3169,9 +3177,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P1",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-4",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3181,9 +3189,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P2",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-6",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3193,11 +3201,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG2",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Jueves",
@@ -3205,11 +3213,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG4",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Lunes",
@@ -3217,9 +3225,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P1",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-4",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3229,9 +3237,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P2",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-6",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3241,11 +3249,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG2",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Jueves",
@@ -3253,11 +3261,11 @@ const scheduleDashboardData = {
           "subject": "INV. Y DES. DE PROD APE SG4",
           "room": "FABLAB",
           "teacher": "MGT. JENNY ROJAS",
-          "courseId": "N6-G1-5",
+          "courseId": "C6-GENERAL-5",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
-          "baseSubject": "investigacion y desarrollo de nuevos productos"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "inv y des de prod"
         },
         {
           "day": "Lunes",
@@ -3265,9 +3273,9 @@ const scheduleDashboardData = {
           "subject": "INVESTIGACIÓN Y DES P1",
           "room": "FABLAB",
           "teacher": "MGT. RODRIGO GUAMÁN",
-          "courseId": "N6-G1-4",
+          "courseId": "C6-GENERAL-4",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "investigacion y des"
         },
@@ -3277,9 +3285,9 @@ const scheduleDashboardData = {
           "subject": "MAQUINAS, HERRAMIENTAS",
           "room": "CB-B004",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-1",
+          "courseId": "C6-GENERAL-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "maquinas herramientas"
         },
@@ -3289,9 +3297,9 @@ const scheduleDashboardData = {
           "subject": "MAQUINAS, HERRAMIENTAS SG1",
           "room": "Lab MAQ-HERR",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-1",
+          "courseId": "C6-GENERAL-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "maquinas herramientas"
         },
@@ -3301,9 +3309,9 @@ const scheduleDashboardData = {
           "subject": "ECONOMÍA GENERAL ACD",
           "room": "CB-B201",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N6-G1-2",
+          "courseId": "C6-GENERAL-2",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "economia general"
         },
@@ -3313,9 +3321,9 @@ const scheduleDashboardData = {
           "subject": "MAQUINAS, HERRAMIENTAS",
           "room": "CB-B004",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-1",
+          "courseId": "C6-GENERAL-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "maquinas herramientas"
         },
@@ -3325,9 +3333,9 @@ const scheduleDashboardData = {
           "subject": "MAQUINAS, HERRAMIENTAS SG1",
           "room": "Lab MAQ-HERR",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-1",
+          "courseId": "C6-GENERAL-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "maquinas herramientas"
         },
@@ -3337,23 +3345,23 @@ const scheduleDashboardData = {
           "subject": "ECONOMÍA GENERAL ACD",
           "room": "CB-B201",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N6-G1-2",
+          "courseId": "C6-GENERAL-2",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "economia general"
         },
         {
           "day": "Lunes",
           "time": "17:00-18:00",
-          "subject": "PRÁCTICAS PRE PROFESIONALES I (VINCULACIÓN)",
-          "room": "SALA COM",
+          "subject": "PRÁCTICAS PRE PROFESIONALES I (VIN",
+          "room": "CSALA COM",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-10",
+          "courseId": "C6-GENERAL-10",
           "level": 6,
-          "parallel": "G1",
-          "component": "ACD",
-          "baseSubject": "pre profesionales i vinculacion"
+          "parallel": "General",
+          "component": "APE/A",
+          "baseSubject": "pre profesionales i vin"
         },
         {
           "day": "Martes",
@@ -3361,9 +3369,9 @@ const scheduleDashboardData = {
           "subject": "MAQUINAS, HERRAMIENTAS SG1",
           "room": "Lab MAQ-HERR",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N6-G1-1",
+          "courseId": "C6-GENERAL-1",
           "level": 6,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "maquinas herramientas"
         },
@@ -3373,136 +3381,128 @@ const scheduleDashboardData = {
           "subject": "LEGISLACIÓN ECUATORIANA APE SG2",
           "room": "CB-B004",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N6-G1-9",
+          "courseId": "C6-GENERAL-9",
           "level": 6,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "legislacion ecuatoriana"
         }
-      ]
+      ],
+      "id": "c6-general",
+      "title": "Ciclo 6"
     },
     {
-      "id": "n7-g1",
       "level": 7,
-      "parallel": "G1",
-      "title": "Nivel 7 - Paralelo G1",
+      "parallel": "General",
       "courses": [
         {
-          "id": "N7-G1-1",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "EQUIPO INDUSTRIAL",
-          "teacher": "Jhonathan Darío Santos Benitez",
+          "teacher": "MGT. Jhonathan Darío Santos Benitez",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C7-GENERAL-1",
           "baseSubject": "equipo industrial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N7-G1-2",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "MARKETING",
           "teacher": "PHD. OTILIA CORDERO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C7-GENERAL-2",
           "baseSubject": "marketing",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N7-G1-3",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "MATEMÁTICA FINANCIERA",
-          "teacher": "MGT. MATEO COELLO",
+          "teacher": "PhD. CRISTIAN ZAMORA",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 1.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 1.0
           },
-          "totalHours": 3.0,
+          "id": "C7-GENERAL-3",
           "baseSubject": "matematica financiera",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         },
         {
-          "id": "N7-G1-4",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN",
           "teacher": "MGT. PAOLA VINTIMILLA",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C7-GENERAL-4",
           "baseSubject": "organizacion de la produccion",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N7-G1-5",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "PRÁCTICAS PRE PROFESIONALES II (LABORALES 1",
           "teacher": "MGT. FREDDY NARVAEZ",
           "hours": {
-            "HORAS C": 0,
-            "HORAS P": 0,
-            "HORAS T": 1.0
+            "AA": 1.0
           },
-          "totalHours": 1.0,
+          "id": "C7-GENERAL-5",
           "baseSubject": "pre profesionales ii laborales 1",
-          "component": "ACD"
+          "component": "APE/A",
+          "totalHours": 1.0
         },
         {
-          "id": "N7-G1-6",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "SEGURIDAD Y SALUD OCUPACIONAL",
           "teacher": "MGT. PAULINA ESPINOZA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C7-GENERAL-6",
           "baseSubject": "seguridad y salud ocupacional",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N7-G1-7",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "subject": "TECNOLOGÍA ENERGÉTICA",
           "teacher": "PHD. ANDRÉS MONTERO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C7-GENERAL-7",
           "baseSubject": "tecnologia energetica",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         }
       ],
       "sessions": [
         {
           "day": "Martes",
           "time": "07:00-08:00",
-          "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN G1",
+          "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN",
           "room": "CB-B202",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N7-G1-4",
+          "courseId": "C7-GENERAL-4",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "organizacion de la produccion"
         },
@@ -3511,22 +3511,22 @@ const scheduleDashboardData = {
           "time": "07:00-08:00",
           "subject": "MATEMÁTICA FINANCIERA APE",
           "room": "CB-B004",
-          "teacher": "MGT. MATEO COELLO",
-          "courseId": "N7-G1-3",
+          "teacher": "PhD. CRISTIAN ZAMORA",
+          "courseId": "C7-GENERAL-3",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "matematica financiera"
         },
         {
           "day": "Martes",
           "time": "08:00-09:00",
-          "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN G1",
+          "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN",
           "room": "CB-B202",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N7-G1-4",
+          "courseId": "C7-GENERAL-4",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "organizacion de la produccion"
         },
@@ -3535,10 +3535,10 @@ const scheduleDashboardData = {
           "time": "08:00-09:00",
           "subject": "MATEMÁTICA FINANCIERA",
           "room": "CB-B202",
-          "teacher": "MGT. MATEO COELLO",
-          "courseId": "N7-G1-3",
+          "teacher": "PhD. CRISTIAN ZAMORA",
+          "courseId": "C7-GENERAL-3",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "matematica financiera"
         },
@@ -3547,10 +3547,10 @@ const scheduleDashboardData = {
           "time": "08:00-09:00",
           "subject": "MATEMÁTICA FINANCIERA",
           "room": "CB-B202",
-          "teacher": "MGT. MATEO COELLO",
-          "courseId": "N7-G1-3",
+          "teacher": "PhD. CRISTIAN ZAMORA",
+          "courseId": "C7-GENERAL-3",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "matematica financiera"
         },
@@ -3559,10 +3559,10 @@ const scheduleDashboardData = {
           "time": "09:00-10:00",
           "subject": "EQUIPO INDUSTRIAL",
           "room": "CB-B202",
-          "teacher": "Jhonathan Darío Santos Benitez",
-          "courseId": "N7-G1-1",
+          "teacher": "MGT. Jhonathan Darío Santos Benitez",
+          "courseId": "C7-GENERAL-1",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "equipo industrial"
         },
@@ -3572,9 +3572,9 @@ const scheduleDashboardData = {
           "subject": "SEGURIDAD Y SALUD OCUPACIONAL",
           "room": "CB-B202",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "seguridad y salud ocupacional"
         },
@@ -3584,9 +3584,9 @@ const scheduleDashboardData = {
           "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN G1",
           "room": "Lab I4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N7-G1-4",
+          "courseId": "C7-GENERAL-4",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "organizacion de la produccion"
         },
@@ -3596,10 +3596,10 @@ const scheduleDashboardData = {
           "subject": "SEGURIDAD Y SALUD OCUPACIONAL APE",
           "room": "CB-B101",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "seguridad y salud ocupacional"
         },
         {
@@ -3607,23 +3607,23 @@ const scheduleDashboardData = {
           "time": "10:00-11:00",
           "subject": "EQUIPO INDUSTRIAL",
           "room": "CB-B202",
-          "teacher": "Jhonathan Darío Santos Benitez",
-          "courseId": "N7-G1-1",
+          "teacher": "MGT. Jhonathan Darío Santos Benitez",
+          "courseId": "C7-GENERAL-1",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "equipo industrial"
         },
         {
           "day": "Martes",
           "time": "10:00-11:00",
-          "subject": "SEGURIDAD Y SALUD OCUPACIONAL APE",
+          "subject": "SEGURIDAD Y SALUD OCUPACIONAL",
           "room": "CB-B202",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "ACD",
           "baseSubject": "seguridad y salud ocupacional"
         },
         {
@@ -3632,9 +3632,9 @@ const scheduleDashboardData = {
           "subject": "ORGANIZACIÓN DE LA PRODUCCIÓN G1",
           "room": "Lab I4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N7-G1-4",
+          "courseId": "C7-GENERAL-4",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "organizacion de la produccion"
         },
@@ -3644,10 +3644,10 @@ const scheduleDashboardData = {
           "subject": "SEGURIDAD Y SALUD OCUPACIONAL APE",
           "room": "CB-B101",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "seguridad y salud ocupacional"
         },
         {
@@ -3656,9 +3656,9 @@ const scheduleDashboardData = {
           "subject": "SEGURIDAD Y SALUD OCUPACIONAL",
           "room": "LAB I4,0",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "seguridad y salud ocupacional"
         },
@@ -3666,11 +3666,11 @@ const scheduleDashboardData = {
           "day": "Martes",
           "time": "11:00-12:00",
           "subject": "MARKETING",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N7-G1-2",
+          "courseId": "C7-GENERAL-2",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "marketing"
         },
@@ -3679,22 +3679,22 @@ const scheduleDashboardData = {
           "time": "11:00-12:00",
           "subject": "EQUIPO INDUSTRIAL APE",
           "room": "CB-B202",
-          "teacher": "Jhonathan Darío Santos Benitez",
-          "courseId": "N7-G1-1",
+          "teacher": "MGT. Jhonathan Darío Santos Benitez",
+          "courseId": "C7-GENERAL-1",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "equipo industrial"
         },
         {
           "day": "Jueves",
           "time": "11:00-12:00",
           "subject": "TECNOLOGÍA ENERGÉTICA",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. ANDRÉS MONTERO",
-          "courseId": "N7-G1-7",
+          "courseId": "C7-GENERAL-7",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "tecnologia energetica"
         },
@@ -3704,33 +3704,33 @@ const scheduleDashboardData = {
           "subject": "TECNOLOGÍA ENERGÉTICA",
           "room": "CB-B202",
           "teacher": "PHD. ANDRÉS MONTERO",
-          "courseId": "N7-G1-7",
+          "courseId": "C7-GENERAL-7",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "tecnologia energetica"
         },
         {
           "day": "Lunes",
           "time": "12:00-13:00",
-          "subject": "SEGURIDAD Y SALUD OCUPACIONAL APE",
+          "subject": "SEGURIDAD Y SALUD OCUPACIONAL",
           "room": "LAB I4,0",
           "teacher": "MGT. PAULINA ESPINOZA",
-          "courseId": "N7-G1-6",
+          "courseId": "C7-GENERAL-6",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "ACD",
           "baseSubject": "seguridad y salud ocupacional"
         },
         {
           "day": "Martes",
           "time": "12:00-13:00",
           "subject": "MARKETING",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N7-G1-2",
+          "courseId": "C7-GENERAL-2",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "marketing"
         },
@@ -3739,22 +3739,22 @@ const scheduleDashboardData = {
           "time": "12:00-13:00",
           "subject": "EQUIPO INDUSTRIAL APE",
           "room": "CB-B202",
-          "teacher": "Jhonathan Darío Santos Benitez",
-          "courseId": "N7-G1-1",
+          "teacher": "MGT. Jhonathan Darío Santos Benitez",
+          "courseId": "C7-GENERAL-1",
           "level": 7,
-          "parallel": "G1",
-          "component": "APE",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "equipo industrial"
         },
         {
           "day": "Jueves",
           "time": "12:00-13:00",
           "subject": "TECNOLOGÍA ENERGÉTICA",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. ANDRÉS MONTERO",
-          "courseId": "N7-G1-7",
+          "courseId": "C7-GENERAL-7",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "tecnologia energetica"
         },
@@ -3764,9 +3764,9 @@ const scheduleDashboardData = {
           "subject": "TECNOLOGÍA ENERGÉTICA",
           "room": "CB-B202",
           "teacher": "PHD. ANDRÉS MONTERO",
-          "courseId": "N7-G1-7",
+          "courseId": "C7-GENERAL-7",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "tecnologia energetica"
         },
@@ -3774,11 +3774,11 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "15:00-16:00",
           "subject": "MARKETING",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N7-G1-2",
+          "courseId": "C7-GENERAL-2",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "marketing"
         },
@@ -3786,11 +3786,11 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "16:00-17:00",
           "subject": "MARKETING",
-          "room": "POSGRADOS",
+          "room": "CB-B308",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N7-G1-2",
+          "courseId": "C7-GENERAL-2",
           "level": 7,
-          "parallel": "G1",
+          "parallel": "General",
           "component": "ACD",
           "baseSubject": "marketing"
         },
@@ -3800,109 +3800,102 @@ const scheduleDashboardData = {
           "subject": "PRÁCTICAS PRE PROFESIONALES II (LABORALES 1",
           "room": "Por definir",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N7-G1-5",
+          "courseId": "C7-GENERAL-5",
           "level": 7,
-          "parallel": "G1",
-          "component": "ACD",
+          "parallel": "General",
+          "component": "APE/A",
           "baseSubject": "pre profesionales ii laborales 1"
         }
-      ]
+      ],
+      "id": "c7-general",
+      "title": "Ciclo 7"
     },
     {
-      "id": "n8-general",
       "level": 8,
       "parallel": "General",
-      "title": "Nivel 8",
       "courses": [
         {
-          "id": "N8-General-1",
           "level": 8,
           "parallel": "General",
           "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN",
           "teacher": "PhD. PABLO FLORES",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
-          "baseSubject": "sistemas de control de la produccion",
-          "component": "ACD"
+          "id": "C8-GENERAL-1",
+          "baseSubject": "sistemas de control de la produccioncion",
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N8-General-2",
           "level": 8,
           "parallel": "General",
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "teacher": "MGT. PAOLA VINTIMILLA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C8-GENERAL-2",
           "baseSubject": "logistica y cadena de suministro",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N8-General-3",
           "level": 8,
           "parallel": "General",
           "subject": "GESTIÓN DE CALIDAD",
           "teacher": "PhD. SILVIA PEÑA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C8-GENERAL-3",
           "baseSubject": "gestion de calidad",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N8-General-4",
           "level": 8,
           "parallel": "General",
           "subject": "GESTIÓN AMBIENTAL EMPRESARIAL",
           "teacher": "MGT. XIMENA ÁLVAREZ",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C8-GENERAL-4",
           "baseSubject": "gestion ambiental empresarial",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N8-General-5",
           "level": 8,
           "parallel": "General",
           "subject": "INGENIERÍA DEL MANTENIMIENTO",
           "teacher": "MGT. PAÚL ÁLVAREZ",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C8-GENERAL-5",
           "baseSubject": "ingenieria del mantenimiento",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N8-General-6",
           "level": 8,
           "parallel": "General",
           "subject": "PRÁCTICAS PRE PROFESIONALES III (LABORALES 2)",
           "teacher": "MGT. FREDDY NARVAEZ",
           "hours": {
-            "HORAS C": 0,
-            "HORAS P": 1.0,
-            "HORAS T": 0
+            "APE/A": 1.0
           },
-          "totalHours": 1.0,
+          "id": "C8-GENERAL-6",
           "baseSubject": "pre profesionales iii laborales 2",
-          "component": "ACD"
+          "component": "APE/A",
+          "totalHours": 1.0
         }
       ],
       "sessions": [
@@ -3912,7 +3905,7 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DEL MANTENIMIENTO",
           "room": "CB-B004",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N8-General-5",
+          "courseId": "C8-GENERAL-5",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -3924,7 +3917,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "CB-B202",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -3936,10 +3929,10 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DE CALIDAD APE",
           "room": "CB-B004",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion de calidad"
         },
         {
@@ -3948,7 +3941,7 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DEL MANTENIMIENTO",
           "room": "CB-B004",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N8-General-5",
+          "courseId": "C8-GENERAL-5",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -3960,7 +3953,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "CB-B202",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -3972,19 +3965,19 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN DE CALIDAD APE",
           "room": "CB-B004",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion de calidad"
         },
         {
           "day": "Lunes",
           "time": "09:00-10:00",
-          "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN",
+          "subject": "SISTEMAS DE CONTROL DE LA PRODUC",
           "room": "CB-B201",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -3996,7 +3989,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "LAB I4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4008,7 +4001,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN AMBIENTAL EMPRESARIAL",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N8-General-4",
+          "courseId": "C8-GENERAL-4",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4018,12 +4011,12 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "09:00-10:00",
           "subject": "GESTIÓN DE CALIDAD APE",
-          "room": "POSGRADOS",
+          "room": "CB-B309",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion de calidad"
         },
         {
@@ -4032,19 +4025,19 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DEL MANTENIMIENTO APE",
           "room": "CB-B004",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N8-General-5",
+          "courseId": "C8-GENERAL-5",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria del mantenimiento"
         },
         {
           "day": "Lunes",
           "time": "10:00-11:00",
-          "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN",
+          "subject": "SISTEMAS DE CONTROL DE LA PRODUC",
           "room": "CB-B201",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4056,7 +4049,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "LAB I4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4068,7 +4061,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN AMBIENTAL EMPRESARIAL",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N8-General-4",
+          "courseId": "C8-GENERAL-4",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4078,12 +4071,12 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "10:00-11:00",
           "subject": "GESTIÓN DE CALIDAD APE",
-          "room": "POSGRADOS",
+          "room": "CB-B309",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion de calidad"
         },
         {
@@ -4092,19 +4085,19 @@ const scheduleDashboardData = {
           "subject": "INGENIERÍA DEL MANTENIMIENTO APE",
           "room": "CB-B004",
           "teacher": "MGT. PAÚL ÁLVAREZ",
-          "courseId": "N8-General-5",
+          "courseId": "C8-GENERAL-5",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "ingenieria del mantenimiento"
         },
         {
           "day": "Lunes",
           "time": "11:00-12:00",
           "subject": "GESTIÓN DE CALIDAD",
-          "room": "Por definir",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4113,10 +4106,10 @@ const scheduleDashboardData = {
         {
           "day": "Martes",
           "time": "11:00-12:00",
-          "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN",
+          "subject": "SISTEMAS DE CONTROL DE LA PRODUC",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4128,11 +4121,11 @@ const scheduleDashboardData = {
           "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN APE",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "sistemas de control de la produccion"
+          "component": "APE/A",
+          "baseSubject": "sistemas de control de la produccioncion"
         },
         {
           "day": "Jueves",
@@ -4140,7 +4133,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "CB-B105",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4152,19 +4145,19 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN AMBIENTAL EMPRESARIAL APE",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N8-General-4",
+          "courseId": "C8-GENERAL-4",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion ambiental empresarial"
         },
         {
           "day": "Lunes",
           "time": "12:00-13:00",
           "subject": "GESTIÓN DE CALIDAD",
-          "room": "Por definir",
+          "room": "CB-B308",
           "teacher": "PhD. SILVIA PEÑA",
-          "courseId": "N8-General-3",
+          "courseId": "C8-GENERAL-3",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4173,13 +4166,13 @@ const scheduleDashboardData = {
         {
           "day": "Martes",
           "time": "12:00-13:00",
-          "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN APE",
+          "subject": "SISTEMAS DE CONTROL DE LA PRODUC",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "sistemas de control de la produccion"
         },
         {
@@ -4188,11 +4181,11 @@ const scheduleDashboardData = {
           "subject": "SISTEMAS DE CONTROL DE LA PRODUCCIÓN APE",
           "room": "CB-B106",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N8-General-1",
+          "courseId": "C8-GENERAL-1",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "sistemas de control de la produccion"
+          "component": "APE/A",
+          "baseSubject": "sistemas de control de la produccioncion"
         },
         {
           "day": "Jueves",
@@ -4200,7 +4193,7 @@ const scheduleDashboardData = {
           "subject": "LOGÍSTICA Y CADENA DE SUMINISTRO",
           "room": "CB-B105",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N8-General-2",
+          "courseId": "C8-GENERAL-2",
           "level": 8,
           "parallel": "General",
           "component": "ACD",
@@ -4212,10 +4205,10 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN AMBIENTAL EMPRESARIAL APE",
           "room": "CB-B004",
           "teacher": "MGT. XIMENA ÁLVAREZ",
-          "courseId": "N8-General-4",
+          "courseId": "C8-GENERAL-4",
           "level": 8,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion ambiental empresarial"
         },
         {
@@ -4224,10 +4217,10 @@ const scheduleDashboardData = {
           "subject": "ATENCIÓN PPP",
           "room": "SALA COM",
           "teacher": "Por definir",
-          "courseId": null,
+          "courseId": "",
           "level": 8,
           "parallel": "General",
-          "component": "",
+          "component": "ACD",
           "baseSubject": "atencion ppp"
         },
         {
@@ -4236,152 +4229,129 @@ const scheduleDashboardData = {
           "subject": "PRÁCTICAS PRE PROFESIONALES III (LABORALES 2)",
           "room": "Por definir",
           "teacher": "MGT. FREDDY NARVAEZ",
-          "courseId": "N8-General-6",
+          "courseId": "C8-GENERAL-6",
           "level": 8,
           "parallel": "General",
-          "component": "ACD",
+          "component": "APE/A",
           "baseSubject": "pre profesionales iii laborales 2"
         }
-      ]
+      ],
+      "id": "c8-general",
+      "title": "Ciclo 8"
     },
     {
-      "id": "n9-general",
       "level": 9,
       "parallel": "General",
-      "title": "Nivel 9",
       "courses": [
         {
-          "id": "N9-General-1",
           "level": 9,
           "parallel": "General",
           "subject": "LEAN MANUFACTURING Y 6 SIGMA (I) ACD",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
-          "baseSubject": "lean manufacturing y six sigma i",
-          "component": "ACD"
+          "id": "C9-GENERAL-1",
+          "baseSubject": "lean manufacturing y 6 sigma i",
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N9-General-2",
           "level": 9,
           "parallel": "General",
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I)",
           "teacher": "PhD. MILTON BARRAGÁN",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C9-GENERAL-2",
           "baseSubject": "lean services y sigma sigma i",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N9-General-3",
           "level": 9,
           "parallel": "General",
           "subject": "INSTRUMENTACIÓN Y CONTROL ACD",
           "teacher": "PhD. PABLO FLORES",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 0,
-            "HORAS T": 0
+            "ACD": 2.0
           },
-          "totalHours": 2.0,
+          "id": "C9-GENERAL-3",
           "baseSubject": "instrumentacion y control",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 2.0
         },
         {
-          "id": "N9-General-4",
           "level": 9,
           "parallel": "General",
           "subject": "DISEÑO EXPERIMENTAL",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C9-GENERAL-4",
           "baseSubject": "diseno experimental",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N9-General-5",
           "level": 9,
           "parallel": "General",
           "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA",
           "teacher": "MGT. MATEO COELLO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
-          "baseSubject": "sistemas de informacion estrategica",
-          "component": "ACD"
+          "id": "C9-GENERAL-5",
+          "baseSubject": "sistemas de informacion estrategicaica",
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N9-General-6",
           "level": 9,
           "parallel": "General",
           "subject": "GESTIÓN FINANCIERA",
           "teacher": "PHD. OTILIA CORDERO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C9-GENERAL-6",
           "baseSubject": "gestion financiera",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N9-General-7",
           "level": 9,
           "parallel": "General",
           "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1",
           "teacher": "MGT. DIANA JADÁN",
           "hours": {
-            "HORAS C": 0.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 0.0,
+            "APE/A": 3.0
           },
-          "totalHours": 3.0,
+          "id": "C9-GENERAL-7",
           "baseSubject": "unidad de integracion curricular 1",
-          "component": "ACD"
-        },
-        {
-          "id": "N9-General-8",
-          "level": 9,
-          "parallel": "General",
-          "subject": "PRÁCTICAS PRE PROFESIONALES Iv (LABORALES 3",
-          "teacher": "Por definir",
-          "hours": {
-            "HORAS C": 0,
-            "HORAS P": 1.0,
-            "HORAS T": 0
-          },
-          "totalHours": 1.0,
-          "baseSubject": "pre profesionales iv laborales 3",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 3.0
         }
       ],
       "sessions": [
         {
           "day": "Lunes",
           "time": "07:00-08:00",
-          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA APE",
-          "room": "POSGRADOS",
+          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉG",
+          "room": "CB-B308",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N9-General-5",
+          "courseId": "C9-GENERAL-5",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "sistemas de informacion estrategica"
         },
         {
@@ -4390,7 +4360,7 @@ const scheduleDashboardData = {
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I)",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4402,7 +4372,7 @@ const scheduleDashboardData = {
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I)",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4414,34 +4384,34 @@ const scheduleDashboardData = {
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I) APE",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean services y sigma sigma i"
         },
         {
           "day": "Lunes",
           "time": "08:00-09:00",
-          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA APE",
-          "room": "POSGRADOS",
+          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉG",
+          "room": "CB-B308",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N9-General-5",
+          "courseId": "C9-GENERAL-5",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "sistemas de informacion estrategica"
         },
         {
           "day": "Martes",
           "time": "08:00-09:00",
-          "subject": "LEAN SERVICES Y SIGMA SIGMA (I) APE",
+          "subject": "LEAN SERVICES Y SIGMA SIGMA (I)",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "ACD",
           "baseSubject": "lean services y sigma sigma i"
         },
         {
@@ -4450,10 +4420,10 @@ const scheduleDashboardData = {
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I) APE",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean services y sigma sigma i"
         },
         {
@@ -4462,10 +4432,10 @@ const scheduleDashboardData = {
           "subject": "LEAN SERVICES Y SIGMA SIGMA (I) APE",
           "room": "LAB I4.0",
           "teacher": "PhD. MILTON BARRAGÁN",
-          "courseId": "N9-General-2",
+          "courseId": "C9-GENERAL-2",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean services y sigma sigma i"
         },
         {
@@ -4474,7 +4444,7 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) ACD",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4484,9 +4454,9 @@ const scheduleDashboardData = {
           "day": "Martes",
           "time": "09:00-10:00",
           "subject": "GESTIÓN FINANCIERA",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N9-General-6",
+          "courseId": "C9-GENERAL-6",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4498,7 +4468,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4510,7 +4480,7 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) ACD",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4522,7 +4492,7 @@ const scheduleDashboardData = {
           "subject": "INSTRUMENTACIÓN Y CONTROL",
           "room": "LAB MAN FLEX",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N9-General-3",
+          "courseId": "C9-GENERAL-3",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4534,7 +4504,7 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) ACD",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4544,9 +4514,9 @@ const scheduleDashboardData = {
           "day": "Martes",
           "time": "10:00-11:00",
           "subject": "GESTIÓN FINANCIERA",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N9-General-6",
+          "courseId": "C9-GENERAL-6",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4558,7 +4528,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4570,7 +4540,7 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) ACD",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4582,7 +4552,7 @@ const scheduleDashboardData = {
           "subject": "INSTRUMENTACIÓN Y CONTROL",
           "room": "LAB MAN FLEX",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N9-General-3",
+          "courseId": "C9-GENERAL-3",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4594,7 +4564,7 @@ const scheduleDashboardData = {
           "subject": "INSTRUMENTACIÓN Y CONTROL",
           "room": "LAB MAN FLEX",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N9-General-3",
+          "courseId": "C9-GENERAL-3",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4606,7 +4576,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-B004",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4618,7 +4588,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN FINANCIERA",
           "room": "CB-B403",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N9-General-6",
+          "courseId": "C9-GENERAL-6",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4627,14 +4597,14 @@ const scheduleDashboardData = {
         {
           "day": "Jueves",
           "time": "11:00-12:00",
-          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA APE",
+          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA AP",
           "room": "CB-B201",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N9-General-5",
+          "courseId": "C9-GENERAL-5",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "sistemas de informacion estrategica"
+          "component": "ACD",
+          "baseSubject": "sistemas de informacion estrategicaica"
         },
         {
           "day": "Viernes",
@@ -4642,10 +4612,10 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) APE",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean manufacturing y six sigma i"
         },
         {
@@ -4654,7 +4624,7 @@ const scheduleDashboardData = {
           "subject": "INSTRUMENTACIÓN Y CONTROL",
           "room": "LAB MAN FLEX",
           "teacher": "PhD. PABLO FLORES",
-          "courseId": "N9-General-3",
+          "courseId": "C9-GENERAL-3",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4666,7 +4636,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-B004",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4678,7 +4648,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN FINANCIERA",
           "room": "CB-B403",
           "teacher": "PHD. OTILIA CORDERO",
-          "courseId": "N9-General-6",
+          "courseId": "C9-GENERAL-6",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4687,14 +4657,14 @@ const scheduleDashboardData = {
         {
           "day": "Jueves",
           "time": "12:00-13:00",
-          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA APE",
+          "subject": "SISTEMAS DE INFORMACIÓN ESTRATÉGICA AP",
           "room": "CB-B201",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N9-General-5",
+          "courseId": "C9-GENERAL-5",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
-          "baseSubject": "sistemas de informacion estrategica"
+          "component": "ACD",
+          "baseSubject": "sistemas de informacion estrategicaica"
         },
         {
           "day": "Viernes",
@@ -4702,35 +4672,35 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (I) APE",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-1",
+          "courseId": "C9-GENERAL-1",
           "level": 9,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean manufacturing y six sigma i"
         },
         {
           "day": "Martes",
           "time": "14:00-15:00",
-          "subject": "PRÁCTICAS PRE PROFESIONALES Iv (LABORALES 3",
-          "room": "I 4.0",
+          "subject": "PRÁCTICAS PRE PROFESIONALES Iv I 4.0",
+          "room": "Por definir",
           "teacher": "Por definir",
-          "courseId": "N9-General-8",
+          "courseId": "",
           "level": 9,
           "parallel": "General",
-          "component": "ACD",
-          "baseSubject": "pre profesionales iv laborales 3"
+          "component": "APE/A",
+          "baseSubject": "pre profesionales iv i 4 0"
         },
         {
           "day": "Miércoles",
           "time": "14:00-15:00",
-          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1",
-          "room": "I 4.0",
+          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1 I 4.0",
+          "room": "Por definir",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N9-General-7",
+          "courseId": "C9-GENERAL-7",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
-          "baseSubject": "unidad de integracion curricular 1"
+          "baseSubject": "unidad de integracion curricular 1 i 4 0"
         },
         {
           "day": "Jueves",
@@ -4738,7 +4708,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-B201",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4747,14 +4717,14 @@ const scheduleDashboardData = {
         {
           "day": "Miércoles",
           "time": "15:00-16:00",
-          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1",
-          "room": "I 4.0",
+          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1 I 4.0",
+          "room": "Por definir",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N9-General-7",
+          "courseId": "C9-GENERAL-7",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
-          "baseSubject": "unidad de integracion curricular 1"
+          "baseSubject": "unidad de integracion curricular 1 i 4 0"
         },
         {
           "day": "Jueves",
@@ -4762,7 +4732,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO EXPERIMENTAL",
           "room": "CB-B201",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N9-General-4",
+          "courseId": "C9-GENERAL-4",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
@@ -4771,97 +4741,92 @@ const scheduleDashboardData = {
         {
           "day": "Miércoles",
           "time": "16:00-17:00",
-          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1",
-          "room": "I 4.0",
+          "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 1 I 4.0",
+          "room": "Por definir",
           "teacher": "MGT. DIANA JADÁN",
-          "courseId": "N9-General-7",
+          "courseId": "C9-GENERAL-7",
           "level": 9,
           "parallel": "General",
           "component": "ACD",
-          "baseSubject": "unidad de integracion curricular 1"
+          "baseSubject": "unidad de integracion curricular 1 i 4 0"
         }
-      ]
+      ],
+      "id": "c9-general",
+      "title": "Ciclo 9"
     },
     {
-      "id": "n10-general",
       "level": 10,
       "parallel": "General",
-      "title": "Nivel 10",
       "courses": [
         {
-          "id": "N10-General-1",
           "level": 10,
           "parallel": "General",
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS ACD",
           "teacher": "MGT. MATEO COELLO",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C10-GENERAL-1",
           "baseSubject": "diseno y gestion de proyectos",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N10-General-2",
           "level": 10,
           "parallel": "General",
           "subject": "GESTIÓN ESTRATÉGICA",
           "teacher": "MGT. MATEO COELLO",
           "hours": {
-            "HORAS C": 2.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 2.0,
+            "APE/A": 2.0
           },
-          "totalHours": 4.0,
+          "id": "C10-GENERAL-2",
           "baseSubject": "gestion estrategica",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 4.0
         },
         {
-          "id": "N10-General-3",
           "level": 10,
           "parallel": "General",
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 ACD",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C10-GENERAL-3",
           "baseSubject": "lean manufacturing y six sigma ii",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N10-General-4",
           "level": 10,
           "parallel": "General",
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "teacher": "MGT. JAMES ARIAS",
           "hours": {
-            "HORAS C": 3.0,
-            "HORAS P": 3.0,
-            "HORAS T": 0
+            "ACD": 3.0,
+            "APE/A": 3.0
           },
-          "totalHours": 6.0,
+          "id": "C10-GENERAL-4",
           "baseSubject": "simulacion de la produccion",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 6.0
         },
         {
-          "id": "N10-General-5",
           "level": 10,
           "parallel": "General",
           "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 2",
           "teacher": "MGT. PAOLA VINTIMILLA",
           "hours": {
-            "HORAS C": 0.0,
-            "HORAS P": 2.0,
-            "HORAS T": 0
+            "ACD": 0.0,
+            "APE/A": 2.0
           },
-          "totalHours": 2.0,
+          "id": "C10-GENERAL-5",
           "baseSubject": "unidad de integracion curricular 2",
-          "component": "ACD"
+          "component": "ACD",
+          "totalHours": 2.0
         }
       ],
       "sessions": [
@@ -4869,9 +4834,9 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "07:00-08:00",
           "subject": "INNOVATION MANAGEMENT ACD",
-          "room": "POSGRADOS",
-          "teacher": "Por definir",
-          "courseId": null,
+          "room": "CB-B306",
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4883,7 +4848,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4895,7 +4860,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4905,12 +4870,12 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "07:00-08:00",
           "subject": "INNOVATION MANAGEMENT APE",
-          "room": "Por definir",
-          "teacher": "Por definir",
-          "courseId": null,
+          "room": "LAB I 4.0",
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "innovation management"
         },
         {
@@ -4919,7 +4884,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4929,9 +4894,9 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "08:00-09:00",
           "subject": "INNOVATION MANAGEMENT ACD",
-          "room": "POSGRADOS",
-          "teacher": "Por definir",
-          "courseId": null,
+          "room": "CB-B306",
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4943,7 +4908,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4955,7 +4920,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4965,12 +4930,12 @@ const scheduleDashboardData = {
           "day": "Jueves",
           "time": "08:00-09:00",
           "subject": "INNOVATION MANAGEMENT APE",
-          "room": "Por definir",
-          "teacher": "Por definir",
-          "courseId": null,
+          "room": "LAB I 4.0",
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "innovation management"
         },
         {
@@ -4979,7 +4944,7 @@ const scheduleDashboardData = {
           "subject": "SIMULACIÓN DE LA PRODUCCIÓN",
           "room": "CB-C003",
           "teacher": "MGT. JAMES ARIAS",
-          "courseId": "N10-General-4",
+          "courseId": "C10-GENERAL-4",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -4989,12 +4954,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "09:00-10:00",
           "subject": "GESTIÓN ESTRATÉGICA APE",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-2",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion estrategica"
         },
         {
@@ -5002,8 +4967,8 @@ const scheduleDashboardData = {
           "time": "09:00-10:00",
           "subject": "INNOVATION MANAGEMENT ACD",
           "room": "CB-B401",
-          "teacher": "Por definir",
-          "courseId": null,
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5015,7 +4980,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN ESTRATÉGICA ACD",
           "room": "CB-B403",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5027,19 +4992,19 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN ESTRATÉGICA APE",
           "room": "CB-B004",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-2",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion estrategica"
         },
         {
           "day": "Viernes",
           "time": "09:00-10:00",
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 ACD",
-          "room": "CB-003",
+          "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5049,12 +5014,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "10:00-11:00",
           "subject": "GESTIÓN ESTRATÉGICA APE",
-          "room": "POSGRADOS",
+          "room": "CB-B307",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-2",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion estrategica"
         },
         {
@@ -5062,11 +5027,11 @@ const scheduleDashboardData = {
           "time": "10:00-11:00",
           "subject": "INNOVATION MANAGEMENT APE",
           "room": "CB-B401",
-          "teacher": "Por definir",
-          "courseId": null,
+          "teacher": "PhD. MILTON BARRAGÁN",
+          "courseId": "",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "innovation management"
         },
         {
@@ -5075,7 +5040,7 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN ESTRATÉGICA ACD",
           "room": "CB-B403",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5087,19 +5052,19 @@ const scheduleDashboardData = {
           "subject": "GESTIÓN ESTRATÉGICA APE",
           "room": "CB-B004",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-2",
+          "courseId": "C10-GENERAL-2",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "gestion estrategica"
         },
         {
           "day": "Viernes",
           "time": "10:00-11:00",
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 ACD",
-          "room": "CB-003",
+          "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5109,12 +5074,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "11:00-12:00",
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS APE",
-          "room": "POSGRADOS",
+          "room": "CB-B306",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno y gestion de proyectos"
         },
         {
@@ -5123,10 +5088,10 @@ const scheduleDashboardData = {
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS APE",
           "room": "CB-B401",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno y gestion de proyectos"
         },
         {
@@ -5135,19 +5100,19 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 APE",
           "room": "LAB i4.0",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean manufacturing y six sigma ii"
         },
         {
           "day": "Jueves",
           "time": "11:00-12:00",
-          "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 ACD",
+          "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5159,7 +5124,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS ACD",
           "room": "CB-B106",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5169,12 +5134,12 @@ const scheduleDashboardData = {
           "day": "Lunes",
           "time": "12:00-13:00",
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS APE",
-          "room": "POSGRADOS",
+          "room": "CB-B306",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "diseno y gestion de proyectos"
         },
         {
@@ -5183,7 +5148,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS ACD",
           "room": "CB-B401",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5195,19 +5160,19 @@ const scheduleDashboardData = {
           "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 APE",
           "room": "LAB i4.0",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
-          "component": "APE",
+          "component": "APE/A",
           "baseSubject": "lean manufacturing y six sigma ii"
         },
         {
           "day": "Jueves",
           "time": "12:00-13:00",
-          "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1 ACD",
+          "subject": "LEAN MANUFACTURING Y SIX SIGMA (II) I1",
           "room": "CB-C003",
           "teacher": "MGT. JUAN CARLOS LLIVISACA",
-          "courseId": "N10-General-3",
+          "courseId": "C10-GENERAL-3",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5219,7 +5184,7 @@ const scheduleDashboardData = {
           "subject": "DISEÑO Y GESTIÓN DE PROYECTOS ACD",
           "room": "CB-B106",
           "teacher": "MGT. MATEO COELLO",
-          "courseId": "N10-General-1",
+          "courseId": "C10-GENERAL-1",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5231,7 +5196,7 @@ const scheduleDashboardData = {
           "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 2",
           "room": "LAB i4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N10-General-5",
+          "courseId": "C10-GENERAL-5",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
@@ -5243,21 +5208,21 @@ const scheduleDashboardData = {
           "subject": "UNIDAD DE INTEGRACIÓN CURRICULAR 2",
           "room": "LAB i4.0",
           "teacher": "MGT. PAOLA VINTIMILLA",
-          "courseId": "N10-General-5",
+          "courseId": "C10-GENERAL-5",
           "level": 10,
           "parallel": "General",
           "component": "ACD",
           "baseSubject": "unidad de integracion curricular 2"
         }
-      ]
+      ],
+      "id": "c10-general",
+      "title": "Ciclo 10"
     }
   ],
   "summary": {
     "levels": 10,
     "blocks": 11,
     "courses": 72,
-    "sessions": 339,
-    "teachers": 30,
-    "rooms": 33
+    "sessions": 342
   }
 };
